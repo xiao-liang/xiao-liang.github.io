@@ -1,0 +1,996 @@
+<?php 
+  include("includes/header.php"); 
+  include("includes/top_nav.php");
+?>
+
+<!-- styles for poems-->
+ <style>
+            .breaker {
+                -moz-border-bottom-colors: none;
+                -moz-border-image: none;
+                -moz-border-left-colors: none;
+                -moz-border-right-colors: none;
+                -moz-border-top-colors: none;
+                border-color: #EEEEEE -moz-use-text-color #FFFFFF;
+                border-style: solid none;
+                border-width: 1px 0;
+                margin: 18px 0;
+                padding-top:6px;
+            }
+
+            .ToC {
+                font-family: Arial, Helvetica, tahoma, verdana, 宋体, SimSun, 华文细黑, STXihei, sans-serif;
+                font-weight:bold;
+                font-size:large;
+            }
+
+            .modernTitle {
+                font-family: Arial, Helvetica, tahoma, verdana, 宋体, SimSun, 华文细黑, STXihei, sans-serif;
+                font-weight:bold;
+                font-size:x-large;
+            }
+
+            .modernSubtitle {
+                font-family: Arial, Helvetica, tahoma, verdana, 宋体, SimSun, 华文细黑, STXihei, sans-serif;
+                font-weight:bold;
+                font-size:medium;
+            }
+
+
+            .modernAttrib {
+                font-family: Arial, Helvetica, tahoma, verdana, 宋体, SimSun, 华文细黑, STXihei, sans-serif;
+                font-weight:normal;
+                font-size:medium;
+            }
+            .modernBody {
+                font-family: Arial, Helvetica, tahoma, verdana, 宋体, SimSun, 华文细黑, STXihei, sans-serif;
+                font-weight:normal;
+                font-size:large;
+            }
+
+
+            .classicalTitle {
+                font-family: Georgia, "Times New Roman", "KaiTi", "楷体", STKaiti, "华文楷体", serif;
+                font-weight:bold;
+                font-size:x-large;
+            }
+
+            .classicalSubtitle {
+                font-family: Georgia, "Times New Roman", "KaiTi", "楷体", STKaiti, "华文楷体", serif;
+                font-weight:normal;
+                font-size:large;
+            }
+
+            .classicalBody {
+                font-family: Georgia, "Times New Roman", "KaiTi", "楷体", STKaiti, "华文楷体", serif;
+                font-weight:normal;
+                font-size:x-large;
+            }
+
+            .classicalAttrib {
+                font-family: Georgia, "Times New Roman", "KaiTi", "楷体", STKaiti, "华文楷体", serif;
+                font-weight:normal;
+                font-size:large;
+            }
+
+</style>
+
+
+<!-- full-page wrapper -->
+<div class="container">
+
+<div class="col-xs-12 col-sm-12 col-md-10 col-xg-10" style="padding-top:15px;">
+<h3>目录</h3> 
+<hr class="breaker">
+
+
+<div class="col-xs-6 col-sm-6 col-md-5 col-xg-5" style="padding-top:0px;">
+    <span class="ToC"><a href="#比喻">比喻</a></span><br/>
+    <span class="ToC"><a href="#远方">远方</a></span><br/>
+    <span class="ToC"><a href="#一个字的韵脚诗">一个字的韵脚诗</a></span><br/>
+    <span class="ToC"><a href="#告别">告别</a></span><br/>
+    <span class="ToC"><a href="#分裂">分裂</a></span><br/>
+    <span class="ToC"><a href="#你站着">你站着</a></span><br/>
+    <span class="ToC"><a href="#轮回">轮回</a></span><br/>
+    <!--
+        <span class="ToC"><a href="#背影">背影</a></span><br/>
+    -->
+    <span class="ToC"><a href="#北方">北方</a></span><br/>
+    <span class="ToC"><a href="#血月亮">血月亮</a></span><br/>
+    <span class="ToC"><a href="#九龙塘的非洲鼓">九龙塘的非洲鼓</a></span><br/>
+    <span class="ToC"><a href="#旺角">旺角</a></span><br/>
+</div>
+
+<div class="col-xs-6 col-sm-6 col-md-5 col-xg-5" style="padding-top:0px;">
+    <span class="ToC"><a href="#赠宋卿">赠宋卿</a></span><br/>
+    <span class="ToC"><a href="#与宋卿冬夜论词并序">与宋卿冬夜论词并序</a></span><br/>
+    <span class="ToC"><a href="#岁初咏怀兼答李叔俊闯">岁初咏怀兼答李叔俊闯</a></span><br/>
+    <span class="ToC"><a href="#送乔老归台感作">送乔老归台感作</a></span><br/>
+    <span class="ToC"><a href="#观书有感">观书有感</a></span><br/>
+    <span class="ToC"><a href="#题香山寺答骆霄">题香山寺答骆霄</a></span><br/>
+    <span class="ToC"><a href="#中秋绿馆抚琴有作">中秋绿馆抚琴有作</a></span><br/>
+
+    <span class="ToC"><a href="#答外祖问">答外祖问</a></span><br/>
+    <!--
+        <span class="ToC"><a href="#采桑子无题">采桑子·无题</a></span><br/>
+        <span class="ToC"><a href="#清平乐令无题">清平乐令·无题</a></span><br/>
+        <span class="ToC"><a href="#无题1">无题（一）</a></span><br/>
+    -->
+    <span class="ToC"><a href="#夜题广庆寺">夜题广庆寺</a></span><br/>
+    <!--
+        <span class="ToC"><a href="#无题2">无题（二）</a></span><br/>
+    -->
+    <span class="ToC"><a href="#过古村">过古村</a></span><br/>
+    <span class="ToC"><a href="#赠常珂">赠常珂</a></span><br/>
+</div>
+
+<hr class="col-xs-12 col-sm-12 col-md-12 col-xg-12 breaker">
+
+
+</div>
+  
+<div class="col-xs-12 col-sm-12 col-md-10 col-xg-10" style="padding-top:15px;">
+  
+
+
+
+
+
+
+<!------------------- Breaker --------------->
+  <div class="modernTitle" id="比喻" style="padding-left:50px;">
+    比喻<br/>
+  </div>
+  <p class="modernSubtitle" style="padding-left:100px;">
+    —— 关于雷电、文化以及隐藏起来的暴政 <br/><br/>
+  </p>
+
+  <p class="modernBody">
+    这是场藏得最好的比喻 <br/>
+    <br/>
+
+
+    一夜雷电中<br/>
+    我听见大海的回声<br/>
+    近得犹如生命到死亡<br/>
+    远得犹如死亡<br/>
+    &nbsp; &nbsp; &nbsp; &nbsp; —— 到生命<br/>
+    <br/>
+
+    就在下一个看似五色斑斓的早晨里<br/>
+    再也开不出一朵<br/>
+    五色斑斓的花<br/>
+    <br/>
+
+    像一场藏得最好的比喻 <br/> 
+    <br/> 
+  </p>
+  <span class="modernAttrib" style="padding-left:70px;">
+    2015.08.04 &nbsp; 子夜长岛风雨狂作<br/><br/>
+  </span>
+<hr class="breaker">
+
+
+
+
+<!------------------- Breaker --------------->
+<div class="modernTitle" id="远方" style="padding-left:10px;">
+    远方<br/>
+</div>
+<p class="modernSubtitle" style="padding-left:60px;">
+    —— 关伟“云在青天水在瓶”作品展 <br/><br/>
+</p>
+  
+
+<p class="modernBody">
+    星图 &nbsp; 八阵 &nbsp; 点卦相<br/>
+    不只是一场关于古文字的模仿<br/>
+    埋在土里的镜子<br/>
+    策反出磅礴的首创<br/>
+    <br/>
+ 
+    龙爪与兽角随时出没<br/>
+    裸体的先人只好藏起眼睛<br/>
+    成了一张张恐惧和惊奇的嘴<br/>
+    然后卷入明朝翻滚的浪<br/>
+    <br/>
+ 
+    我听见了海<br/>
+    吹响千年前的头盖骨召唤<br/>
+    把灵封入信中<br/>
+    再次抛下西洋<br/>
+    <br/>
+ 
+    途中我不断追觅<br/>
+    不断地写给未来<br/>
+    等笔忘了家的方向<br/>
+    心才不会再流放<br/>
+    <br/>
+</p>
+<span class="modernAttrib" style="padding-left:70px;">
+    2010年12月26日 &nbsp; 北京798<br/><br/>
+</span>
+<hr class="breaker">
+
+
+
+<!------------------- Breaker --------------->
+  <div class="modernTitle" id="一个字的韵脚诗" style="padding-left:10px;">
+    一个字的韵脚诗<br/><br/>
+  </div>
+  
+
+  <p class="modernBody">
+    你是月亮的心事<br/>
+    <br/>
+
+    所以我从不敢从正面着笔<br/>
+    即使母语是世上最微妙的文字<br/>
+    即使已试遍了<br/>
+    那些藏在鹊桥里的诗<br/>
+    <br/>
+
+    于是我锁起所有的笔<br/>
+    静静等一个样子:<br/>
+    <br/>
+
+    直到好多年后<br/>
+    当孩子问起“婉约”<br/>
+    或是其他什么抽象的名词<br/>
+    我指着坐在一旁的你<br/>
+    就给出了最具象的解释<br/>
+    <br/>
+  </p>
+    <span class="modernAttrib" style="padding-left:70px;">
+        —— 你坐在满是黄叶的庭院中，在一个早晨，为一首诗解释一个主人<br/>
+    </span>
+    <span class="modernAttrib" style="padding-left:90px;">
+         &nbsp; &nbsp; 6339 Benzal Road, Middle Grove, NY, USA<br/>
+    </span>
+<hr class="breaker">
+
+
+<!------------------- Breaker --------------->
+<div class="modernTitle" id="告别" style="padding-left:10px;">
+    告别<br/><br/>
+</div>
+  
+
+<p class="modernBody">
+    小火车漂走<br/>
+    我看不到蓝天<br/>
+    <br/>
+     
+    当风和哭泣的太阳<br/>
+    不再陪我坐在门槛<br/>
+    你还愿意相信<br/>
+    继续相信<br/>
+    心真的可以保存地<br/>
+    永远都一尘不染？<br/>
+    <br/>
+     
+    可是已经没有人<br/>
+    和我一起珍惜那些泥巴与河岸<br/>
+     
+    然后我摆好手枪<br/>
+    然后我拾起木马<br/>
+    然后我擦了擦灰尘和裂痕的小魔镜<br/>
+    <br/>
+
+    我照见我<br/>
+    死在童年<br/>
+</p>
+<span class="modernAttrib" style="padding-left:70px;">
+    2010-12-12<br/><br/>
+</span>
+<hr class="breaker">
+
+<!------------------- Breaker --------------->
+<div class="modernTitle" id="分裂" style="padding-left:10px;">
+    分裂<br/><br/>
+</div>
+  
+
+<p class="modernBody">
+    我临风出窍 <br/>
+    形销骨立 <br/>
+    <br/>
+
+    巨兽首足入土 <br/>
+    拱出阴森的脊背 <br/>
+    风化成黑暗的寂岭 <br/>
+    <br/>
+
+    祖先们的伤口 <br/>
+    终于我胸前撕裂 <br/>
+    每砸破一滩梦 <br/>
+    就冰蚀一根肋骨 <br/>
+    <br/>
+
+    血剪成的蝴蝶 <br/>
+    因雨季的存在 <br/>
+    满心绞痛 <br/>
+    <br/>
+
+    我用一只烟等待另一支烟的火化 <br/>
+    大地把头颅撕裂 <br/>
+    从没有一次燃烧或枯萎 <br/>
+    得以永生 <br/>
+    <br/>
+
+    夜开始涨潮 <br/>
+    杀死所有真相 <br/>
+    <br/>
+</p>
+<span class="modernAttrib" style="padding-left:70px;">
+    2012年9月11日夜 &nbsp; 静园<br/><br/>
+</span>
+<hr class="breaker">
+
+
+
+
+<!------------------- Breaker --------------->
+<div class="modernTitle" id="你站着" style="padding-left:10px;">
+    你站着
+</div>
+<p class="modernSubtitle" style="padding-left:80px;">
+—— 给郑州外国语学校、以及她每一个急功近利的孩子
+ <br/><br/>
+</p>
+<p class="modernBody">
+    你站着<br/>
+    脊背的影子像利剑<br/>
+    纵贯六千年故国<br/>
+    <br/>
+ 
+    天曾黑过十年<br/>
+    然后炎黄大地再不敢有自己的文字<br/>
+    在机械、钢铁和围墙中<br/>
+    茫茫旋转<br/>
+    于是东方诗死魂灭<br/>
+    <br/>
+ 
+    而只有你<br/>
+    站着<br/>
+    把祖先那血和墨的荣誉<br/>
+    如责任般烙在我们前额<br/>
+    <br/>
+ 
+    你站着<br/>
+    于是我们才敢站着<br/>
+    枪口淬火<br/>
+    长着和你一样的脊梁<br/>
+    磅礴而激烈地<br/>
+    —— 活！<br/>
+    <br/>
+</p>
+<span class="modernAttrib" style="padding-left:70px;">
+    2014年6月4日<br/><br/>
+</span>
+<hr class="breaker">
+
+
+
+
+<!------------------- Breaker --------------->
+<div class="modernTitle" id="轮回" style="padding-left:10px;">
+    轮回<br/><br/>
+</div>
+
+<p class="modernBody">
+    还有什么<br/>
+    你在等<br/>
+    用一个人的苦行<br/>
+    而我已看见<br/>
+    黑暗断崖冷傲的颔下<br/>
+    一滴灯花一点城<br/>
+    <br/>
+
+    今夜月明<br/>
+    我暗算昨夜、明夜与下一轮回的月明<br/>
+    却无权从圆缺列序中<br/>
+    听懂这轮  &nbsp; 会在何处更迭<br/>
+    <br/>
+
+    风不停刺探<br/>
+    夜依旧不动声色地隐喻<br/>
+    <br/>
+
+    无因  ——  无果<br/>
+    无始  ——  无终<br/>
+    即因  ——  即果<br/>
+    即始  ——  即终<br/>
+    <br/>
+
+    于是我安坐至处<br/>
+    晓落  &nbsp;    一生<br/>
+    <br/>
+
+</p>
+<span class="modernAttrib" style="padding-left:70px;">
+    2012年6月5日夜  &nbsp; 离京道中<br/><br/>
+</span>
+<hr class="breaker">
+
+
+
+
+<!------------------- Breaker -------------
+<div class="modernTitle" id="背影" style="padding-left:10px;">
+    背影<br/><br/>
+</div>
+
+<p class="modernBody">
+    我坐在檐下<br/>
+    明暗交界的后面<br/>
+    恍惚于时光流转<br/>
+    <br/>
+
+    直到你像一场梦<br/>
+    步履款款<br/>
+    走出了时间<br/>
+    <br/>
+
+    然后摇成一柔隐入画中的水墨<br/>
+    点点<br/>
+    滴滴<br/>
+    冷冷<br/>
+    淡淡<br/>
+    拒绝了一整个夏天<br/>
+    <br/>
+</p>
+<span class="modernAttrib" style="padding-left:70px;">
+     2014年5月16日  &nbsp; 于北外中国语言文学学院<br/><br/>
+</span>
+<hr class="breaker">
+-->
+
+
+
+
+<!------------------- Breaker --------------->
+<div class="modernTitle" id="北方" style="padding-left:10px;">
+    北方<br/>
+</div>
+<p class="modernSubtitle" style="padding-left:60px;">
+    —— 我离开不久，却很远······ <br/><br/>
+</p>
+  
+
+<p class="modernBody">
+    水乡从来不在梦里<br/>
+    这里的花只开一季<br/>
+    循环即永恒<br/>
+    而地域是亘古不变的烙印<br/>
+    沿着田埂和犁<br/>
+    伸进未来<br/>
+    <br/>
+
+    田地 &nbsp; 叶子 &nbsp; 草<br/>
+    这里所有的绿<br/>
+    都杂着黄土的干燥<br/>
+    这里的生命不是美<br/>
+    是力量<br/>
+    <br/>
+
+    麦子很诚实<br/>
+    有这阳光下的肤色<br/>
+    每一粒都嗅得到汗水和苍凉<br/>
+    如同老农眼角开始扩散到肌肤深处的<br/>
+    每一道皱纹<br/>
+    <br/>
+
+    长江以北的太阳<br/>
+    熟知这里每一滴香醇剧烈的酒<br/>
+    每一道饱经风沙的墙<br/>
+    每一条濒临干涸的河流<br/>
+    每一位热情跳脱的姑娘<br/>
+    除了那片<br/>
+    总是藏着心事的月亮<br/>
+    <br/>
+
+    今夜<br/>
+    我用长江以北的太阳<br/>
+    命令一切：<br/>
+    <br/>
+
+    水乡从来不在梦里<br/>
+    而这片热情到近乎狂野的土地上<br/>
+    长着家<br/>
+    <br/>
+
+    田埂间祖祖辈辈的坟丘上<br/>
+    跃起一只野斑鸠<br/>
+    <br/>
+</p>
+<span class="modernAttrib" style="padding-left:70px;">
+    2013年5月20日夜 &nbsp; 离开香港的列车上<br/><br/>
+</span>
+<hr class="breaker">
+
+
+
+<!------------------- Breaker --------------->
+  <div class="modernTitle" id="血月亮" style="padding-left:50px;">
+    血月亮<br/>
+  </div>
+  <p class="modernSubtitle" style="padding-left:130px;">
+     —— 献给人类文明 <br/><br/>
+  </p>
+
+  <p class="modernBody">
+    不是一点点的侵蚀<br/>
+    那是一层一层残忍的撕剥<br/>
+    剥到裸露着<br/>
+    薄膜下这轮血泊<br/>
+    <br/>
+
+    血光里映不出仙子、玉兔或是更古老的传说<br/>
+    也没有文字<br/>
+    那年甚至还没有麦子<br/>
+    只有一个个披头散发的、狂野的影子<br/>
+    跪在火里跳舞<br/>
+    焰分七色<br/>
+    扭曲着腰间兽皮上每一寸狰狞<br/>
+    <br/>
+ 
+    放大的瞳孔里<br/>
+    插着几颗巨硕锋利的犬牙<br/>
+    撕咬着月亮的、以及他们的精魂<br/>
+    当“自然” —— 他们唯一的信仰<br/>
+    践踏着他们唯一的信仰<br/>
+    他们惑了<br/>
+    惟有在惊恐中献祭祈求<br/>
+    可又惑于该祈求什么<br/>
+    <br/>
+
+    光线搅着时间的沙瀑<br/>
+    如洪泄下<br/>
+    铜戟、铁犁、蒸汽机喷蹦而出<br/>
+    最强的只需一瞬<br/>
+    便将几个世纪的钢筋水泥一气呵成<br/>
+    <br/>
+
+    于是夜不再死寂<br/>
+    人们省略了一切黄土、树、和河上的风<br/>
+    文明失去恐惧<br/>
+    于是就绞死了信仰<br/>
+    但皮肉下包裹的<br/>
+    或许是比祖先更空虚野蛮的灵<br/>
+    <br/>
+     
+    只在月全食的那一刻<br/>
+    这喧嚣才刹那静默<br/>
+    高楼大厦于斑斓五色中<br/>
+    密密排开万里<br/>
+    忽然冻结成一朵一千瓣的莲花<br/>
+    作出一副虔诚静候的样子<br/>
+    <br/>
+     
+    等月华再现<br/>
+    它们却只会用破乱不堪的凋败<br/>
+    来结束这场绽放<br/>
+    而没有人会再记起<br/>
+    那滩血月亮<br/>
+    <br/>
+  </p>
+  <span class="modernAttrib" style="padding-left:70px;">
+    2011年12月11日 &nbsp;  昨夜月食<br/><br/>
+  </span>
+<hr class="breaker">
+
+  
+
+<!------------------- Breaker --------------->
+<div class="modernTitle" id="九龙塘的非洲鼓" style="padding-left:20px;">
+  九龙塘的非洲鼓<br/><br/>
+</div>
+
+<p class="modernBody">
+咚······<br/>
+风中藏海，海味杂盐<br/>
+咚······<br/>
+那块贫瘠的大陆，听见烈日与荒原<br/>
+翎羽木箭<br/>
+黝黑的皮肤上或有鲜血流过 <br/>
+黑红难辨<br/>
+<br/>
+
+古老地图上每处叫维多利亚的地方<br/>
+都应有白骨和鸣<br/>
+唱四面楚歌<br/>
+也唱万象交融<br/>
+精神于是开始腐烂<br/>
+<br/>
+
+压抑 &nbsp; 寂寞 &nbsp; 贪婪······ <br/> 
+一个又一个奇绚的灵魂<br/>
+自我了断<br/>
+<br/>
+
+从这个湛蓝的星球上有了生命<br/>
+每个时代  &nbsp; 都是争战<br/>
+<br/>
+
+轰 ——！<br/>
+一万匹斑马奔过<br/>
+鼓声嘎然<br/>
+灯车酒色又清晰可见<br/>
+<br/>
+
+而每夜最黑的角落<br/>
+引诱谁拿匕首指向自己<br/>
+用罪恶来释然<br/>
+<br/>
+</p>
+
+<span class="modernAttrib" style="padding-left:70px;">
+    2013年2月 &nbsp;  于香港九龙塘<br/><br/>
+  </span>
+<hr class="breaker">
+
+
+<!------------------- Breaker --------------->
+<div class="modernTitle" id="旺角" style="padding-left:50px;">
+  旺角<br/><br/>
+</div>
+<!--
+<p class="modernSubtitle" style="padding-left:100px;">
+    —— 给Crystal W.   愿等待你的是个温柔的香港 <br/><br/>
+</p>
+-->
+
+<p class="modernBody">
+你一开场便用尽了所有的颜色<br/>
+而楼和街道早就老了<br/>
+看那些广告牌<br/>
+林林总总地翻新出<br/>
+摩登情调<br/>
+<br/>
+
+夜太黑   灯太亮<br/>
+没过夜晚的是酒<br/>
+酒是无数块黑玻璃<br/>
+女人是黑玻璃上清凛的霓光<br/>
+<br/>
+
+而你总爱留低几条忽暗的巷尾<br/>
+放点前些年代的东西<br/>
+来记挂市井的或暖或倦<br/>
+旧得如同店角的老板娘<br/>
+和街对面三楼<br/>
+那几张瞎了的铁格窗<br/>
+<br/>
+
+弥敦道上<br/>
+我始终未能拼好<br/>
+你时空乱掉的印象<br/>
+却在以后每个本该没有梦的夜里<br/>
+被装上胶片<br/>
+放映永无止境的人群<br/>
+<br/>
+
+—— 流着流着<br/>
+没有了语言 &nbsp;  没有了脸庞<br/>
+<br/>
+</p>
+
+<span class="modernAttrib" style="padding-left:70px;">
+    2013年4月 &nbsp;  香港旺角<br/><br/>
+  </span>
+<hr class="breaker">
+
+
+
+
+
+
+
+<!------------------- Breaker --------------->
+<div class="classicalTitle" id="赠宋卿" style="padding-left:200px;">
+    赠宋卿<br/><br/>
+</div>
+
+<p class="classicalSubtitle" align="justify">
+&nbsp; &nbsp; 宋家有女名方方。尝同窗于郑，前后列坐，时叙人物、谈音律，语笑频频。后同案入畿内，然各自奔波，数年不逢。今春得与班荆，而北外北理一墙之隔，故友近邻，实属不易，惜之惜之。 <br/>
+&nbsp; &nbsp; 宋卿幼习字。见其临“满座江南不老身”句，转提工款，婉逸清扬。论及颜柳欧赵，所见略同。余乘兴约字一幅，卿即允。遂赠七律一首，聊以为谢。<br/>
+<br/>
+曰：
+</p>
+<p class="classicalBody" style="padding-left:50px;">
+    环佩毋须弃妆痕，非为纸墨懒持身。<br/>
+    嬉笑含辞一方谓，点斜生花七巧心。<br/>
+    座临昔年同窗语，门对如今两院春。<br/>
+    随园空钤苏小印，狂生何幸识佳人。<br/>
+    <br/>
+</p>
+<span class="classicalAttrib" style="padding-left:340px;">
+    甲午年春<br/><br/>
+</span>
+<hr class="breaker">
+
+
+<!------------------- Breaker --------------->
+<div class="classicalTitle" id="与宋卿冬夜论词并序" style="padding-left:200px;">
+    与宋卿冬夜论词并序<br/><br/>
+</div>
+
+<p class="classicalSubtitle" align="justify">
+&nbsp; &nbsp; 与宋卿读王荆公《千秋岁引》，又论及庆历故事，屡闻灼见，受益良多。因有思：古来才子高士繁于牛毛，而扫眉如易安、令姜者，鲜如凤麟。岂真女不如男欤？无非社会流弊，积习日深耳。平权之说，已非新论，然观国内怪状，差欧美甚远。吾辈自当弘毅为此任。又应如临渊履冰，小心推行，莫蹈荆公变法旧辙。<br/>
+<br/>
+曰：
+</p>
+<p class="classicalBody" style="padding-left:50px;">
+    青障屈客解围人，笄岁音容旧也新。<br/>
+    五蕴念还星满目，十年寻罢梦一身。<br/>
+    曾因华表误秦楼，别又双溪负晚春。<br/>
+    临案易赋长门事，当垆难觅卓文君。<br/>
+    <br/>
+</p>
+<span class="classicalAttrib" style="padding-left:340px;">
+    己亥年冬
+</span>
+<p class="classicalSubtitle" align="justify">
+宋卿跋：<br/>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;愿金石咏絮之才，再不囿于重楼妆奁、耽于《谷风》、见捐秋扇。<br/><br/>
+</p>
+<hr class="breaker">
+
+
+<!------------------- Breaker --------------->
+  <div class="classicalTitle" id="岁初咏怀兼答李叔俊闯" style="padding-left:50px;">
+    岁初咏怀兼答李叔俊闯<br/><br/>
+    </div>
+
+  <p class="classicalBody">
+    梁园一别又一冬，山川行色太匆匆。<br/>
+    游远安兴容刀叹？年少不起《宿府》声。<br/>
+    江湖谈笑风雪客，山河俯仰去留中。<br/>
+    何处身家何处语，亦无归离亦无行。<br/>
+    <br/>
+    
+  </p>
+  <span class="classicalAttrib" style="padding-left:140px;">
+      乙未年二月十七日 &nbsp; 于长岛<br/><br/>
+    </span>
+  <hr class="breaker">
+
+
+
+<!------------------- Breaker --------------->
+<div class="classicalTitle" id="送乔老归台感作" style="padding-left:110px;">
+    送乔老归台感作<br/><br/>
+</div>
+
+<p class="classicalBody">
+    文礼茶饭一味同，言语可避家国声？<br/>
+    孔府祢衡始得意，戎前阮籍笑忘龄。<br/>
+    荼火兵甲各自息，衣水音书渐次通。<br/>
+    江山几易争国体，百姓不改是乡情。<br/> 
+</p>
+<span class="classicalAttrib" style="padding-left:140px;">
+    民国一百零四年七月三日 &nbsp; 长岛绿馆<br/><br/>
+</span>
+<hr class="breaker">
+
+<!------------------- Breaker --------------->
+  <div class="classicalTitle" id="观书有感" style="padding-left:130px;">
+    观书有感<br/><br/>
+    </div>
+
+  <p class="classicalBody">
+    书间烟马乱缨鍪，骋目流眄景自忧。<br/>
+    花色艳察香炉红，鸡声未解海棠秋。<br/>
+    莫笑秦皇始遣舟，从来官家寻仙寿。<br/>
+    女墙能拒关外险，石城也锁归命侯。<br/>
+    
+  </p>
+<span class="classicalAttrib" style="padding-left:140px;">
+      西元二零一九年十月一日 &nbsp; 举国同庆<br/><br/>
+</span>
+  <hr class="breaker">
+
+
+<!------------------- Breaker --------------->
+<div class="classicalTitle" id="题香山寺答骆霄" style="padding-left:130px;">
+    题香山寺答骆霄<br/><br/>
+</div>
+
+<p class="classicalSubtitle" align="justify">
+&nbsp; &nbsp; 庚寅一冬未雪。景日，随长辈游香山寺，行前见旧簿旁落，其上兄题“观君之心如菩提之佛，叹兄之才如皓月孤灯”二句，不禁有思。家中异爨，长幼咸集如斯者期年不逢，而子吾虽交如亲，别久较之更甚。侪辈之中，唯兄灵悟，又好禅理、尚归隐，犹记当年藤萝花架下，戏作和靖先生语否？竹林之风，不知尚存？弟羁旅仆仆四载，犹衣无黼黻、馘黄颈槁。唯难改心性如故。今山寺之中，兄语花下，历历在目······ 百里不及，遥作以答。
+</p>
+<p class="classicalSubtitle" align="right">
+    弟稽首再拜
+</p>
+<p class="classicalSubtitle">
+    曰：
+</p>
+
+<p class="classicalBody" style="padding-left:50px;">
+    净地始觉道意深，面山如对漯颖人。<br/>
+    兄修文笔早得悟，弟齿舞象犹凡尘。<br/>
+    高士法衣非界外，随处菩提随处身。<br/>
+    禅参七境候花雨，琴香三敛见佛心。<br/>
+    <br/>
+</p>
+<hr class="breaker">
+
+
+<!------------------- Breaker --------------->
+<div class="classicalTitle" id="中秋绿馆抚琴有作" style="padding-left:50px;">
+    中秋绿馆抚琴有作<br/><br/>
+</div>
+
+<p class="classicalBody">
+    十年行迹客海滨，取笑白衣惯风尘。<br/>
+    道尽蟾宫千丈冷，不过绿馆一把琴。<br/>
+    月心洇透几张梦？袖尾跌碎双捧音。<br/>
+    调在缓急须无情，曲到穷尽最有心。<br/>
+    <br/>
+</p>
+<span class="classicalAttrib" style="padding-left:140px;">
+    乙未八月十五 &nbsp; 绿馆<br/><br/>
+</span>
+<hr class="breaker">
+
+<!------------------- Breaker --------------->
+<div class="classicalTitle" id="答外祖问" style="padding-left:130px;">
+    答外祖问<br/><br/>
+</div>
+
+<p class="classicalSubtitle" >
+&nbsp; &nbsp; 返乡，外祖问及在京事宜，感作，敬呈以对。
+</p>
+<p class="classicalBody">
+    垂问我作冰壶酬，半世接舆嘲不休。<br/>
+    京畿道外徙乡语，良阳城下谀重侯。<br/>
+    苏坟水脉因子癖，梁园花骨疗我忧。<br/>
+    三千叶来声不起，自横焦尾面中州。<br/>
+    <br/>
+</p>
+<span class="classicalAttrib" style="padding-left:300px;">
+      辛卯年夏<br/><br/>
+</span>
+<hr class="breaker">
+
+<!--
+<div class="classicalTitle" id="采桑子无题" style="padding-left:20px;">
+    采桑子·无题<br/><br/>
+</div>
+
+<p class="classicalBody">
+    遥想应是眉目间：<br/>
+    笑如当年，愁如当年。<br/>
+    寻常冷暖总牵念。<br/>
+    <br/>
+    究竟不解初初见：<br/>
+    早了那天？晚了那天？<br/>
+    此事人间最为难。<br/>
+    <br/>
+</p>
+<span class="classicalAttrib" style="padding-left:130px;">
+      乙未七月三十  &nbsp; 绿馆<br/><br/>
+</span>
+<hr class="breaker">
+
+<div class="classicalTitle" id="清平乐令无题" style="padding-left:20px;">
+    清平乐令·无题<br/><br/>
+</div>
+
+<p class="classicalBody">
+    那时寡语，数来两三句。<br/>
+    纵使路上频相遇，都是对笑而去。<br/>
+    <br/>
+
+    缘来已非原来，原来别后如此。<br/>
+    百了也都白了，白了几根相思?<br/>
+    <br/>
+</p>
+<span class="classicalAttrib" style="padding-left:130px;">
+      乙未七月十六  &nbsp; 绿馆<br/><br/>
+</span>
+<hr class="breaker">
+
+
+<div class="classicalTitle" id="无题1" style="padding-left:120px;">
+    无题（一）<br/><br/>
+</div>
+
+<p class="classicalBody">
+    两处消息一厢情，深浅心思说不停。<br/>
+    逃了指间浓淡字，又教四更反复梦。<br/>
+    <br/>
+</p>
+<span class="classicalAttrib" style="padding-left:340px;">
+      乙未七月七日  &nbsp; 绿馆<br/><br/>
+</span>
+<hr class="breaker">
+-->
+
+<!------------------- Breaker --------------->
+<div class="classicalTitle" id="夜题广庆寺" style="padding-left:70px;">
+    夜题广庆寺<br/><br/>
+</div>
+
+<p class="classicalBody">
+    嘈退广庆门，喧歇钟鼓楼。<br/>
+    月华诗色尽，沁远古声留。<br/>
+    光影松竹隐，风露鹤柏幽。<br/>
+    花雨自西来，法衣顿参透。<br/>
+    <br/>
+</p>
+<hr class="breaker">
+
+
+
+
+
+<!------------------- Breaker -------------
+<div class="classicalTitle" id="无题2" style="padding-left:120px;">
+    无题（二）<br/><br/>
+</div>
+<p class="classicalBody">
+    远游暂过桑梓地，亲朋笑宴柳桥西。<br/>
+    惟伊喜眸犹带怯，不问归程问离期。<br/>
+    <br/>
+</p>
+
+<hr class="breaker">
+-->
+
+
+<!------------------- Breaker --------------->
+<div class="classicalTitle" id="过古村" style="padding-left:120px;">
+    过古村<br/><br/>
+</div>
+<p class="classicalBody">
+    水气空濛远沁幽，疏枝闲映人家后。<br/>
+    青牛破水和晚笛，塘心倚棹钓直钩。<br/>
+    <br/>
+</p>
+
+<hr class="breaker">
+
+<!------------------- Breaker --------------->
+<div class="classicalTitle" id="赠常珂" style="padding-left:70px;">
+    赠常珂<br/><br/>
+</div>
+
+<p class="classicalBody">
+    朝发良阳道，笑辞京华吟。<br/>
+    烟敛平林后，云舒幽燕岑。<br/>
+    何面清寒景，犹念多病身。<br/>
+    原知羁旅客，尽是伤心人。<br/>
+    馀日诡天晓，麝月谲翼轸。<br/>
+    未归郏州县，先诣平山门。<br/>
+    常卿何惶惶，鸿毛五千金。<br/>
+    梁生本轻狂，莫问由来因。<br/>
+    龟马且换酒，子吾对月斟。<br/>
+    七白任侠气，万里故人心。<br/>
+    自忖徽之后，再无乘兴人。<br/>
+    我醉君莫笑，径取七弦琴。<br/>
+    醒者皆秽浊，唯醉返璞真。<br/>
+    千古孰可堪？临江唱《招魂》。<br/>
+    快语风啸啸，槊歌夜沉沉。<br/>
+    灯进相藉眠，短梦聊以欣。<br/>
+    犹记同窗苦，一夕别离紧。<br/>
+    远人若有知，何必书信频。<br/>
+    同笑儒交淡，我辈性情人。<br/>
+    道法出自然，风骨存魏晋。<br/>
+    不辞舟车苦，莫作有期闻。<br/>
+    明年花尽后，共销远游魂。<br/>
+    <br/>
+</p>
+<hr class="breaker">
+
+</div>
+
+
+</div> <!-- container -->
+
+
+
+<?php 
+  include("includes/footer.php"); 
+?>

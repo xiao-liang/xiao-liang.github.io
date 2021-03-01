@@ -1,0 +1,78 @@
+<?php 
+  include("includes/header.php"); 
+  include("includes/top_nav.php");
+?>
+
+<!-- full-page wrapper -->
+<div class="container">
+
+
+<div class="col-xs-12 col-sm-7 col-md-10 col-xg-10" style="padding-top:15px;">
+  
+  <h4>2015全球华语大学生短诗大赛二等奖<br/><br/></h4>
+
+  <div class="col-xs-12 col-sm-9 col-md-10 col-xg-10" style="padding-left:55px;">
+  <h3 style="padding-left:50px">旺角</h3> <br/>
+
+       <!-- 
+       <p style="padding-left:70px;">—— 给Crystal W. &nbsp 愿等待你的是个温柔的香港 <br/>
+       <br/>
+        </p>
+      -->
+
+
+你一开场便用尽了所有的颜色 <br/>
+而楼和街道早就老了<br/>
+看那些广告牌<br/>
+林林总总地翻新出<br/>
+摩登情调<br/>
+<br/>
+
+
+夜太黑 &nbsp 灯太亮 <br/>
+没过夜晚的是酒 <br/>
+酒是无数块黑玻璃 <br/>
+女人是黑玻璃上清凛的霓光 <br/>
+<br/>
+
+而你总爱留低几条忽暗的巷尾 <br/>
+放点前些年代的东西 <br/>
+来记挂市井的或暖或倦 <br/>
+旧得如同店角的老板娘 <br/>
+和街对面三楼 <br/>
+那几张瞎了的铁格窗 <br/>
+<br/>
+
+弥敦道上 <br/> 
+我始终未能拼好 <br/>
+你时空乱掉的印象 <br/>
+却在以后每个本该没有梦的夜里 <br/>
+被装上胶片 <br/>
+放映永无止境的人群 <br/>
+<br/>
+
+—— 流着流着 <br/>
+没有了语言 &nbsp
+没有了脸庞 <br/>
+<br/>
+
+<span style="padding-left:70px;">2013年4月 &nbsp 于香港旺角<br/> <br/></span>
+  
+<p>
+<br/> <br/>【评委点评】<br/> <br/>
+作者以充满画面感的用语，构筑了文字化的香港，段落就如同电影胶片般的转动，娓娓道来一段属于他们才知道的回忆，整首诗充满了以女性角度的细腻观察，是一首都会感十足的情诗。
+<br/><br/>
+——台湾诗人、作词人 &nbsp 方文山
+</p>
+
+
+</div>
+</div>
+
+
+</div> <!-- container -->
+
+
+<?php
+include("includes/footer.php");
+?>	

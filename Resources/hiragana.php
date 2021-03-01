@@ -1,0 +1,911 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+        <title>Hiragana Letters</title>
+        <meta http-equiv="REFRESH">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+
+
+
+<body padding-top="700px">
+
+<?php 
+  include("../includes/top_nav.php");
+?>
+
+
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-lg-9"> 
+
+  <!--gojuon table =====================================================================================-->
+  <div id="gojuon">
+        <table class="table table-bordered">
+          <div align="center">
+            <h2>gojuon</h2>
+          </div >
+          <tr>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">あ</font> 　
+              <font face="Arial Black" size="4">ア</font><br /> 
+              <font face="Times New Roman" size="4">a</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">い</font> 
+              <font face="Arial Black" size="4">イ</font><br /> 
+              <font face="Times New Roman" size="4">i</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">う</font> 　
+              <font face="Arial Black" size="4">ウ</font><br /> 
+              <font face="Times New Roman" size="4">u</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">え</font> 　
+              <font face="Arial Black" size="4">エ</font><br />
+              <font face="Times New Roman" size="4">e</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">お</font> 　
+              <font face="Arial Black" size="4">オ</font><br />
+              <font face="Times New Roman" size="4">o</font> 
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">か</font>　
+              <font face="Arial Black" size="4">カ</font><br /> 
+              <font face="Times New Roman" size="4">ka</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">き</font>　
+              <font face="Arial Black" size="4">キ</font><br />
+              <font face="Times New Roman" size="4">ki</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">く</font>　
+              <font face="Arial Black" size="4">ク</font><br />
+              <font face="Times New Roman" size="4">ku</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">け</font>　
+              <font face="Arial Black" size="4">ケ</font><br />
+              <font face="Times New Roman" size="4">ke</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">こ</font>　
+              <font face="Arial Black" size="4">コ</font><br />
+              <font face="Times New Roman" size="4">ko</font>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">さ</font>
+              <font face="Arial Black" size="4">サ</font><br />
+              <font face="Times New Roman" size="4">sa</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">し</font>
+              <font face="Arial Black" size="4">シ</font><br />
+              <font face="Times New Roman" size="4">shi</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">す</font>
+              <font face="Arial Black" size="4">ス</font><br />
+              <font face="Times New Roman" size="4">su</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">せ</font>　
+              <font face="Arial Black" size="4">セ</font><br />
+              <font face="Times New Roman" size="4">se</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">そ</font>　
+              <font face="Arial Black" size="4">ソ</font><br />
+              <font face="Times New Roman" size="4">so</font>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">た</font>　
+              <font face="Arial Black" size="4">タ</font><br />
+              <font face="Times New Roman" size="4">ta</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ち</font>　
+              <font face="Arial Black" size="4">チ</font><br />
+              <font face="Times New Roman" size="4">chi</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">つ</font>　
+              <font face="Arial Black" size="4">ツ</font><br />
+              <font face="Times New Roman" size="4">tsu</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">て</font>　
+              <font face="Arial Black" size="4">テ</font><br />
+              <font face="Times New Roman" size="4">te</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">と</font>　
+              <font face="Arial Black" size="4">ト</font><br />
+              <font face="Times New Roman" size="4">to</font>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">な</font>　　
+              <font face="Arial Black" size="4">ナ</font><br />
+              <font face="Times New Roman" size="4">na</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">に</font>　
+              <font face="Arial Black" size="4">ニ</font><br />
+              <font face="Times New Roman" size="4">ni</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ぬ</font>　
+              <font face="Arial Black" size="4">ヌ</font><br />
+              <font face="Times New Roman" size="4">nu</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ね</font>　
+              <font face="Arial Black" size="4">ネ</font><br />
+              <font face="Times New Roman" size="4">ne</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">の</font>　
+              <font face="Arial Black" size="4">ノ</font><br />
+              <font face="Times New Roman" size="4">no</font>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">は</font>　
+              <font face="Arial Black" size="4">ハ</font><br />
+              <font face="Times New Roman" size="4">ha</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ひ　
+              <font face="Arial Black" size="4">ヒ</font><br />
+              <font face="Times New Roman" size="4">hi</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ふ</font>　
+              <font face="Arial Black" size="4">フ</font><br />
+              <font face="Times New Roman" size="4">hu</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">へ</font>　
+              <font face="Arial Black" size="4">ヘ</font><br />
+              <font face="Times New Roman" size="4">he</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ほ</font>　
+              <font face="Arial Black" size="4">ホ</font><br />
+              <font face="Times New Roman" size="4">ho</font>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ま</font>　
+              <font face="Arial Black" size="4">マ</font><br />
+              <font face="Times New Roman" size="4">ma</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">み　
+              <font face="Arial Black" size="4">ミ</font><br />
+              <font face="Times New Roman" size="4">mi</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">む</font>　
+              <font face="Arial Black" size="4">ム</font><br />
+              <font face="Times New Roman" size="4">mu</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">め</font>　
+              <font face="Arial Black" size="4">メ</font><br />
+              <font face="Times New Roman" size="4">me</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">も</font>　
+              <font face="Arial Black" size="4">モ</font><br />
+              <font face="Times New Roman" size="4">mo</font>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">や</font>　
+              <font face="Arial Black" size="4">ヤ</font><br />
+              <font face="Times New Roman" size="4">ya</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4"></font> 
+              <font face="Times New Roman" size="4">i</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ゆ</font>　
+              <font face="Arial Black" size="4">ユ</font><br />
+              <font face="Times New Roman" size="4">yu</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4"></font> 
+              <font face="Times New Roman" size="4">e</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">よ</font>　
+              <font face="Arial Black" size="4">ヨ</font><br /> 
+              <font face="Times New Roman" size="4">yo</font>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ら</font>　
+              <font face="Arial Black" size="4">ラ</font><br />
+              <font face="Times New Roman" size="4">ra</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">れ</font>　
+              <font face="Arial Black" size="4">リ</font><br />
+              <font face="Times New Roman" size="4">ri</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">る</font>　
+              <font face="Arial Black" size="4">ル</font><br />
+              <font face="Times New Roman" size="4">ru</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">れ</font>　
+              <font face="Arial Black" size="4">レ</font><br />
+              <font face="Times New Roman" size="4">re</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ろ</font>　
+              <font face="Arial Black" size="4">ロ</font><br />
+              <font face="Times New Roman" size="4">ro</font>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">わ</font>　
+              <font face="Arial Black" size="4">ワ</font><br />
+              <font face="Times New Roman" size="4">wa</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4"></font> 
+              <font face="Times New Roman" size="4">i</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4"></font> 
+              <font face="Times New Roman" size="4">u</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4"></font> 
+              <font face="Times New Roman" size="4">e</font>
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">を</font> 
+              <font face="Arial Black" size="4">ヲ</font><br />
+              <font face="Times New Roman" size="4">wo</font>
+              </div>
+            </td>
+          </tr>
+        </table>
+  </div> <!--ID lcose -->
+
+  <!--dakuon table =====================================================================================-->
+  <div id="dakuon" >
+        <table class="table table-bordered">
+          <div align="center">
+            <h2>dakuon</h2>
+          </div>
+          <tr>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">が</font> 　
+              <font face="Arial Black" size="4">ガ</font><br /> 
+              <font face="Times New Roman" size="4">ga</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ぎ</font> 　
+              <font face="Arial Black" size="4">ギ</font><br /> 
+              <font face="Times New Roman" size="4">gi</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ぐ</font> 　
+              <font face="Arial Black" size="4">グ</font><br /> 
+              <font face="Times New Roman" size="4">gu</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">げ</font> 　
+              <font face="Arial Black" size="4">ゲ</font><br /> 
+              <font face="Times New Roman" size="4">ge</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ご</font> 　
+              <font face="Arial Black" size="4">ゴ</font><br /> 
+              <font face="Times New Roman" size="4">go</font> 
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ざ</font> 　
+              <font face="Arial Black" size="4">ザ</font><br /> 
+              <font face="Times New Roman" size="4">za</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">じ</font> 　
+              <font face="Arial Black" size="4">ジ</font><br /> 
+              <font face="Times New Roman" size="4">ji</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ず</font> 　
+              <font face="Arial Black" size="4">ズ</font><br /> 
+              <font face="Times New Roman" size="4">zu</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ぜ</font> 　
+              <font face="Arial Black" size="4">ゼ</font><br /> 
+              <font face="Times New Roman" size="4">ze</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ぞ</font> 　
+              <font face="Arial Black" size="4">ゾ</font><br /> 
+              <font face="Times New Roman" size="4">zo</font> 
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">だ</font> 　
+              <font face="Arial Black" size="4">ダ</font><br /> 
+              <font face="Times New Roman" size="4">da</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ぢ</font> 　
+              <font face="Arial Black" size="4">ヂ</font><br /> 
+              <font face="Times New Roman" size="4">ji(di)</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">づ</font> 　
+              <font face="Arial Black" size="4">ヅ</font><br /> 
+              <font face="Times New Roman" size="4">zu(du)</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">で</font> 　
+              <font face="Arial Black" size="4">デ</font><br /> 
+              <font face="Times New Roman" size="4">de</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ど</font> 　
+              <font face="Arial Black" size="4">ド</font><br /> 
+              <font face="Times New Roman" size="4">do</font> 
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ば</font> 　
+              <font face="Arial Black" size="4">バ</font><br /> 
+              <font face="Times New Roman" size="4">ba</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">び</font> 　
+              <font face="Arial Black" size="4">ビ</font><br /> 
+              <font face="Times New Roman" size="4">bi</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ぶ</font> 　
+              <font face="Arial Black" size="4">ブ</font><br /> 
+              <font face="Times New Roman" size="4">bu</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">べ</font> 　
+              <font face="Arial Black" size="4">ベ</font><br /> 
+              <font face="Times New Roman" size="4">be</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ぼ</font> 　
+              <font face="Arial Black" size="4">ボ</font><br /> 
+              <font face="Times New Roman" size="4">bo</font> 
+              </div>
+            </td>
+          </tr>
+        </table>
+  </div> <!--ID lcose -->
+
+
+  <!--han-dakuon table =================================================================================-->
+  <div id="han-dakuon">   
+        <table class="table table-bordered">
+          <div align="center">
+            <h2>han-dakuon</h2>
+          </div>
+          <tr>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ぱ</font> 　
+              <font face="Arial Black" size="4">パ</font><br /> 
+              <font face="Times New Roman" size="4">pa</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ぴ</font> 　
+              <font face="Arial Black" size="4">ピ</font><br /> 
+              <font face="Times New Roman" size="4">pi</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ぷ</font> 　
+              <font face="Arial Black" size="4">プ</font><br /> 
+              <font face="Times New Roman" size="4">pu</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ぺ</font> 　
+              <font face="Arial Black" size="4">ペ</font><br /> 
+              <font face="Times New Roman" size="4">pe</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ぽ</font> 　
+              <font face="Arial Black" size="4">ポ</font><br /> 
+              <font face="Times New Roman" size="4">po</font> 
+              </div>
+            </td>
+        </table>
+  </div> <!--ID lcose -->
+
+
+  <!--yoon table =======================================================================================-->
+  <div id="yoon">
+        <table class="table table-bordered">
+          <div align="center">
+            <h2>yoon</h2>
+          </div>
+          <tr>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">きゃ</font> 　
+              <font face="Arial Black" size="4">キャ</font><br /> 
+              <font face="Times New Roman" size="4">kya</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">きゅ</font> 　
+              <font face="Arial Black" size="4">キュ</font><br /> 
+              <font face="Times New Roman" size="4">kyu</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">きょ</font> 　
+              <font face="Arial Black" size="4">キョ</font><br /> 
+              <font face="Times New Roman" size="4">kyo</font> 
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">しゃ</font> 　
+              <font face="Arial Black" size="4">シャ</font><br /> 
+              <font face="Times New Roman" size="4">sha</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">しゅ</font> 　
+              <font face="Arial Black" size="4">シュ</font><br /> 
+              <font face="Times New Roman" size="4">shu</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">しょ</font> 　
+              <font face="Arial Black" size="4">ショ</font><br /> 
+              <font face="Times New Roman" size="4">sho</font> 
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ちゃ</font> 　
+              <font face="Arial Black" size="4">チャ</font><br /> 
+              <font face="Times New Roman" size="4">cha</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ちゅ</font> 　
+              <font face="Arial Black" size="4">チュ</font><br /> 
+              <font face="Times New Roman" size="4">chu</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ちょ</font> 　
+              <font face="Arial Black" size="4">チョ</font><br /> 
+              <font face="Times New Roman" size="4">cho</font> 
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">にゃ</font> 　
+              <font face="Arial Black" size="4">ニャ</font><br /> 
+              <font face="Times New Roman" size="4">nya</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">にゅ</font> 　
+              <font face="Arial Black" size="4">ニュ</font><br /> 
+              <font face="Times New Roman" size="4">nyu</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">にょ</font> 　
+              <font face="Arial Black" size="4">ニョ</font><br /> 
+              <font face="Times New Roman" size="4">nyo</font> 
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ひゃ</font> 　
+              <font face="Arial Black" size="4">ヒャ</font><br /> 
+              <font face="Times New Roman" size="4">hya</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ひゅ</font> 　
+              <font face="Arial Black" size="4">ヒュ</font><br /> 
+              <font face="Times New Roman" size="4">hyu</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ひょ</font> 　
+              <font face="Arial Black" size="4">ヒョ</font><br /> 
+              <font face="Times New Roman" size="4">hyo</font> 
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">みあ</font> 　
+              <font face="Arial Black" size="4">ミャ</font><br /> 
+              <font face="Times New Roman" size="4">mya</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">みゅ</font> 　
+              <font face="Arial Black" size="4">ミュ</font><br /> 
+              <font face="Times New Roman" size="4">myu</font> 
+              </div>
+            </td>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">みょ</font> 　
+              <font face="Arial Black" size="4">ミョ</font><br /> 
+              <font face="Times New Roman" size="4">myo</font> 
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">りゃ</font> 　
+              <font face="Arial Black" size="4">リャ</font><br /> 
+              <font face="Times New Roman" size="4">rya</font> 
+              </div>
+            </td>
+     
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">りゅ</font> 　
+              <font face="Arial Black" size="4">リュ</font><br /> 
+              <font face="Times New Roman" size="4">ryu</font> 
+              </div>
+            </td>
+         
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">りょ</font> 　
+              <font face="Arial Black" size="4">リョ</font><br /> 
+              <font face="Times New Roman" size="4">ryo</font> 
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ぎゃ</font> 　
+              <font face="Arial Black" size="4">ギャ</font><br /> 
+              <font face="Times New Roman" size="4">gya</font> 
+              </div>
+            </td>
+     
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ぎゅ</font> 　
+              <font face="Arial Black" size="4">ギュ</font><br /> 
+              <font face="Times New Roman" size="4">gyu</font> 
+              </div>
+            </td>
+         
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ぎょ</font> 　
+              <font face="Arial Black" size="4">ギョ</font><br /> 
+              <font face="Times New Roman" size="4">gyo</font> 
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">じゃ</font> 　
+              <font face="Arial Black" size="4">ジャ</font><br /> 
+              <font face="Times New Roman" size="4">ja</font> 
+              </div>
+            </td>
+         
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">じゅ</font> 　
+              <font face="Arial Black" size="4">ジュ</font><br /> 
+              <font face="Times New Roman" size="4">ju</font> 
+              </div>
+            </td>
+          
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">じょ</font> 　
+              <font face="Arial Black" size="4">ジョ</font><br /> 
+              <font face="Times New Roman" size="4">jo</font> 
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">びゃ</font> 　
+              <font face="Arial Black" size="4">ビャ</font><br /> 
+              <font face="Times New Roman" size="4">bya</font> 
+              </div>
+            </td>
+         
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">びゅ</font> 　
+              <font face="Arial Black" size="4">ビュ</font><br /> 
+              <font face="Times New Roman" size="4">byu</font> 
+              </div>
+            </td>
+         
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">びょ</font> 　
+              <font face="Arial Black" size="4">ビョ</font><br /> 
+              <font face="Times New Roman" size="4">byo</font> 
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ぴゃ</font> 　
+              <font face="Arial Black" size="4">ピャ</font><br /> 
+              <font face="Times New Roman" size="4">pya</font> 
+              </div>
+            </td>
+          
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ぴゅ</font> 　
+              <font face="Arial Black" size="4">ピュ</font><br /> 
+              <font face="Times New Roman" size="4">pyu</font> 
+              </div>
+            </td>
+        
+            <td>
+              <div align="center">
+              <font face="Times New Roman" size="4">ぴょ</font> 　
+              <font face="Arial Black" size="4">ピョ</font><br /> 
+              <font face="Times New Roman" size="4">pyo</font> 
+              </div>
+            </td>
+          </tr>
+        </table>
+  </div> <!--ID close -->
+
+</div> <!-- col-lg-9 close --> 
+  
+
+</div><!--row close-->
+</div><!--container close-->
+
+
+</body> 
+
+</html>
+
