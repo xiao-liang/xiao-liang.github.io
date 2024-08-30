@@ -21,7 +21,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
 
     <style>
         hr {
@@ -70,7 +75,33 @@
             font-family: Time New Roman, Times, serif;
             font-size:x-large;
         }
+
+        #myBtn {
+          display: none;
+          position: fixed;
+          bottom: 20px;
+          left: 30px;
+          z-index: 99;
+          font-size: 20px;
+          font-weight: bold;
+          border: none;
+          outline: none;
+          background-color: #b3b6b7;
+          color: white;
+          cursor: pointer;
+          padding: 10px;
+          border-radius: 4px;
+        }
+
+        #myBtn:hover {
+          background-color: #7b7d7d;
+        }
+
     </style>
+
+
+
+
 </head>
 
 
@@ -78,15 +109,82 @@
 <body>
 
 
-<nav class="navbar navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand">Homepage</a>
-  </div>
-</nav>
+
+<!-- back to top button -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+<!-- to take care of the button -->
+<script type="text/javascript">
+  // Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+  
+</script>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+<div class="container-fluid">
+   <a class="navbar-brand" href="#">Homepage</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+       
+
+        <li class="nav-item">
+          <a  class="nav-link active" href="#service">Service</a>
+        </li>
+
+        <li class="nav-item">
+          <a  class="nav-link active" href="#publication">Publication</a>
+        </li>
+
+        <li class="nav-item">
+          <a  class="nav-link active" href="#talks">Talks</a>
+        </li>
+
+        <li class="nav-item">
+          <a  class="nav-link active" href="#contact">Contact</a>
+        </li>
+
+        
+      </ul>
+    </div>
+</div>
+</nav> 
+
+
+
 
 
 <!-- full-page wrapper -->
 <div class="container">
+
+
+
+
 
 
 <div class="row mt-4">   
@@ -97,24 +195,14 @@
       <a class="MediumTNR" href="Resources/my_cv.pdf" target="_blank">[Curriculum Vitae]</a>
     </p>
     <p class="NormalText">
-      I am a Postdoctoral Fellow working with Professor <a href="https://www.cs.cmu.edu/~goyal/" target="_blank">Vipul Goyal</a> at <a href="https://ntt-research.com/cis/" target="_blank"> NTT Research</a>. Before that, I was a Postdoctoral Assosicate at <a href="https://csweb.rice.edu/" target="_blank">Rice University</a>, supervised by professors <a href="https://sites.google.com/view/naihuichia" target="_blank">Nai-Hui Chia</a> and <a href="https://homepage.iis.sinica.edu.tw/~kmchung/" target="_blank">Kai-Min Chung</a>.
 
-      <!-- professors <a href="https://sites.google.com/view/naihuichia" target="_blank">Nai-Hui Chia</a> and <a href="https://homepage.iis.sinica.edu.tw/~kmchung/" target="_blank">Kai-Min Chung</a>, physically located in a superposition of <a href="https://csweb.rice.edu/" target="_blank">Rice University</a> and  <a href="https://www.iis.sinica.edu.tw/en/index.html" target="_blank">Academia Sinica</a>. -->
-
-      I obtained my Ph.D. in Computer Science from <a href="http://www.stonybrook.edu/" target="_blank">Stony Brook University</a>, where I was fortune to be advised by Professor <a href="http://www3.cs.stonybrook.edu/~omkant/" target="_blank">Omkant Pandey</a>. Before that, I received an M.S. in Applied Math from Stony Brook University and a B.S. in Economics from <a href="https://english.bit.edu.cn/" target="_blank">Beijing Institute of Technology</a>.
-      <!-- I am a Ph.D. student in the <a href="https://www.cs.stonybrook.edu/" target="_blank">Computer Science Department</a> at <font style="font-variant: small-caps"><a href="http://www.stonybrook.edu/" target="_blank">Stony Brook University</a></font>. My advisor is Professor <a href="http://www3.cs.stonybrook.edu/~omkant/" target="_blank">Omkant Pandey</a>. Before joining the Ph.D. track, I received an M.S. degree in Applied Math from <font style="font-variant: small-caps">Stony Brook University</font> and a B.S. in Economics from <font style="font-variant: small-caps"><a href="https://english.bit.edu.cn/" target="_blank">Beijing Institute of Technology</a></font>.  -->
+      I am an assistant professor in the <a href="https://www.cse.cuhk.edu.hk/" target="_blank"> Department of Computer Science and Engineering</a> at the <a href="https://www.cuhk.edu.hk/english/index.html" target="_blank">Chinese University of Hong Kong</a>. I am interested in Cryptography and its intersections with related fields such as Quantum Computing, Computational Complexity Theory, and Computer Security. My work has concentrated on theoretical fundamentals, including Zero-Knowledge Protocols, Secure Multi-Party Computation, Non-Malleability, and Digital Signatures, as well as their practical applications, such as Secure Spectrum Allocation and Plausibly Deniable Storage. 
     </p>
 
     <p class="NormalText">
-      I am interested in (classical and quantum) Cryptography and its interplay with Computational Complexity Theory. My work has been focused on Zero-Knowledge Proofs, Secure Multi-Party Computation, Non-Malleability, and Signatures.  
+      Prior to my appointment at CUHK, I was a Postdoctoral Fellow at <a href="https://ntt-research.com/cis/" target="_blank">NTT Research</a>, working with <a href="https://www.cs.cmu.edu/~goyal/" target="_blank">Vipul Goyal</a>. Before that, I was a Postdoctoral Associate at <a href="https://csweb.rice.edu/" target="_blank">Rice University</a>, working with <a href="https://sites.google.com/view/naihuichia" target="_blank">Nai-Hui Chia</a> and <a href="https://homepage.iis.sinica.edu.tw/~kmchung/" target="_blank">Kai-Min Chung</a>. I obtained my Ph.D. in Computer Science from <a href="http://www.stonybrook.edu/" target="_blank">Stony Brook University</a>, where I was fortunate to be advised by <a href="http://www3.cs.stonybrook.edu/~omkant/" target="_blank">Omkant Pandey</a>. Before that, I received an M.S. in Applied Math from Stony Brook University, and a Bachelor of Economics from <a href="https://english.bit.edu.cn/" target="_blank">Beijing Institute of Technology</a>.
     </p>
 
-    <!-- <p class="NormalText">
-      <a class="PaperTitle" href="Resources/TheoreticalToys.pdf" target="_blank">Theoretical Toys</a> &mdash; my always-unfinished notes on mathematical tools for theoretical computer science.
-    </p>
-    <p class="NormalText">
-      <a class="PaperTitle" href="Resources/Dissertation-Xiao-Liang.pdf" target="_blank">Black-Box Secure Multi-Party Computation: New Possibilities and Limitations</a> &mdash; my doctoral dissertation.
-    </p> -->
     <p>
       <ul class="px-3">
         <li class="NormalText">
@@ -133,21 +221,24 @@
   <div class="col-9 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2" align="right">
     <figure class="figure  mt-3">
       <img src="Resources/PhotoXiao.jpg" class="figure-img img-fluid rounded" style="max-height: 160px" alt="profile">
+
       <div class="row">
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" align="right">
           <a href="https://dblp.org/pid/06/4676-14.html" target="_blank">
             <img src="Resources/Miscellaneous/dblp-icon.png" class="figure-img img-fluid rounded" style="max-height: 35px" alt="DBLP Icon">
           </a>
         </div>
+
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" align="right">
           <a href="https://scholar.google.com/citations?user=pUCv_e4AAAAJ&hl=en" target="_blank">
            <img src="Resources/Miscellaneous/GS-icon.jpg" class="figure-img img-fluid rounded" style="max-height: 25px" alt="Google Scholar Icon">
          </a>
         </div>
       </div>
-      <figcaption class="figure-caption" align="center">
+
+      <!-- <figcaption class="figure-caption" align="center">
       <strong><a href="contact.html" target="_blank">Contact Info (click)</a></strong>
-      </figcaption>
+      </figcaption> -->
     </figure>
   </div><!-- end of col for Photo -->
 </div><!-- end row -->
@@ -161,15 +252,14 @@
       I used to write Chinese poetry (both classical and modern) and won the 2nd prize at the 2015 Chinese Poetry Writing Competition for Chinese-Speaking Undergrads and Grads. <a href="WinningPoem.html" target="_blank">Check my award-winning work here</a> with comments from the famous lyricist and poet <a href="https://en.wikipedia.org/wiki/Vincent_Fang_(lyricist)" target="_blank">Vincent Fang </a>(Chinese: 方文山). [<a href="Poems.html" target="_blank">More works of me</a>]
       </li>
       <li class="NormalText"> 
-        I won the National Scholarship (one of the highest honors for Chinese undergraduates) when I majored in Economics.
-        <!-- , an area in which I have already lost my interest.  -->
+        I won the National Scholarship (one of the highest honors for Chinese undergraduates) when I majored in Economics, an area in which I have since lost interest. 
       </li>
     </ul>
   </div> <!-- end col -->
 </div> <!-- end row -->
 
 
-
+<!-- 
 <div class="row"> 
   <div class="col">
     <ul class="px-0" style="list-style-type:none; ">
@@ -183,16 +273,16 @@
         <b>July - Oct. 2021:</b> Thanks to Professor <a href="https://sites.google.com/view/giuliomalavolta/" target="_blank">Giulio Malavolta</a> for hosting me at <a href="https://www.mpg.de/en" target="_blank">Max Planck Institute</a>.
       </li>
     </ul>
-  </div> <!-- end col -->
-</div> <!-- end row -->
+  </div> 
+</div>  -->
 
    
 
 <div class="row mt-4">
   
 
-  <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8">
-    <h4>Professional Services</h4>
+  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+    <h4 id="service">Professional Services</h4>
     <hr />
     <ul class="px-3">
       <li class="NormalText"> 
@@ -232,16 +322,14 @@
     </p> -->
   </div> <!-- end col for Subreview-->
 
-  <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
+ <!--  
+ <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
     <h4>Useful Links</h4>
     <hr />
     <ul class="px-3">
       <li class="NormalText"> 
             <a href="http://kconrad.math.uconn.edu/blurbs/" target="_blank">Expository Papers for Math</a> by Prof. <a  href="http://kconrad.math.uconn.edu/" target="_blank">Keith Conrad</a>
       </li>
-          <!-- <li> 
-            <a href="https://xiao-liang.com/blog/?p=39/" target="_blank">My favorite way to use LaTex: Sublime+TexLive</a>
-          </li> -->
       <li class="NormalText"> 
             <a href="writing.html" target="_blank">Formalizing Your Writing</a>
       </li>
@@ -249,19 +337,19 @@
             <a href="miscellaneous.html" target="_blank">Other Interesting Links</a>
       </li>
     </ul>
-  </div> <!-- end col for Useful Links-->
-</div> <!-- end row-->
-
+  </div> 
+</div> 
+ -->
 
 
 
 <div class="row mt-4">
-  <div class="col">
-  <h4>Publications &nbsp&nbsp<span class="MediumTNR" >(Unless stated otherwise, authors are arranged alphabetically)</span></h4>
+  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+  <h4 id="publication">Publications &nbsp&nbsp<span class="MediumTNR" >(Unless stated otherwise, authors are arranged alphabetically)</span></h4>
+  
   <hr />
 
   <ol reversed class="px-4.5"> <!-- px-4.5 for 4.5 indent -->
-    
 
     <!-- Publication 13 -->
           <li>
@@ -566,11 +654,9 @@
 
 <div class="row mt-4">
   <div class="col">
-    <h4>Other Talks</h4>
+    <h4 id="talks">Other Talks</h4>
     <hr />
     <ul class="px-3">
-
-
       <li>
         <span class="PaperTitle">
         On Concurrent Multi-Party Quantum Computation </span>
@@ -630,7 +716,43 @@
   </div> <!--end col Other Talks -->
 </div> <!--end row Other Talks -->
 
+
+<div class="row mt-4">
+  <div class="col">
+    <h4 id="contact">Contact Information</h4>
+    <hr />
+    <div class="col-xs-12 col-sm-7 col-md-6 col-xg-6" >
+      <table class="table table-borderless">
+        <tr>
+          <td width="10%">
+            <strong>Email:</strong>
+          </td>
+          <td>
+            xiaoliang [at] cuhk.edu.hk 
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Address:</strong>
+          </td>
+          <td>
+            Room 926, Ho Sin Hang Engineering Building <br \>
+            The Chinese University of Hong Kong <br \>
+            Shatin, N.T., Hong Kong
+          </td>
+        </tr>
+      </table>
+    </div>
+
+  </div> <!--end col Contact Information-->
+</div> <!--end row Contact Information -->
+
 </div> <!-- container -->
+
+
+
+
+
 </body> 
 </html>
 
