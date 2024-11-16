@@ -43,6 +43,7 @@
         h4 {
           font-family: Time New Roman, Times, serif;
           /*font-weight:bold;*/
+          font-size: large;
         }
        
         a { 
@@ -53,21 +54,28 @@
         
         .NormalText {
             font-family: Arial, Helvetica, sans-serif;
-            font-size:medium;
+            font-size:small;
             text-align:justify;
         }
+
+        .TinyCaption {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:xx-small;
+            color:#b3b6b7;
+        }
+
         .PaperTitle {
             font-family: Time New Roman, Times, serif;
-            font-size:large;
+            font-size:medium;
             font-weight:bold;
         }
         .AuthorLine {
             font-family: Arial, Helvetica, sans-serif;
-            font-size:medium;
+            font-size:small;
         }
         .ConferenceLine {
             font-family: Time New Roman, Times, serif;
-            font-size:large;
+            font-size:medium;
         }
         .MediumTNR {
             font-family: Time New Roman, Times, serif;
@@ -88,7 +96,7 @@
           display: none;
           position: fixed;
           bottom: 20px;
-          left: 30px;
+          left: 20px;
           z-index: 99;
           font-size: 20px;
           font-weight: bold;
@@ -200,7 +208,11 @@ function topFunction() {
 
 
 
-<div class="row mt-4">   
+<div class="row mt-4">  
+
+
+
+
   <div class="col-12 col-sm-9 col-md-9 col-lg-10 col-xl-10 col-xxl-10">
     <p class="NormalText">
       <span class="XLargeTNR">Xiao Liang</span> <span class="ChineseName">（梁宵）</span>
@@ -223,30 +235,39 @@ function topFunction() {
   </div><!-- end col -->
 
 
-  <!-- my photo -->
-  <div class="col-9 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2" align="right">
-    <figure class="figure  mt-3">
-      <img src="Resources/PhotoXiao.jpg" class="figure-img img-fluid rounded" style="max-height: 160px" alt="profile">
+<!-- my photo -->
+<div class="col-9 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2" align="right">
+  <figure class="figure  mt-3">
+    <img src="Resources/final-Leica-50par-timestamp-compressed.jpg" class="figure-img img-fluid rounded" style="max-height: 300px" alt="profile">
 
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" align="right">
-          <a href="https://dblp.org/pid/06/4676-14.html" target="_blank">
-            <img src="Resources/Miscellaneous/dblp-icon.png" class="figure-img img-fluid rounded" style="max-height: 35px" alt="DBLP Icon">
-          </a>
-        </div>
+    <div class="row">
+      <span class="TinyCaption" style="text-align:right">
+        Photo by Fangfang Song </br>
+        at Victoria Harbour
+      </span>
+    </div>
 
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" align="right">
-          <a href="https://scholar.google.com/citations?user=pUCv_e4AAAAJ&hl=en" target="_blank">
-           <img src="Resources/Miscellaneous/GS-icon.jpg" class="figure-img img-fluid rounded" style="max-height: 25px" alt="Google Scholar Icon">
-         </a>
-        </div>
+<!--     <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" align="right">
+        <a href="https://dblp.org/pid/06/4676-14.html" target="_blank">
+          <img src="Resources/Miscellaneous/dblp-icon.png" class="figure-img img-fluid rounded" style="max-height: 35px" alt="DBLP Icon">
+        </a>
       </div>
 
-      <!-- <figcaption class="figure-caption" align="center">
-      <strong><a href="contact.html" target="_blank">Contact Info (click)</a></strong>
-      </figcaption> -->
-    </figure>
-  </div><!-- end of col for Photo -->
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" align="right">
+        <a href="https://scholar.google.com/citations?user=pUCv_e4AAAAJ&hl=en" target="_blank">
+         <img src="Resources/Miscellaneous/GS-icon.jpg" class="figure-img img-fluid rounded" style="max-height: 25px" alt="Google Scholar Icon">
+       </a>
+      </div>
+    </div> -->
+
+    <!-- <figcaption class="figure-caption" align="center">
+    <strong><a href="contact.html" target="_blank">Contact Info (click)</a></strong>
+    </figcaption> -->
+  </figure>
+</div><!-- end of col for Photo -->
+
+
 </div><!-- end row -->
 
 
