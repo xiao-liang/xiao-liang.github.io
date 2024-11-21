@@ -154,7 +154,7 @@ function topFunction() {
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
 <div class="container-fluid">
-   <a class="navbar-brand" href="#">Homepage</a>
+   <a class="navbar-brand" href="#">CSCI5370</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -163,33 +163,28 @@ function topFunction() {
   
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a  class="nav-link active" href="#teaching">Teaching</a>
+          <a  class="nav-link active" href="#meta">Meta Info</a>
         </li>
 
         <li class="nav-item">
-          <a  class="nav-link active" href="#service">Service</a>
+          <a  class="nav-link active" href="#description">Description</a>
         </li>
 
         <li class="nav-item">
-          <a  class="nav-link active" href="#publication">Publications</a>
+          <a  class="nav-link active" href="#outcomes">Outcomes</a>
         </li>
 
         <li class="nav-item">
-          <a  class="nav-link active" href="#talks">Talks</a>
+          <a  class="nav-link active" href="#reading">Reading</a>
         </li>
 
         <li class="nav-item">
-          <a  class="nav-link active" href="#contact">Contact</a>
-        </li>
+          <a  class="nav-link active" href="#comparison">Comparison</a>
+        </li> 
 
         <li class="nav-item">
-          <a class="nav-link active" href="Resources/CV-Xiao-Liang.pdf" target="_blank">CV</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link active" href="http://cryptopluslab.github.io" target="_blank">Laboratory</a>
-        </li>
-        
+          <a  class="nav-link active" href="#schedule">Schedule</a>
+        </li> 
       </ul>
     </div>
 </div>
@@ -213,12 +208,12 @@ function topFunction() {
 
 <div class="row mt-4">
   <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-    <h4>Meta Information</h4>
+    <h4 id="meta">Meta Information</h4>
     <hr />
 
     <b>Target Audience:</b>
     <p class="NormalText" style="padding-top: 0.5em">
-      This course is primarily designed for postgraduate students. However, senior undergraduates are also welcome. Please note that undergraduate students must obtain formal approval to enroll in postgraduate courses at CUHK. If you're an undergraduate interested in joining, ensure you complete this approval process. If you encounter any difficulties during the process, don't hesitate to reach out to the course instructor, Xiao LIANG, who will be happy to assist.
+      This course is primarily designed for postgraduate students. However, senior undergraduates are also welcome. Please note that undergraduate students must obtain formal approval to enroll in postgraduate courses at CUHK. If you're an undergraduate interested in joining, ensure you complete this approval process. If you encounter any difficulties during the process, don't hesitate to reach out to the course instructor, <a href="https://xiao-liang.github.io/" target="_blank">Xiao LIANG</a>, who will be happy to assist.
     </p>
    
     <b>Prerequisites:</b>
@@ -239,9 +234,9 @@ function topFunction() {
 
 
 
-<div class="row mt-3">
+<div class="row mt-4">
   <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-    <h4 >Course Description</h4>
+    <h4  id="description">Course Description</h4>
     <hr />
 
 	<p class="NormalText">
@@ -250,26 +245,45 @@ function topFunction() {
 
     <p class="NormalText">
 		The course is structured into two parts:
-
-		(1) First Half: This portion focuses on the foundational concepts and algorithms of quantum computing, with an emphasis on depth. This contrasts with CSCI3350, which prioritizes breadth over depth in the topics covered.
-
-		(2) Second Half: The latter part of the course explores several interdisciplinary areas where quantum computing intersects with fields such as computational complexity, cryptography, machine learning, networking, information theory, and more.
-
+    <ol>
+      <li >
+        First Half: This portion focuses on the foundational concepts and algorithms of quantum computing, with an emphasis on depth. This contrasts with CSCI3350, which prioritizes breadth over depth in the topics covered.
+      </li>
+      <li>
+        Second Half: The latter part of the course explores several interdisciplinary areas where quantum computing intersects with fields such as computational complexity, cryptography, machine learning, networking, information theory, and more.
+      </li>
+    </ol>
 		This approach aims to equip students with a comprehensive range of quantum-related skills, preparing them to contribute to the rapidly evolving field of quantum computing, which presents abundant opportunities in both industry and academia.
     </p>
 
     <p class="NormalText">
 		Tentative topics include:
-
-		(Quick review) Basics of quantum information, the quantum circuit model
-		(Quick review) Basic quantum protocols, such as quantum teleportation, superdense coding, and more
-		(Quick review) Basic quantum algorithms, such as Simon's algorithm, Shor's factoring algorithm, and Grover's search
-		(In-depth) Quantum Fourier Transform, phase estimation, and amplitude amplification
-		(In-depth) The linear-algebraic formalism of quantum computing
-		(In-depth) Entanglement, non-local games
-		(In-depth) Quantum error correction and fault tolerance
-		(In-depth) Selective topics from quantum cryptography, proofs of quantumness, quantum information theory, quantum complexity theory, quantum machine learning, and quantum networks
-
+    <ul>
+      <li>
+        (Quick review) Basics of quantum information, the quantum circuit model
+		  </li>
+      <li>
+        (Quick review) Basic quantum protocols, such as quantum teleportation, superdense coding, and more
+		  </li>
+      <li>
+        (Quick review) Basic quantum algorithms, such as Simon's algorithm, Shor's factoring algorithm, and Grover's search
+		  </li>
+      <li>
+        (In-depth) Quantum Fourier Transform, phase estimation, and amplitude amplification
+		  </li>
+      <li>
+        (In-depth) The linear-algebraic formalism of quantum computing
+		  </li>
+      <li>
+        (In-depth) Entanglement, non-local games
+		  </li>
+      <li>
+        (In-depth) Quantum error correction and fault tolerance
+		  </li>
+      <li>
+        (In-depth) Selective topics from quantum cryptography, proofs of quantumness, quantum information theory, quantum complexity theory, quantum machine learning, and quantum networks
+      </li>
+    </ul>
 
 		The final topics covered will depend on student feedback, their ability to grasp the material, and the time available.
     </p>
@@ -278,634 +292,112 @@ function topFunction() {
 </div> <!-- end row -->
 
 
-<div class="row mt-3">
+<div class="row mt-4">
   <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-    <h4 >Course Learning Outcomes</h4>
+    <h4  id="outcomes">Course Learning Outcomes</h4>
     <hr />
 
 	<p class="NormalText">
 		By the end of the course, students will:
+    <ul>
+      <li>Build a solid foundation in quantum computing, developing essential conceptual frameworks and technical skills in the field.</li>
+		
+      <li>Gain the ability to understand and discuss cutting-edge research papers in quantum computing, effectively communicating complex ideas with collaborators and peers. Be prepared to contribute to ongoing research and development within the field.</li>
 
-		Build a solid foundation in quantum computing, developing essential conceptual frameworks and technical skills in the field.
-
-		Gain the ability to understand and discuss cutting-edge research papers in quantum computing, effectively communicating complex ideas with collaborators and peers. Be prepared to contribute to ongoing research and development within the field.
-
-		Acquire interdisciplinary knowledge of how quantum computing interacts with other areas, including computational complexity, cryptography, machine learning, networking, and information theory. Be able to identify and appreciate the intersections between quantum computing and their own research areas, and pursue interdisciplinary research opportunities.
-    </p>
+      <li>Acquire interdisciplinary knowledge of how quantum computing interacts with other areas, including computational complexity, cryptography, machine learning, networking, and information theory. Be able to identify and appreciate the intersections between quantum computing and their own research areas, and pursue interdisciplinary research opportunities.</li>
+    </ul>
+  </p>
    
   </div> <!-- end col -->
 </div> <!-- end row -->
 
 
-<div class="row mt-1">
+<div class="row mt-4">
   <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-    <h4 >Recommended reading list</h4>
+    <h4  id="reading">Recommended Reading List</h4>
     <hr />
 
 	<p class="NormalText">
-		- Introduction to Quantum Information Science Lecture Notes I & II, by Scott Aaronson
-		- The complexity of quantum states and transformations: From quantum money to black holes, by Scott Aaronson
-		- Principles of Quantum Communication Theory: A Modern Approach, by Sumeet Khatri, Mark M. Wilde
-		- Quantum Computation and Quantum Information, by Michael A. Nielsen and Isaac L. Chuang
-    </p>
-   
-  </div> <!-- end col -->
-</div> <!-- end row -->
-
-
-<div class="row mt-1">
-  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-    <h4 >Existing similar courses</h4>
-    <hr />
-
-	<p class="NormalText">
-		There are currently four courses at CUHK similar to this one::
-		- CSCI3350 Introduction to Quantum Computing
-		- IERG 5380: Quantum Information Processing
-		- IERG 6130: Advanced Topics in Information Engineering II: PSD Matrices and Quantum IT
-		- MAEG 5110: Quantum Control & Quantum Information
-
-		To help students avoid confusion and make informed decisions when planning their study scheme, I include a comparison between this course and the similar offerings: 
-
-		Compared to the undergraduate course CSCI3350, this course:
-		 (1) covers several advanced topics not included in CSCI3350, and 
-		 (2) for overlapping topics, explores them from a new perspective, typically with greater depth and a more powerful mathematical formalism.
-
-		Courses such as IERG 5380, IERG 6130, and MAEG 5110 place a stronger emphasis on the information-theoretic aspects of quantum computing. In contrast, this course focuses on the algorithmic side of quantum computing. While we will touch on topics central to quantum information theory—such as various notions of quantum entropy, quantum channel characterizations, entanglement distillation, and the capacity of quantum channels—we will only cover them to the extent necessary to support the main topics listed in the course description. The primary focus will be on subjects with a theoretical computer science flavor, which are at the forefront of current research, offering numerous open questions and opportunities that are likely to excite computer science students.
-    </p>
-   
-  </div> <!-- end col -->
-</div> <!-- end row -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="row mt-3">
-  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-    <h4 id="teaching">Teaching</h4>
-    <hr />
-
-    
-
-    <!-- <b>Interesting Things about Me:</b> -->
-    <ul class="px-4.5">
-      <li class="NormalText">
-           <b>Student Consultation Hours:</b> <br />
-           Wednesday 15:00 - 17:00 at Room 926, Ho Sin Hang Engineering Building
-      </li>
-      <li class="NormalText">
-           <b>Courses:</b> <br />
-           CSCI 5370 Quantum Computing (Spring'25, more information to be announced)
-      </li>
-    </ul>
-  </div> <!-- end col -->
-</div> <!-- end row -->
-
-<!-- 
-<div class="row"> 
-  <div class="col">
-    <ul class="px-0" style="list-style-type:none; ">
-      <li class="NormalText"> 
-        <b>May - Aug. 2018:</b> Thanks to Professor <a href="https://people.eecs.berkeley.edu/~sanjamg/" target="_blank">Sanjam Garg</a> for hosting me at <a href="https://www.berkeley.edu/" target="_blank">UC Berkeley</a>. 
-      </li>
-      <li class="NormalText"> 
-        <b>May - Aug. 2019:</b> This hybrid is identical to the previous one, except that I want to thank Sanjam again. 
-      </li>
-      <li class="NormalText"> 
-        <b>July - Oct. 2021:</b> Thanks to Professor <a href="https://sites.google.com/view/giuliomalavolta/" target="_blank">Giulio Malavolta</a> for hosting me at <a href="https://www.mpg.de/en" target="_blank">Max Planck Institute</a>.
-      </li>
-    </ul>
-  </div> 
-</div>  -->
-
-   
-
-<div class="row mt-3">
-  
-
-  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-    <h4 id="service">Professional Services</h4>
-    <hr />
-    <ul class="px-4.5">
-      <li class="NormalText"> 
-        <b>Program Committee:</b> <a href="https://itcrypto.github.io/index.html" target="_blank">ITC 2023</a>
-      </li>
-
-      <li class="NormalText"> 
-        <b>Reviewer:</b> ACM Transactions on Storage (2019), IEEE Transactions on Dependable and Secure Computing (2021), Theoretical Computer Science (2024)
-      </li>
-
-      <li class="NormalText"> 
-        <b>External Reviewer:</b>
-	      STOC (2024, 2025),&nbsp
-        FOCS (2022, 2024),&nbsp
-        Crypto (2020-2024),&nbsp
-        Eurocrypt (2020, 2022-2024),&nbsp
-        TCC (2018-2024),&nbsp
-        QIP (2023),&nbsp
-        QCrypt (2023, 2024),&nbsp
-        ITC (2020),&nbsp
-        Asiacrypt (2019, 2021-2023),&nbsp
-        PKC (2020, 2022, 2024),&nbsp
-        TQC (2023,2024),&nbsp 
-        AQIS (2024),&nbsp
-        SCN (2022)
-      </li>
-      
-    </ul>
-    <!-- <p class="NormalText" style="font-variant: small-caps">
-      Crypto (2020, 2021),&nbsp
-        Eurocrypt (2020, 2022),&nbsp
-        TCC (2018-2021),&nbsp
-        ITC (2020),<br />
-        Asiacrypt (2019, 2021),&nbsp
-        PKC (2020, 2022),&nbsp
-        ACM TOS (2019)
-    </p> -->
-  </div> <!-- end col for Subreview-->
-
- <!--  
- <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
-    <h4>Useful Links</h4>
-    <hr />
-    <ul class="px-3">
-      <li class="NormalText"> 
-            <a href="http://kconrad.math.uconn.edu/blurbs/" target="_blank">Expository Papers for Math</a> by Prof. <a  href="http://kconrad.math.uconn.edu/" target="_blank">Keith Conrad</a>
-      </li>
-      <li class="NormalText"> 
-            <a href="writing.html" target="_blank">Formalizing Your Writing</a>
-      </li>
-      <li class="NormalText"> 
-            <a href="miscellaneous.html" target="_blank">Other Interesting Links</a>
-      </li>
-    </ul>
-  </div> 
-</div> 
- -->
-
-
-
-<div class="row mt-3">
-  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-  <h4 id="publication">Publications &nbsp&nbsp<span class="MediumTNR" >(In accordance with the tradition of theoretical computer science, authors are listed in alphabetical order)</span></h4>
-  
-  <hr />
-
-  <ol reversed class="px-4.5"> <!-- px-4.5 for 4.5 indent -->
-
-    <!-- Publication 15 -->
-          <li>
-            <span class="PaperTitle">
-            The Black-Box Simulation Barrier Persists in a Fully Quantum World
-            </span>
-            <br />
-            <span class="AuthorLine">
-             
-              <a  href="https://sites.google.com/view/naihuichia" target="_blank">Nai-Hui Chia</a>,
-              <a  href="https://homepage.iis.sinica.edu.tw/~kmchung/" target="_blank">Kai-Min Chung</a>,
-                Xiao Liang,
-              <a  href="https://sites.google.com/view/jiahuiliu/" target="_blank">Jiahui Liu</a>
-            </span> 
-            <br />
-            <span class="ConferenceLine" >
-              <!-- <a style="font-variant: small-caps" href="https://focs.computer.org/2023/" target="_blank">
-              FOCS 2023
-              </a>  -->
-              Manuscript 2024
-              &nbsp &nbsp
-              [<a href="https://arxiv.org/pdf/2409.06317" target="_blank">PDF</a>]
-              
-              <!-- [<a href="Resources/Publications/2023/PQNM.pptx" target="_blank">Slides</a>] -->
-              <!--
-              [<a href="https://youtu.be/fUh0Y_PU1BA?list=PLeeS-3Ml-rpohTqwyNZE37TKuJPCei_fa" target="_blank">Video</a>]
-              -->
-            </span>
-          </li>
-
-    <!-- Publication 14 -->
-          <li style="padding-top: 10pt">
-            <span class="PaperTitle">
-            A New Approach to Post-Quantum Non-Malleability
-            </span>
-            <br />
-            <span class="AuthorLine">
-              Xiao Liang,
-              <a  href="https://www3.cs.stonybrook.edu/~omkant/" target="_blank">Omkant Pandey</a>,
-               <a  href="https://sites.google.com/view/takashiyamakawa" target="_blank">Takashi Yamakawa</a>
-            </span> 
-            <br />
-            <span class="ConferenceLine" >
-              <a style="font-variant: small-caps" href="https://focs.computer.org/2023/" target="_blank">
-              FOCS 2023
-              </a> 
-              &nbsp &nbsp
-              [<a href="https://arxiv.org/pdf/2207.05861.pdf" target="_blank">PDF</a>]
-              
-              [<a href="Resources/Publications/2023/PQNM.pptx" target="_blank">Slides</a>]
-              <!--
-              [<a href="https://youtu.be/fUh0Y_PU1BA?list=PLeeS-3Ml-rpohTqwyNZE37TKuJPCei_fa" target="_blank">Video</a>]
-              -->
-            </span>
-          </li>
-
-
-<!-- Publication 13 -->
-          <li style="padding-top: 10pt">
-            <span class="PaperTitle">
-            On Concurrent Multi-Party Quantum Computation 
-            </span>
-            <br />
-            <span class="AuthorLine">
-              <a  href="https://www.cs.cmu.edu/~goyal/" target="_blank">Vipul Goyal</a>,
-              Xiao Liang,
-              <a  href="https://sites.google.com/view/giuliomalavolta/" target="_blank">Giulio Malavolta</a>
-            </span> 
-            <br />
-            <span class="ConferenceLine" >
-              <a style="font-variant: small-caps" href="https://crypto.iacr.org/2023/" target="_blank">Crypto 2023</a>
-               &nbsp & &nbsp
-              <a style="font-variant: small-caps" href="https://2023.qcrypt.net/" target="_blank">QCrypt 2023</a>
-              &nbsp &nbsp
-
-              [<a href="https://eprint.iacr.org/2023/827.pdf" target="_blank">PDF</a>]
-              [<a href="Resources/Publications/2023/PQ-concurrent-25mins.pptx" target="_blank">Slides</a>]
-              [<a href="https://youtu.be/Z_xnpv3jBQU?list=PLeeS-3Ml-rpq6m4DK_dARhLhIW31SE2pn&t=192" target="_blank">Video</a>] 
-            </span>
-          </li >
-
-
-        <!-- Publication 12 -->
-          <li style="padding-top: 10pt">
-            <span class="PaperTitle">
-            A New Approach to Efficient Non-Malleable Zero-Knowledge
-            </span>
-            <br />
-            <span class="AuthorLine">
-              <a  href="https://allenkim.github.io/" target="_blank">Allen Kim</a>,
-              Xiao Liang,
-              <a  href="https://www3.cs.stonybrook.edu/~omkant/" target="_blank">Omkant Pandey</a>
-            </span> 
-            <br />
-            <span class="ConferenceLine" >
-              <a style="font-variant: small-caps" href="https://crypto.iacr.org/2022/" target="_blank">Crypto 2022</a>
-              &nbsp &nbsp
-              [<a href="https://eprint.iacr.org/2022/767.pdf" target="_blank">PDF</a>]
-              [<a href="Resources/Publications/2022/NewNMZK.pptx" target="_blank">Slides</a>]
-              [<a href="https://youtu.be/C3AU5D5Wsgg?list=PLeeS-3Ml-rpohTqwyNZE37TKuJPCei_fa&t=4536" target="_blank">Video</a>]
-              
-            </span>
-          </li>
-
-        <!-- Publication 11 -->
-          <li style="padding-top: 10pt">
-            <span class="PaperTitle">
-            Post-Quantum Simulatable Extraction with Minimal Assumptions: Black-Box and Constant-Round
-            </span>
-            <br />
-            <span class="AuthorLine">
-              <a  href="https://sites.google.com/view/naihuichia" target="_blank">Nai-Hui Chia</a>,
-              <a  href="https://homepage.iis.sinica.edu.tw/~kmchung/" target="_blank">Kai-Min Chung</a>,
-              Xiao Liang, 
-              <a  href="https://sites.google.com/view/takashiyamakawa" target="_blank">Takashi Yamakawa</a>
-            </span>  
-            <br />
-            <span class="ConferenceLine" >
-              <a style="font-variant: small-caps" href="https://crypto.iacr.org/2022/" target="_blank">Crypto 2022</a>
-              &nbsp &nbsp
-              [<a href="https://arxiv.org/pdf/2111.08665.pdf" target="_blank">PDF</a>]
-              [<a href="Resources/Publications/2022/BB-PQ-2PC.pptx" target="_blank">Slides</a>]
-              [<a href="https://youtu.be/fUh0Y_PU1BA?list=PLeeS-3Ml-rpohTqwyNZE37TKuJPCei_fa&t=2" target="_blank">Video</a>]
-            </span>
-          </li>
-
-        <!-- Publication 10 -->
-          <li style="padding-top: 10pt">
-            <span class="PaperTitle">
-            A Note on the Post-Quantum Security of (Ring) Signatures
-            </span>
-            <br />
-            <span class="AuthorLine">
-              <a  href="https://rohit656.github.io/webbpage/" target="_blank">Rohit Chatterjee</a>,
-              <a  href="https://homepage.iis.sinica.edu.tw/~kmchung/" target="_blank">Kai-Min Chung</a>,
-              Xiao Liang,
-              <a  href="https://sites.google.com/view/giuliomalavolta/" target="_blank">Giulio Malavolta</a>
-            </span> 
-            <br />
-            <span class="ConferenceLine" >
-              <a style="font-variant: small-caps" href="https://pkc.iacr.org/2022/" target="_blank">PKC 2022</a>
-              &nbsp &nbsp 
-              [<a href="https://arxiv.org/pdf/2112.06078.pdf" target="_blank">PDF</a>]
-              
-              
-              [<a href="Resources/Publications/2021/Note-on-PQ-ring-sig.pptx" target="_blank">Slides</a>]
-              [<a href="https://www.youtube.com/watch?v=kAywpk3IzzQ" target="_blank">Video</a>]
-               
-            </span>
-          </li>
-
-        <!-- Publication 9 -->
-          <li style="padding-top: 10pt">
-            <span class="PaperTitle">
-            SoK: Plausibly Deniable Storage
-            </span>
-            <br />
-            <span class="AuthorLine">
-              <a  href="https://sites.google.com/view/chen-chen/home" target="_blank">Chen Chen</a>,
-              Xiao Liang,
-              <a  href="https://users.cs.fiu.edu/~carbunar/" target="_blank">Bogdan Carbunar</a>,
-              <a  href="https://zxr.io/" target="_blank">Radu Sion</a>
-            </span>  
-            &nbsp&nbsp<span class="MediumTNR" >(not in alphabetical order)</span>
-            <br />
-            <span class="ConferenceLine" >
-              <a style="font-variant: small-caps" href="https://petsymposium.org/2022/" target="_blank">PETS 2022</a>
-              &nbsp &nbsp 
-              [<a href="https://arxiv.org/pdf/2111.12809.pdf" target="_blank">PDF</a>]
-              [<a href="https://www.youtube.com/watch?v=NBc0UT_CzSA" target="_blank">Video</a>]
-              [<a href="Resources/Publications/2022/PDStorage.pptx" target="_blank">Slides</a>]
-            </span>
-          </li>
-
-
-          <!-- Publication 8 -->
-          <li style="padding-top: 10pt">
-            <span class="PaperTitle">
-            Black-Box Secure Multi-Party Computation: New Possibilities and Limitations
-            </span>
-            <br />
-            <span class="AuthorLine">
-              Xiao Liang
-            </span>  
-            <br />
-            <span class="ConferenceLine" >
-              Doctoral Dissertation, Stony Brook University, 2021 &nbsp &nbsp
-              [<a href="Resources/Dissertation-Xiao-Liang.pdf" target="_blank">PDF</a>]
-            </span>
-          </li>
-
-
-        <!-- Publication 7 -->
-          <li style="padding-top: 10pt">
-            <span class="PaperTitle">
-            Towards a Unified Approach to Black-Box Constructions of Zero-Knowledge Proofs
-            </span>
-            <br />
-            <span class="AuthorLine">
-              Xiao Liang,
-              <a  href="https://www3.cs.stonybrook.edu/~omkant/" target="_blank">Omkant Pandey</a>
-            </span>  
-            <br />
-            <span class="ConferenceLine" >
-              <a style="font-variant: small-caps" href="https://crypto.iacr.org/2021/" target="_blank">Crypto 2021</a>
-              &nbsp &nbsp 
-              [<a href="https://eprint.iacr.org/2021/836.pdf" target="_blank">PDF</a>]
-              [<a href="Resources/Publications/2021/BB-Proof-short.pptx" target="_blank">Slides</a>]
-              [<a href="https://www.youtube.com/watch?v=vpm-tkjQGrU" target="_blank">Video</a>]
-              <!-- [<a href=" " target="_blank">Video</a>] -->
-            </span>
-          </li>
-
-          <!-- Publication 6 -->
-          <li style="padding-top: 10pt">
-            <span class="PaperTitle">
-            Compact Ring Signatures from Learning with Errors
-            </span>
-            <br />
-            <span class="AuthorLine">
-              <a  href="https://rohit656.github.io/webbpage/" target="_blank">Rohit Chatterjee</a>,
-              <a  href="https://people.eecs.berkeley.edu/~sanjamg/" target="_blank">Sanjam Garg</a>, 
-              <a  href="https://sites.google.com/view/mdhajiabadi" target="_blank"> Mohammad Hajiabadi</a>, 
-              <a  href="https://www.dakshitakhurana.com/" target="_blank">Dakshita Khurana</a>,
-              Xiao Liang, 
-              <a  href="https://sites.google.com/view/giuliomalavolta/" target="_blank">Giulio Malavolta</a>,
-              <a  href="https://www3.cs.stonybrook.edu/~omkant/" target="_blank">Omkant Pandey</a>,
-              <a  href="https://scholar.google.com/citations?user=0tX_y9QAAAAJ&hl=en" target="_blank">Sina Shiehian</a>
-            </span>  
-            <br />
-            <span class="ConferenceLine" >
-              <a href="https://crypto.iacr.org/2021/" target="_blank" style="font-variant: small-caps">
-              Crypto 2021</a>
-              &nbsp &nbsp 
-              [<a href="https://eprint.iacr.org/2021/942.pdf" target="_blank">PDF</a>]
-              [<a href="Resources/Publications/2021/ring-signature.pptx" target="_blank">Slides</a>]
-              [<a href="https://www.youtube.com/watch?v=FgMO7Gph_QE" target="_blank">Video</a>]
-            </span>
-          </li>
-
-          <!-- Publication 5 -->
-          <li style="padding-top: 10pt">
-            <span class="PaperTitle">
-            Black-Box Constructions of Bounded-Concurrent Secure Computation
-            </span>
-            <br />
-            <span class="AuthorLine">
-              <a  href="https://people.eecs.berkeley.edu/~sanjamg/" target="_blank">Sanjam Garg</a>, Xiao Liang,
-              <a  href="http://www3.cs.stonybrook.edu/~omkant/" target="_blank">Omkant Pandey</a>,
-              <a  href="https://docenti.unisa.it/004312/en/home" target="_blank">Ivan Visconti</a> 
-            </span>  
-            <br />
-            <span class="ConferenceLine" >
-              <a style="font-variant: small-caps" href="https://scn.unisa.it/" target="_blank">
-              SCN 2020</a>&nbsp &nbsp 
-              [<a href="https://eprint.iacr.org/2020/216.pdf" target="_blank">PDF</a>]
-              [<a href="Resources/Publications/2020/GLPV20.pptx" target="_blank">Slides</a>]
-              [<a href="https://www.youtube.com/watch?v=FzmrL5_7yEM" target="_blank">Video</a>]
-            </span>
-          </li>
-
-          <!-- Publication 4 -->
-          <li style="padding-top: 10pt">
-            <span class="PaperTitle">
-              Improved Black-Box Constructions of Composable Secure Computation
-            </span>
-            <br />
-            <span class="AuthorLine" >
-              <a  href="https://rohit656.github.io/webbpage/" target="_blank">Rohit Chatterjee</a>, 
-              Xiao Liang, 
-              <a href="http://www3.cs.stonybrook.edu/~omkant/" target="_blank">Omkant Pandey</a>
-            </span>
-            <br />
-            <span class="ConferenceLine" >
-              <a style="font-variant: small-caps" href="https://icalp2020.saarland-informatics-campus.de/" target="_blank">
-              ICALP 2020</a>&nbsp &nbsp 
-              [<a href="https://eprint.iacr.org/2020/494.pdf" target="_blank">PDF</a>]
-              [<a href="Resources/Publications/2020/CLP20.pptx" target="_blank">Slides</a>]
-              [<a href="https://www.youtube.com/watch?v=Idq6AL3a2jI&t=216s" target="_blank">Video</a>]
-            </span>
-          </li>
-
-          <!-- Publication 3 -->
-          <li style="padding-top: 10pt">
-            <span class="PaperTitle">
-            Random Walks and Concurrent Zero-Knowledge
-            </span>
-            <br />
-            <span class="AuthorLine" >
-              <a  href="">Anand Aiyer</a>,
-              Xiao Liang,
-              <a  href="">Nilu Nalini</a>, 
-              <a  href="http://www3.cs.stonybrook.edu/~omkant/" target="_blank">Omkant Pandey</a>
-            </span>
-            <br />
-            <span class="ConferenceLine" >
-              <a style="font-variant: small-caps" href="https://sites.google.com/di.uniroma1.it/ACNS2020" target="_blank">
-              ACNS 2020</a>&nbsp &nbsp 
-              [<a href="https://eprint.iacr.org/2020/082.pdf" target="_blank">PDF</a>]
-              [<a href="Resources/Publications/2020/ALNP20.pptx" target="_blank">Slides</a>]
-              [<a href="https://youtu.be/qKLpBGxwTuY" target="_blank">Video</a>]
-            </span>
-          </li>
-
-          <!-- Publication 2 -->
-          <li style="padding-top: 10pt">
-            <span class="PaperTitle">
-            ProCSA: Protecting Privacy in Crowdsourced Spectrum Allocation
-            </span>
-            <br />
-            <span class="AuthorLine" >
-              <a  href="">Max Curran</a>,
-              Xiao Liang,
-              <a  href="https://www3.cs.stonybrook.edu/~hgupta/" target="_blank">Himanshu Gupta</a>,
-              <a  href="http://www3.cs.stonybrook.edu/~omkant/" target="_blank">Omkant Pandey</a>, 
-              <a  href="https://www3.cs.stonybrook.edu/~samir/" target="_blank">Samir Das</a>
-            </span>
-            &nbsp&nbsp<span class="MediumTNR" >(not in alphabetical order)</span>
-            <br />
-            <span class="ConferenceLine" >
-              <a style="font-variant: small-caps" href="https://esorics2019.uni.lu/">
-                ESORICS 2019</a>&nbsp &nbsp
-              [<a href="Resources/Publications/2019/CLGPD19.pdf" target="_blank">PDF</a>]
-              [<a href="Resources/Publications/2019/CLGPD19_slides.pptx" target="_blank">Slides</a>]
-            </span>
-          </li>
-
-          <!-- Publication 1 -->
-          <li style="padding-top: 10pt">
-            <span class="PaperTitle">
-            A Study on the Management Model of China's Nursing Homes with Examples from Beijing
-            </span>
-            <br />
-            <span class="AuthorLine" >
-              <a  href="">Jingru Du</a>,
-               Xiao Liang
-            </span>
-            &nbsp&nbsp<span class="MediumTNR" >(not in alphabetical order)</span>
-            <br />
-            <span class="ConferenceLine">  
-              <em>Foreign Investment in China</em>, 2013(6): 138-140 &nbsp &nbsp[<a href="Resources/Publications/2013/NursingHome.pdf" target="_blank">PDF</a>] (Published in Chinese)
-            </span>
-          </li>
-  </ol>
-
-
-  </div> <!--end col Publications -->
-</div> <!-- end row for Publications-->
-
-<div class="row mt-3">
-  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-    <h4 id="talks">Other Talks</h4>
-    <hr />
-    <ul class="px-4.5">
+    <ul>
       <li>
-        <span class="PaperTitle">
-        On Concurrent Multi-Party Quantum Computation </span>
-        <br />
-        <span class="ConferenceLine">  
-          Invited Talk at <font style="font-variant: small-caps">Centrum Wiskunde & Informatica</font> (Oct. 27th, 2023) &nbsp &nbsp 
-          <!-- [<a href="Resources/OtherTalks/2023/PQNM-90min.pptx" target="_blank">Slides</a>]  -->
-        </span>
-      </li>
-
-      <li style="padding-top: 10pt">
-        <span class="PaperTitle">
-        A New Approach to Post-Quantum Non-Malleability</span>
-        <br />
-        <span class="ConferenceLine">  
-          Invited Talk at <font style="font-variant: small-caps">Stanford University</font> (April 21st, 2023) &nbsp &nbsp 
-          [<a href="Resources/OtherTalks/2023/PQNM-90min.pptx" target="_blank">Slides</a>] 
-          <br /> 
-          Invited Talk at  <a style="font-variant: small-caps" href="https://texascryptoday.github.io/index.html" target="_blank">Texas Crypto Day</a> (Dec. 2nd, 2022) 
-          <br /> 
-          Invited Talk at <font style="font-variant: small-caps">New York University</font> (Sept. 28th, 2022)
-        </span>
-      </li>
-
-      <li style="padding-top: 10pt">
-        <span class="PaperTitle">
-        Alice's Adventure in Quantum Wonderland </span><span class="MediumTNR" >(or A New Approach to Post-Quantum Non-Malleability)</span>
-        
-        <br />
-        <span class="ConferenceLine">  
-          A Rump Session Talk at <a style="font-variant: small-caps" href="https://crypto.iacr.org/2022/" target="_blank">Crypto 2022</a> (Aug. 16th, 2022) &nbsp &nbsp 
-          [<a href="Resources/OtherTalks/2022/Alices_Adventure_in_Quantum_Wonderland.pdf" target="_blank">Slides</a>] 
-          [<a href="https://youtu.be/kXcYy8LOI9s?t=1569" target="_blank">Video</a>]
-        </span>
-      </li>
-
-      <li style="padding-top: 10pt">
-        <span class="PaperTitle">
-        The Watrous Post-Quantum Zero-Knowledge Proof
-        </span>
-        <br />
-        <span class="ConferenceLine">  
-          Crypto Reading Group at <font style="font-variant: small-caps">Max-Planck Institute</font> (Aug. 2nd, 2021) &nbsp &nbsp [<a href="Resources/OtherTalks/2021/talk-for-watrous.pdf" target="_blank">Slides</a>] [<a href="https://github.com/xiao-liang/Talk-for-Watrous" target="_black">LaTeX Code</a>]
-        </span>
-      </li>
-
-      <li style="padding-top: 10pt">
-        <span class="PaperTitle">
-        The Lempel-Ziv Compression Algorithm
-        </span>
-        <br />
-        <span class="ConferenceLine">  
-          Crypto Reading Group at <font style="font-variant: small-caps">Stony Brook University</font> (Nov. 6th, 2016) &nbsp &nbsp [<a href="Resources/OtherTalks/2016/LempelZivCompressionAlgorithm.pdf" target="_blank">Slides</a>] 
-        </span>
+        Introduction to Quantum Information Science Lecture Notes I & II, by Scott Aaronson
+		  </li>
+      <li>
+        The complexity of quantum states and transformations: From quantum money to black holes, by Scott Aaronson
+		  </li>
+      <li>
+        Principles of Quantum Communication Theory: A Modern Approach, by Sumeet Khatri, Mark M. Wilde
+		  </li>
+      <li>
+        Quantum Computation and Quantum Information, by Michael A. Nielsen and Isaac L. Chuang
       </li>
     </ul>
-  </div> <!--end col Other Talks -->
-</div> <!--end row Other Talks -->
+  </p>
+   
+  </div> <!-- end col -->
+</div> <!-- end row -->
 
 
-<div class="row mt-3">
-  <div class="col">
-    <h4 id="contact">Contact Information</h4>
+<div class="row mt-4">
+  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+    <h4  id="comparison">Existing Similar Courses</h4>
     <hr />
-    <div class="col-xs-12 col-sm-7 col-md-6 col-xg-6" >
-      <table class="table table-borderless">
-        <tr>
-          <td class="NormalText" width="10%">
-            <b>Email:</b>
-          </td>
-          <td class="NormalText">
-            xiaoliang [at] cuhk.edu.hk 
-          </td>
-        </tr>
-        <tr>
-          <td class="NormalText">
-            <b>Address:</b>
-          </td>
-          <td class="NormalText">
-            Room 926, Ho Sin Hang Engineering Building <br \>
-            The Chinese University of Hong Kong <br \>
-            Shatin, N.T., Hong Kong
-          </td>
-        </tr>
-      </table>
-    </div>
 
-  </div> <!--end col Contact Information-->
-</div> <!--end row Contact Information -->
+	<p class="NormalText">
+		There are currently four courses at CUHK similar to this one:
+    <ul>
+      <li>
+        CSCI3350 Introduction to Quantum Computing
+		  </li>
+      <li>
+        IERG5380 Quantum Information Processing
+		  </li>
+      <li>
+        IERG6130 Advanced Topics in Information Engineering II: PSD Matrices and Quantum IT
+		  </li>
+      <li>
+        MAEG5110 Quantum Control & Quantum Information
+      </li>
+    </ul>
+
+  </p>
+  <p class="NormalText">
+		To help students avoid confusion and make informed decisions when planning their study scheme, I include a comparison between this course and the similar offerings: 
+    
+    <ul>
+      <li>
+        Compared to the undergraduate course CSCI3350, this course
+        (1) covers several advanced topics not included in CSCI3350, and 
+        (2) for overlapping topics, explores them from a new perspective, typically with greater depth and a more powerful mathematical formalism.
+      </li>
+      <li>
+        Courses such as IERG 5380, IERG 6130, and MAEG 5110 place a stronger emphasis on the information-theoretic aspects of quantum computing. In contrast, this course focuses on the algorithmic side of quantum computing. While we will touch on topics central to quantum information theory—such as various notions of quantum entropy, quantum channel characterizations, entanglement distillation, and the capacity of quantum channels—we will only cover them to the extent necessary to support the main topics listed in the course description. The primary focus will be on subjects with a theoretical computer science flavor, which are at the forefront of current research, offering numerous open questions and opportunities that are likely to excite computer science students.
+      </li>
+    </ul>
+  </p>  
+   
+
+<div class="row mt-4">
+  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+    <h4  id="schedule">Weekly Schedule</h4>
+    <hr />
+
+  <p class="NormalText" style="color:red;">
+    The weekly teaching schedule will be released progressively as the course unfolds...
+  </p>
+   
+  </div> <!-- end col -->
+</div> <!-- end row -->
+  </div> <!-- end col -->
+</div> <!-- end row -->
+
+
+
+
+
+
+
+
 
 </div> <!-- container -->
 
