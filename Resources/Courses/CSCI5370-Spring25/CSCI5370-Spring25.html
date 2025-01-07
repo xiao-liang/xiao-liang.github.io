@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+
+    <link rel="icon" href="../../Resources/Miscellaneous/CUHK-Emblem.png">
+
+    <title>CSCI5370 Quantum Computing (Spring 2025)</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+
+    <style>
+        hr {
+          background-size: 4px;
+          border-top: 4px solid #FFF0F2;
+          border-color: #FFF0F2;
+          border: 4px;
+          margin-top: 5pt;
+          margin-bottom: 7pt;
+        }
+
+        h4 {
+          font-family: Time New Roman, Times, serif;
+          /*font-weight:bold;*/
+          font-size: large;
+        }
+       
+        a { 
+          text-decoration: none; 
+          color:#0073c0;
+          /*color:#3379b7;*/
+        }
+        
+        .NormalText {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:medium;
+            text-align:justify;
+        }
+
+        .TinyCaption {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:xx-small;
+            color:#b3b6b7;
+        }
+
+        .PaperTitle {
+            font-family: Time New Roman, Times, serif;
+            font-size:medium;
+            font-weight:bold;
+        }
+        .AuthorLine {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:small;
+        }
+        .ConferenceLine {
+            font-family: Time New Roman, Times, serif;
+            font-size:medium;
+        }
+        .MediumTNR {
+            font-family: Time New Roman, Times, serif;
+            font-size:medium;
+        }
+
+        .LargeTNR {
+            font-family: Time New Roman, Times, serif;
+            font-size:large;
+        }
+
+        .XLargeTNR {
+            font-family: Time New Roman, Times, serif;
+            font-size:x-large;
+        }
+
+        .ChineseName {
+                font-family: Arial, Helvetica, tahoma, verdana, 宋体, SimSun, 华文细黑, STXihei, sans-serif;
+/*                font-weight:bold;*/
+                font-size:large;
+            }
+
+        #myBtn {
+          display: none;
+          position: fixed;
+          bottom: 20px;
+          left: 20px;
+          z-index: 99;
+          font-size: 20px;
+          font-weight: bold;
+          border: none;
+          outline: none;
+          background-color: #b3b6b7;
+          color: white;
+          cursor: pointer;
+          padding: 10px;
+          border-radius: 4px;
+        }
+
+        #myBtn:hover {
+          background-color: #7b7d7d;
+        }
+
+    </style>
+
+
+
+
+</head>
+
+
+<!-- open tag for body -->
+<body>
+
+
+
+<!-- back to top button -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+<!-- to take care of the button -->
+<script type="text/javascript">
+  // Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+  
+</script>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+<div class="container-fluid">
+   <a class="navbar-brand" href="#">CSCI5370</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a  class="nav-link active" href="#schedule">Weekly Schedule</a>
+        </li> 
+
+        <li class="nav-item">
+          <a  class="nav-link active" href="#meta">Meta Info</a>
+        </li>
+
+        <li class="nav-item">
+          <a  class="nav-link active" href="#description">Description</a>
+        </li>
+
+        <li class="nav-item">
+          <a  class="nav-link active" href="#outcomes">Outcomes</a>
+        </li>
+
+        <li class="nav-item">
+          <a  class="nav-link active" href="#reading">Reading</a>
+        </li>
+
+        <li class="nav-item">
+          <a  class="nav-link active" href="#comparison">Comparison</a>
+        </li> 
+      </ul>
+    </div>
+</div>
+</nav> 
+
+
+
+
+
+<!-- full-page wrapper -->
+<div class="container">
+
+
+
+<div class="row mt-5"> 
+  <div class="col-12 col-sm-9 col-md-9 col-lg-10 col-xl-10 col-xxl-10">
+      <h3>CSCI5370 Quantum Computing (Spring 2025)</h3> 
+  </div><!-- end col -->
+</div><!-- end row -->
+
+
+<div class="row mt-4">
+  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+    
+      <b>Course Instructor:</b> 
+      <ul>
+        <li>
+          <a href="https://xiao-liang.github.io/" target="_blank">Prof. Xiao LIANG</a> (xiaoliang [at] cse.cuhk.edu.hk) 
+        </li>
+      </ul>
+      
+
+      <b>Time and Location:</b>  
+      We meet every Tuesday in two sessions:
+      <ul>
+        <li>
+          09:30AM - 10:15AM at Lee Shau Kee Building LT2
+        </li>
+        <li>
+          10:30AM - 12:15PM at Lee Shau Kee Building 302
+        </li>
+      </ul>
+
+       <b>Teaching Assistant:</b>
+
+        <ul>
+        <li>
+           <a href="https://robinbinluo.github.io/" target="_blank">Mr. LUO, Robin Bin</a> (bluo23 [at] cse.cuhk.edu.hk) <br \> 
+        </li>
+        <li>
+          TA Office Hour: Tue 2:30 - 3:30 pm, Room 210, Ho Sin Hang Engineering Building
+        </li>
+      </ul>
+
+
+<div class="row mt-4">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+    <h4  id="schedule">Weekly Schedule</h4>
+    <hr />
+
+  <p class="NormalText">
+    Class Days (dd/mm): 07/01, 14/01, 21/01, 04/02, 11/02, 18/02, 25/02, 04/03, 11/03, 18/03, 25/03, 01/04, 08/04, 15/04
+  </p>
+
+    
+
+   <table class="table table-bordered border-primary">
+  <thead>
+    <tr>
+      <th scope="col">Week</th>
+      <th scope="col">Date</th>
+      <th scope="col">Topics</th>
+      <th scope="col">Slides</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>07/01/2025</td>
+      <td> 
+        Course overview and logistics, general computing devices and physics, single-qubit systems, a simplified version of "The Four Postulates" of Quantum Mechanics.
+      </td>
+      <td>
+        <a href= "slides/week-01-1.pdf" target="_blank"> test </a> 
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>14/01/2025</td>
+      <td>TAB</td>
+      <td>TAB</td>
+    </tr>
+  </tbody>
+</table>
+
+  <p class="NormalText" style="color:red;">
+    The weekly teaching schedule will be released progressively as the course unfolds...
+  </p>
+
+<br \>
+
+
+  </div> <!-- end col -->
+</div> <!-- end row -->  
+     
+
+    <!-- Time and Location
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">Time</th>
+          <th scope="col">Location</th>
+          <th scope="col">Dates (dd/mm)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td width="18%">Tu 9:30AM - 10:15AM</td>
+          <td width="20%">Lee Shau Kee Building LT2</td>
+          <td>07/01, 14/01, 21/01, 04/02, 11/02, 18/02, 25/02, 04/03, 11/03, 18/03, 25/03, 01/04, 08/04, 15/04</td>
+        </tr>
+        <tr>
+          <td>Mark</td>
+          <td>Jacob</td>
+          <td>Thornton</td>
+        </tr>
+      </tbody>
+    </table> -->
+
+    <h4 id="meta">Meta Information</h4>
+    <hr />
+
+    <b>Target Audience:</b>
+    <p class="NormalText" style="padding-top: 0.5em">
+      This course is primarily designed for postgraduate students. However, senior undergraduates are also welcome. Please note that undergraduate students must obtain formal approval to enroll in postgraduate courses at CUHK. If you're an undergraduate interested in joining, ensure you complete this approval process. If you encounter any difficulties during the process, don't hesitate to reach out to the course instructor, who will be happy to assist.
+    </p>
+   
+    <b>Prerequisites:</b>
+	<p class="NormalText" style="padding-top: 0.5em">
+		Ideally, this course requires the completion of its undergraduate counterpart, CSCI3350 Introduction to Quantum Computing. However, CSCI3350 was suspended for a few years and only recently reactivated (with availability likely starting next semester at the earliest). Thus, this time, the instructor is more open to considering exceptions for interested students who have not taken an undergraduate Quantum Computing course. If you encounter any enrollment issues due to this prerequisite, please feel free to contact the course instructor for assistance.
+    </p>
+
+    <p class="NormalText">
+		Please note, however, that undergraduate-level knowledge of linear algebra and probability theory is required and cannot be waived.
+    </p>
+
+
+  </div> <!-- end col -->
+</div> <!-- end row -->
+
+
+
+
+
+
+<div class="row mt-4">
+  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+    <h4  id="description">Course Description</h4>
+    <hr />
+
+	<p class="NormalText">
+		This course serves as an advanced follow-up to its undergraduate counterpart, CSCI3350 Introduction to Quantum Computing. It offers an in-depth exploration of quantum computing, with a particular focus on areas at the forefront of both academic research and (ongoing but promising) industrial implementations.
+    </p>
+
+    <p class="NormalText">
+		The course is structured into two parts:
+    <ol>
+      <li >
+        First Half: This portion focuses on the foundational concepts and algorithms of quantum computing, with an emphasis on depth. This contrasts with CSCI3350, which prioritizes breadth over depth in the topics covered.
+      </li>
+      <li>
+        Second Half: The latter part of the course explores several interdisciplinary areas where quantum computing intersects with fields such as computational complexity, cryptography, machine learning, networking, information theory, and more.
+      </li>
+    </ol>
+		This approach aims to equip students with a comprehensive range of quantum-related skills, preparing them to contribute to the rapidly evolving field of quantum computing, which presents abundant opportunities in both industry and academia.
+    </p>
+
+    <p class="NormalText">
+		Tentative topics include:
+    <ul>
+      <li>
+        (Quick review) Basics of quantum information, the quantum circuit model
+		  </li>
+      <li>
+        (Quick review) Basic quantum protocols, such as quantum teleportation, superdense coding, and more
+		  </li>
+      <li>
+        (Quick review) Basic quantum algorithms, such as Simon's algorithm, Shor's factoring algorithm, and Grover's search
+		  </li>
+      <li>
+        (In-depth) Quantum Fourier Transform, phase estimation, and amplitude amplification
+		  </li>
+      <li>
+        (In-depth) The linear-algebraic formalism of quantum computing
+		  </li>
+      <li>
+        (In-depth) Entanglement, non-local games
+		  </li>
+      <li>
+        (In-depth) Quantum error correction and fault tolerance
+		  </li>
+      <li>
+        (In-depth) Selective topics from quantum cryptography, proofs of quantumness, quantum information theory, quantum complexity theory, quantum machine learning, and quantum networks
+      </li>
+    </ul>
+
+		The final topics covered will depend on student feedback, their ability to grasp the material, and the time available.
+    </p>
+   
+  </div> <!-- end col -->
+</div> <!-- end row -->
+
+
+<div class="row mt-4">
+  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+    <h4  id="outcomes">Course Learning Outcomes</h4>
+    <hr />
+
+	<p class="NormalText">
+		By the end of the course, students will:
+    <ul>
+      <li>Build a solid foundation in quantum computing, developing essential conceptual frameworks and technical skills in the field.</li>
+		
+      <li>Gain the ability to understand and discuss cutting-edge research papers in quantum computing, effectively communicating complex ideas with collaborators and peers. Be prepared to contribute to ongoing research and development within the field.</li>
+
+      <li>Acquire interdisciplinary knowledge of how quantum computing interacts with other areas, including computational complexity, cryptography, machine learning, networking, and information theory. Be able to identify and appreciate the intersections between quantum computing and their own research areas, and pursue interdisciplinary research opportunities.</li>
+    </ul>
+  </p>
+   
+  </div> <!-- end col -->
+</div> <!-- end row -->
+
+
+<div class="row mt-4">
+  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+    <h4  id="reading">Recommended Reading List</h4>
+    <hr />
+
+	<p class="NormalText">
+    <ul>
+      <li>
+        Introduction to Quantum Information Science Lecture Notes I & II, by Scott Aaronson
+		  </li>
+      <li>
+        The complexity of quantum states and transformations: From quantum money to black holes, by Scott Aaronson
+		  </li>
+      <li>
+        Principles of Quantum Communication Theory: A Modern Approach, by Sumeet Khatri, Mark M. Wilde
+		  </li>
+      <li>
+        Quantum Computation and Quantum Information, by Michael A. Nielsen and Isaac L. Chuang
+      </li>
+    </ul>
+  </p>
+   
+  </div> <!-- end col -->
+</div> <!-- end row -->
+
+
+<div class="row mt-4">
+  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+    <h4  id="comparison">Existing Similar Courses</h4>
+    <hr />
+
+	<p class="NormalText">
+		There are currently four courses at CUHK similar to this one:
+    <ul>
+      <li>
+        CSCI3350 Introduction to Quantum Computing
+		  </li>
+      <li>
+        IERG5380 Quantum Information Processing
+		  </li>
+      <li>
+        IERG6130 Advanced Topics in Information Engineering II: PSD Matrices and Quantum IT
+		  </li>
+      <li>
+        MAEG5110 Quantum Control & Quantum Information
+      </li>
+    </ul>
+
+  </p>
+  <p class="NormalText">
+		To help students avoid confusion and make informed decisions when planning their study scheme, I include a comparison between this course and the similar offerings: 
+    
+    <ul>
+      <li>
+        Compared to the undergraduate course CSCI3350, this course
+        (1) covers several advanced topics not included in CSCI3350, and 
+        (2) for overlapping topics, explores them from a new perspective, typically with greater depth and a more powerful mathematical formalism.
+      </li>
+      <li>
+        Courses such as IERG 5380, IERG 6130, and MAEG 5110 place a stronger emphasis on the information-theoretic aspects of quantum computing. In contrast, this course focuses on the algorithmic side of quantum computing. While we will touch on topics central to quantum information theory—such as various notions of quantum entropy, quantum channel characterizations, entanglement distillation, and the capacity of quantum channels—we will only cover them to the extent necessary to support the main topics listed in the course description. The primary focus will be on subjects with a theoretical computer science flavor, which are at the forefront of current research, offering numerous open questions and opportunities that are likely to excite computer science students.
+      </li>
+    </ul>
+  </p>  
+   
+
+
+  </div> <!-- end col -->
+</div> <!-- end row -->
+
+
+
+
+
+
+
+
+
+</div> <!-- container -->
+
+
+
+
+
+</body> 
+</html>
+
