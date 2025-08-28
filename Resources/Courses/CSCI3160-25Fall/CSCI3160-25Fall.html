@@ -163,21 +163,20 @@ function topFunction() {
   
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
+          <a  class="nav-link active" href="#grading">Grading Scheme</a>
+        </li> 
+
+        <li class="nav-item">
+          <a  class="nav-link active" href="#textbook">Textbooks</a>
+        </li>
+
+        <li class="nav-item">
           <a  class="nav-link active" href="#schedule">Weekly Schedule</a>
         </li> 
 
 
         <li class="nav-item">
-          <a  class="nav-link active" href="#description">Description</a>
-        </li>
-
-
-        <li class="nav-item">
-          <a  class="nav-link active" href="#reading">Reading</a>
-        </li>
-
-        <li class="nav-item">
-          <a  class="nav-link active" href="#Additonal">Additional</a>
+          <a  class="nav-link active" href="#Additional">Additional</a>
         </li>
 
 
@@ -215,6 +214,7 @@ function topFunction() {
       
 
       <b>Time and Venues:</b>  
+
       <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
        <table class="table table-sm" style="margin-left: 2em;">
         <thead>
@@ -266,7 +266,7 @@ function topFunction() {
 
 
 
-       <b>Teaching Assistant:</b>
+       <b>Teaching Assistants:</b>
        <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
        <table class="table table-sm" style="margin-left: 2em;">
         <thead>
@@ -341,9 +341,40 @@ function topFunction() {
 </div> <!-- end row -->  
 
 
+<div class="row mt-4">
+  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+    <h4  id="grading">Grading Scheme</h4>
+    <hr />  
 
 
+  <p class="NormalText" style="color:red;">
+    I will follow the same grading scheme as previous years, when this course were instructed by Prof. Yufei TAO. I will update this section to specified the details soon. For you, please refer to <a href="https://www.cse.cuhk.edu.hk/~taoyf/course/3160/24-fall/" target="_blank">Prof. Tao's version (2024 Fall)</a> for more details.
+  </p>
+   
+  </div> <!-- end col -->
+</div> <!-- end row -->
 
+
+<div class="row mt-4">
+  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+    <h4  id="textbook">Textbooks</h4>
+    <hr />  
+
+
+  <p class="NormalText">
+    <ul>
+      <li>
+        <b>[CLRS]</b> &ndash; <i>Introduction to Algorithms (4th edition)</i>, by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein.  
+        <br /> (E-book version available <a href="https://julac-cuhk.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991040707974903407&context=L&vid=852JULAC_CUHK:CUHK&lang=en&search_scope=All&adaptor=Local%20Search%20Engine&tab=default_tab&query=any,contains,%20introduction%20to%20algorithms&sortby=rank" target="_blank">through this link</a> from CUHK library (login required using your CUHK account)
+      </li>
+      <li>
+        <b>[DPV]</b> &ndash; <i>Algorithms</i>, by Sanjoy Dasgupta, Christos Papadimitriou, and Umesh Vazirani
+      </li>
+    </ul>
+  </p>
+   
+  </div> <!-- end col -->
+</div> <!-- end row -->
 
 
 
@@ -354,315 +385,189 @@ function topFunction() {
     <h4  id="schedule">Weekly Schedule</h4>
     <hr />
 
-    <p class="NormalText" style="color:red;">
-      To be determined.
-    </p>
-
-    <p class="NormalText">
-      Classes are suspended on the following days:
-      <ul>
-      <li>
-        1 September 2025 (Monday): Inauguration Ceremony for Undergraduates [full-time undergraduate classes suspended in the morning until 1:30 p.m., excluding MBChB Programme Years 2-6]
-      </li>
-      <li>
-        11 October 2025 (Saturday): Information Day for Undergraduate Admissions [full-time undergraduate classes suspended, excluding MBChB Programme Years 4-6]
-      </li>
-      <li>
-        6 November 2025 (Thursday): the 95th Congregation [full-time undergraduate classes (excluding MBChB Programme Years 4-6) and *daytime classes of postgraduate programmes suspended]
-      </li>
-    </ul>
-    </p>
-
-<!--   <p class="NormalText">
-    Class Days (dd/mm): 07/01, 14/01, 21/01, 04/02, 11/02, 18/02, 25/02, 04/03, 11/03, 18/03, 25/03, 01/04, 08/04, 15/04
-  </p>
- -->
-    
-
-<!-- <table class="table table-bordered border-primary">
-  <thead>
-    <tr>
-      <th scope="col">Week</th>
-      <th scope="col">Date</th>
-      <th scope="col">Topics</th>
-      <th scope="col">Slides</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>07/01/2025</td>
-      <td> 
-        Course overview and logistics, general computing devices and physics, single-qubit systems, a simplified version of "The Four Postulates" of Quantum Mechanics.
-      </td>
-      <td>
-        <a href= "slides/week-01.pdf" target="_blank"> week-01 </a>  
-      </td>
-    </tr>
-
-    <tr>
-      <th scope="row">2</th>
-      <td>14/01/2025</td>
-      <td> 
-        Exemplary orthogonal matrices, true random number generators, Elitzur-Vaidman bomb, BB84 QKD protocol, the necessity of complex numbers in quantum mechanics. <br />
-        <b>Supplementary reading:</b> Chapters 4.4 and 8.2 of <a href= "https://www.scottaaronson.com/qclec.pdf" target="_blank">Prof. Aaronson's lecture notes</a>. Alessio Avella's <a href= "https://physics.aps.org/articles/v15/7#:~:text=The%20two%20teams%20show%20that,space%2C%20called%20a%20Hilbert%20space." target="_blank">article</a>
-      </td>
-      <td>
-        <a href= "slides/week-02.pdf" target="_blank"> week-02 </a>  
-      </td>
-    </tr>
-
-    <tr>
-      <th scope="row">3</th>
-      <td>21/01/2025</td>
-      <td> 
-        Abstract algebra approach to vector space, sets (Russell's paradox, countability), magma, semigroup, monoid, group (commutativity), ring (polynomials), fields, modules, vector space, linear operators, eigenvalue decomposition.
-      </td>
-      <td>
-        <a href= "slides/week-03.pdf" target="_blank"> week-03 </a>  
-      </td>
-    </tr>
-
-    <tr>
-      <th scope="row"><span class="text-danger">4</span></th>
-      <td><span class="text-danger">28/01/2025</span></td>
-      <td> 
-        <span class="text-danger">--- Course canceled due to Lunar New Year holidays ---</span>
-      </td>
-      <td>
-        <span class="text-danger">N.A.  </span>
-      </td>
-    </tr>
-
-    <tr>
-      <th scope="row">5</th>
-      <td>04/02/2025</td>
-      <td> 
-        Metric space, normed space, inner-product space, Cauchy-Schwarz, Hilbert space, linear algebra in Dirac notation, Postulate 1 (full-fledged), adjoint operators, spectral theorem, normal operators and examples (unitaries, Hermitians, projectors, positive and positive definite oprators)
-      </td>
-      <td>
-        <a href= "slides/week-05.pdf" target="_blank"> week-05 </a>  
-      </td>
-    </tr>
-
-    <tr>
-      <th scope="row">6</th>
-      <td>11/02/2025</td>
-      <td> 
-        Postulate 2 (full-fledged), unitary nature of Shr&ouml;dinger's solution, functions of normal operators, example unitaries, Postulate 3 (full-fledged), projective measurements, generality of projective measurements, Hamiltonians and observables, expected value of quantum properties, POVM <br />
-        <b>Supplementary reading:</b> Section 2.2.2, 2.2.3, 2.2.5, 2.2.6 of Nielsen-Chuang. Chapter 12 of <a href= "https://www.scottaaronson.com/qclec.pdf" target="_blank">Prof. Aaronson's lecture notes</a>. 
-      </td>
-      <td>
-        <a href= "slides/week-06.pdf" target="_blank"> week-06 </a>  
-      </td>
-    </tr>
-
-    <tr>
-      <th scope="row">7</th>
-      <td>18/02/2025</td>
-      <td> 
-       Global phase vs relative phase, Kronecker product, tensor product space from Kronecker product, Postulate 4 (full-fledged), linear operators over tensor product space, no-cloning theorem  <br />
-        <b>Supplementary reading:</b> Section 2.2.7, 2.2.8 of Nielsen-Chuang. Chapter 12 of <a href= "https://www.scottaaronson.com/qclec.pdf" target="_blank">Prof. Aaronson's lecture notes</a>. 
-      </td>
-      <td>
-        <a href= "slides/week-07.pdf" target="_blank"> week-07 </a>  
-      </td>
-    </tr>
-
-    <tr>
-      <th scope="row">8</th>
-      <td>25/02/2025</td>
-      <td> 
-       Quantum Teleportation, measure of information, modelling of noisy channels, Holevo's theorem, super-dense coding, EPR paradox, hidden variables and the "incompleteness" of quantum mechanics <br />
-        <b>Supplementary reading:</b> Lecture 9.1, 10.1, and 13 of <a href= "https://www.scottaaronson.com/qclec.pdf" target="_blank">Prof. Aaronson's lecture notes</a>. Section 2.6 of Nielsen-Chuang (only the philosophical discussion).  The first section of <a href= "https://cs.uwaterloo.ca/~watrous/QC-notes/QC-notes.03.pdf" target="_blank">Prof. John Watrous' lecture</a>.
-      </td>
-      <td>
-        <a href= "slides/week-08.pdf" target="_blank"> week-08 </a>  
-      </td>
-    </tr>
-
-    <tr>
-      <th scope="row">9</th>
-      <td>04/03/2025</td>
-      <td> 
-       CHSH game, introduction to density operators, complete characterization of density operators  <br />
-        <b>Supplementary reading:</b> Lecture 13 and 14.1 of <a href= "https://www.scottaaronson.com/qclec.pdf" target="_blank">Prof. Aaronson's lecture notes</a>. Section 2.4.1 and 2.4.2 of Nielsen-Chuang.  
-
-       Also, Section 2.6 of Nielsen-Chuang discusses the EPR paradox using tools that, compared to those presented in our lecture, seem unnecessarily complex. You are encouraged to read that section, though it is not mandatory.
-      </td>
-      <td>
-        <a href= "slides/week-09.pdf" target="_blank"> week-09 </a>  
-      </td>
-    </tr>
-
-    <tr>
-      <th scope="row">10</th>
-      <td>11/03/2025</td>
-      <td> 
-       The four postulates in density-operator formalism, mixed states vs pure states, entangled states vs mixed states, criterion for pure states, "global phase" explained in density-operator formalism, reduced density operator, partial trace, partial views in EPR game. <br />
-        <b>Supplementary reading:</b> Section 2.4 of Nielsen-Chuang. Lecture 6 of <a href= "https://www.scottaaronson.com/qclec.pdf" target="_blank">Prof. Aaronson's lecture notes</a>.  
-
-       
-      </td>
-      <td>
-        <a href= "slides/week-10.pdf" target="_blank"> week-10 </a>  
-      </td>
-    </tr>
-
-    <tr>
-      <th scope="row">11</th>
-      <td>18/03/2025</td>
-      <td> 
-       Classical circuits, quantum circuit model, QC as a superset of classical computing, Toffoli gate, reversible computing, standard oracle and phase oracle, the "1+2" universal set theorem, Solovay-Kitaev theorem.<br />
-
-        <b>Supplementary reading:</b> Section 3.1.2, 3.2.1, 3.2.2 of Nielsen-Chuang. Lecture 17.1, 17.2 of <a href= "https://www.scottaaronson.com/qclec.pdf" target="_blank">Prof. Aaronson's lecture notes</a>. 
-       
-      </td>
-      <td>
-        <a href= "slides/week-11.pdf" target="_blank"> week-11 </a>  
-      </td>
-    </tr>
-
-    <tr>
-      <th scope="row">12</th>
-      <td>25/03/2025</td>
-      <td> 
-       Solovay-Kitaev continued, Deutsch Algorithm, Binary Quantum Fourier Transform, Deutsch-Josza Algorithm <br />
-        <b>Supplementary reading:</b> Lecture 17.3, 17.4 of <a href= "https://www.scottaaronson.com/qclec.pdf" target="_blank">Prof. Aaronson's lecture notes</a>.  
-
-       
-      </td>
-      <td>
-        <a href= "slides/week-12.pdf" target="_blank"> week-12 </a>  
-      </td>
-    </tr>
-
-
-    <tr>
-      <th scope="row"><span class="text-danger">13</span></th>
-      <td><span class="text-danger">01/04/2025</span></td>
-      <td> 
-        <span class="text-danger">
-        --- Midterm Exam ---</span>
-      </td>
-      <td>
-        <span class="text-danger">N.A.  </span>
-      </td>
-    </tr>
-
-    <tr>
-      <th scope="row">14</th>
-      <td>08/04/2025</td>
-      <td> 
-        Grover Search, reflection operators, Simon's algorithm, birthday paradox, the classical lower bound <br />
-        <b>Supplementary reading:</b> 
-
-        Lecture 22.1 of <a href= "https://www.scottaaronson.com/qclec.pdf" target="_blank">Prof. Aaronson's lecture notes</a> contains a very different explanation of Grover's search.  <a href= "https://cs-people.bu.edu/mbun/courses/535_F23/lectures/lec26.pdf" target="_blank">This lecture</a>
-        by Prof. Mark Bun. Lecture 22, 18.2 of <a href= "https://www.scottaaronson.com/qclec.pdf" target="_blank">Prof. Aaronson's lecture notes</a>. The <a href= "https://en.wikipedia.org/wiki/Birthday_problem" target="_blank">Wikipedia page</a> for birthday paradox (there exist other lecture notes on this topic, but this Wikipedia page is by far the most accurate and detailed version on this topic). <a href= "https://cs.uwaterloo.ca/~cleve/courses/F11CS667/SimonClassicalLB.pdf" target="_blank">Prof. Richard Cleve's lecture notes</a> on the classical lower bound of Simon's problem.
-      </td>
-      <td>
-        <a href= "slides/week-14.pdf" target="_blank"> week-14 </a> 
-      </td>
-    </tr>
-
-    <tr>
-      <th scope="row">15</th>
-      <td>15/04/2025</td>
-      <td> 
-        Quantum Fourier Transform, phase estimation, factoring algorithm, quantum supremacy experiments, 
-        proof of quantumness, Mahadev's CVQC protocol<br />
-        <b>Supplementary reading:</b> 
-
-        Dr Mary Cryan's <a href= "https://www.inf.ed.ac.uk/teaching/courses/ads/Current/FFT.pdf" target="_blank">lecture notes</a> on FFT. Section 5.1, 5.2, 5.3 of of Nielsen-Chuang. Lecture 19.2, 21.1 of <a href= "https://www.scottaaronson.com/qclec.pdf" target="_blank">Prof. Aaronson's lecture notes</a>.
-      </td>
-      <td>
-        <a href= "slides/week-15.pdf" target="_blank"> week-15</a>, <br />
-        <a href= "slides/quantumSupremacy.pdf" target="_blank"> Supremacy </a>    
-      </td>
-    </tr>
-
-  </tbody>
-</table>
- -->
-
-
-
-
-
-  <p class="NormalText" style="color:red;">
-    The weekly teaching schedule will be released progressively as the course unfolds...
-  </p>
-
-<br \>
-
-
-  </div> <!-- end col -->
-</div> <!-- end row -->
-
-
-
-
-
-
-<div class="row mt-4">
-  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-    <h4  id="description">Course Description</h4>
-    <hr />
-
-
-  <p class="NormalText" style="color:red;">
-    To be determined.
-  </p>
-
-	<!-- <p class="NormalText">
-		This course serves as an advanced follow-up to its undergraduate counterpart, CSCI3350 Introduction to Quantum Computing. It offers an in-depth exploration of quantum computing, with a particular focus on areas at the forefront of both academic research and (ongoing but promising) industrial implementations.
-    </p>
-
-    <p class="NormalText">
-		The course is structured into two parts:
-    <ol>
-      <li >
-        First Half: This portion focuses on the foundational concepts and algorithms of quantum computing, with an emphasis on depth. This contrasts with CSCI3350, which prioritizes breadth over depth in the topics covered.
-      </li>
-      <li>
-        Second Half: The latter part of the course explores several interdisciplinary areas where quantum computing intersects with fields such as computational complexity, cryptography, machine learning, networking, information theory, and more.
-      </li>
-    </ol>
-		This approach aims to equip students with a comprehensive range of quantum-related skills, preparing them to contribute to the rapidly evolving field of quantum computing, which presents abundant opportunities in both industry and academia.
-    </p>
-
-    <p class="NormalText">
-		Tentative topics include:
-    <ul>
-      <li>
-        (Quick review) Basics of quantum information, the quantum circuit model
-		  </li>
-      <li>
-        (Quick review) Basic quantum protocols, such as quantum teleportation, superdense coding, and more
-		  </li>
-      <li>
-        (Quick review) Basic quantum algorithms, such as Simon's algorithm, Shor's factoring algorithm, and Grover's search
-		  </li>
-      <li>
-        (In-depth) Quantum Fourier Transform, phase estimation, and amplitude amplification
-		  </li>
-      <li>
-        (In-depth) The linear-algebraic formalism of quantum computing
-		  </li>
-      <li>
-        (In-depth) Entanglement, non-local games
-		  </li>
-      <li>
-        (In-depth) Quantum error correction and fault tolerance
-		  </li>
-      <li>
-        (In-depth) Selective topics from quantum cryptography, proofs of quantumness, quantum information theory, quantum complexity theory, quantum machine learning, and quantum networks
-      </li>
-    </ul>
-
-		The final topics covered will depend on student feedback, their ability to grasp the material, and the time available.
+<!--     <p class="NormalText" style="color:red;">
+      The weekly teaching schedule will be released progressively as the course unfolds...
     </p> -->
-   
+
+    <p class="NormalText" style="color:red;">
+      IMPORTANT: the tutorial sessions start from Week 1!
+    </p>
+
+   <div class="col-11 col-sm-11 col-md-11 col-lg-11 col-xl-11 col-xxl-11">  <!-- container for table -->
+       <table class="table table-sm table-bordered" style="margin-left: 2em;">
+        <thead>
+          <tr>
+            <th scope="col">Week</th>
+            <th scope="col">Date</th>
+            <th scope="col">Lecture Topics and Slides</th>
+            <th scope="col">Supplementary Reading</th>
+            <th scope="col">Tutorial Topics and Slides</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">Week 1</th>
+            <td>2025-09-03</td>
+            <td>TBD (to be determined)</td>
+            <td>TBD</td>
+            <td rowspan="2" style="vertical-align: middle"> Growth of Functions </td>
+          </tr>
+          <tr>
+            <!-- <th scope="row">Ziqing GUO</th> -->
+            <td>2025-09-04</td>
+            <td>TBD</td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">Week 2</th>
+            <td>2025-09-10</td>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td rowspan="2" style="vertical-align: middle">TBD </td>
+          </tr>
+          <tr>
+            <!-- <th scope="row">Ziqing GUO</th> -->
+            <td>2025-09-11</td>
+            <td>TBD</td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">Week 3</th>
+            <td>2025-09-17</td>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td rowspan="2" style="vertical-align: middle">TBD </td>
+          <tr>
+            <!-- <th scope="row">Ziqing GUO</th> -->
+            <td>2025-09-18</td>
+            <td>TBD</td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">Week 4</th>
+            <td>2025-09-24</td>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td rowspan="2" style="vertical-align: middle">TBD </td>
+          <tr>
+            <!-- <th scope="row">Ziqing GUO</th> -->
+            <td>2025-09-25</td>
+            <td>TBD</td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">Week 5</th>
+            <td>2025-10-01</td>
+            <td style="color:green;">Class cancelled due to National Day</td>
+            <td>N.A.</td>
+            <td rowspan="2" style="vertical-align: middle">TBD </td>
+          <tr>
+            <!-- <th scope="row">Ziqing GUO</th> -->
+            <td>2025-10-02</td>
+            <td>TBD</td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">Week 6</th>
+            <td>2025-10-08</td>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td rowspan="2" style="vertical-align: middle">TBD </td>
+          <tr>
+            <!-- <th scope="row">Ziqing GUO</th> -->
+            <td>2025-10-09</td>
+            <td>TBD</td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">Week 7</th>
+            <td>2025-10-15</td>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td rowspan="2" style="vertical-align: middle">TBD </td>
+          <tr>
+            <!-- <th scope="row">Ziqing GUO</th> -->
+            <td>2025-10-16</td>
+            <td>TBD</td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">Week 8</th>
+            <td>2025-10-22</td>
+            <td style="color:SlateBlue;">Midterm (tentative)</td>
+            <td>N.A.</td>
+            <td rowspan="2" style="vertical-align: middle">TBD </td>
+          <tr>
+            <!-- <th scope="row">Ziqing GUO</th> -->
+            <td>2025-10-23</td>
+            <td>TBD</td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">Week 9</th>
+            <td>2025-10-29</td>
+            <td style="color:green;">Class cancelled due to Chung Yeung Festival</td>
+            <td>N.A.</td>
+            <td rowspan="2" style="vertical-align: middle">TBD </td>
+          <tr>
+            <!-- <th scope="row">Ziqing GUO</th> -->
+            <td>2025-10-30</td>
+            <td>TBD</td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">Week 10</th>
+            <td>2025-11-05</td>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td rowspan="2" style="vertical-align: middle; color:green;">Class cancelled due to the 95th Congregation </td>
+          <tr>
+            <!-- <th scope="row">Ziqing GUO</th> -->
+            <td>2025-11-06</td>
+            <td style="color:green;">Class cancelled due to the 95th Congregation</td>
+            <td>N.A.</td>
+          </tr>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">Week 11</th>
+            <td>2025-11-12</td>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td rowspan="2" style="vertical-align: middle">TBD </td>
+          <tr>
+            <!-- <th scope="row">Ziqing GUO</th> -->
+            <td>2025-11-13</td>
+            <td>TBD</td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">Week 12</th>
+            <td>2025-11-19</td>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td rowspan="2" style="vertical-align: middle">TBD </td>
+          <tr>
+            <!-- <th scope="row">Ziqing GUO</th> -->
+            <td>2025-11-20</td>
+            <td>TBD</td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">Week 13</th>
+            <td>2025-11-26</td>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td rowspan="2" style="vertical-align: middle">TBD </td>
+          <tr>
+            <!-- <th scope="row">Ziqing GUO</th> -->
+            <td>2025-11-27</td>
+            <td>TBD</td>
+            <td>TBD</td>
+          </tr>
+        </tbody>
+      </table>
+    </div> <!-- end of container for table -->
+
+
   </div> <!-- end col -->
 </div> <!-- end row -->
 
@@ -670,36 +575,13 @@ function topFunction() {
 
 
 
-<div class="row mt-4">
-  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-    <h4  id="reading">Recommended Reading List</h4>
-    <hr />
 
-     <p class="NormalText" style="color:red;">
-    1.  Introduction to Algorithms, by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein. 
-2.  Algorithms, by Sanjoy Dasgupta, Christos Papadimitriou, and Umesh Vazirani
 
-  </p>
 
-	<!-- <p class="NormalText">
-    <ul>
-      <li>
-        Introduction to Quantum Information Science Lecture Notes I & II, by Scott Aaronson
-		  </li>
-      <li>
-        The complexity of quantum states and transformations: From quantum money to black holes, by Scott Aaronson
-		  </li>
-      <li>
-        Principles of Quantum Communication Theory: A Modern Approach, by Sumeet Khatri, Mark M. Wilde
-		  </li>
-      <li>
-        Quantum Computation and Quantum Information, by Michael A. Nielsen and Isaac L. Chuang
-      </li>
-    </ul>
-  </p> -->
-   
-  </div> <!-- end col -->
-</div> <!-- end row -->
+
+
+
+
 
 
 
@@ -731,14 +613,14 @@ function topFunction() {
 
       <br />
       <br />
-    <b>Further information:</b>
+    <!-- <b>Further information:</b>
       <ul>
         <li>
         It is still a bit early to announce the official arrangements for the course. However, for your reference, I will closely follow the version taught by <a href="https://www.cse.cuhk.edu.hk/~taoyf/" target="_blank">Prof. Yufei TAO</a> in Fall 2024 (you may refer to <a href="https://www.cse.cuhk.edu.hk/~taoyf/course/3160/24-fall/" target="_blank">this page</a> for more details). You can safely assume that the syllabus, textbook, and evaluation scheme will remain the same in the upcoming semester.
 
         The course content will be nearly identical to Prof. TAO's version. The only differences will lie in the teaching style and possibly a few adjustments to the topics covered --- I may add or remove some topics based on the differences in research expertise between Prof. Tao and myself.
         </li>
-      </ul>
+      </ul> -->
    
   </div> <!-- end col -->
 </div> <!-- end row -->
