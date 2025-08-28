@@ -176,6 +176,11 @@ function topFunction() {
           <a  class="nav-link active" href="#reading">Reading</a>
         </li>
 
+        <li class="nav-item">
+          <a  class="nav-link active" href="#Additonal">Additional</a>
+        </li>
+
+
       </ul>
     </div>
 </div>
@@ -209,19 +214,60 @@ function topFunction() {
       </ul>
       
 
-      <b>Time and Location:</b>  
-      We meet every week in two sessions:
-      <ul>
-        <li>
-          Wednesday 11:30AM - 1:15PM, at William M.W. Mong Engineering Building (ERB) LT
-        </li>
-        <li>
-          Thursday 1:30PM - 2:15PM, at Lady Shaw Building (LSB) LT1
-        </li>
-      </ul>
+      <b>Time and Venues:</b>  
+      <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
+       <table class="table table-sm" style="margin-left: 2em;">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Session</th>
+            <th scope="col">Time</th>
+            <th scope="col">Venue</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">Lectures</th>
+            <td>Session 1</td>
+            <td>Wednesday 11:30AM - 1:15PM</td>
+            <td>William M.W. Mong Engineering Building (ERB) LT</td>
+          </tr>
+          <tr>
+            <!-- <th scope="row">Ziqing GUO</th> -->
+            <td>Session 2</td>
+            <td>Thursday 1:30PM - 2:15PM</td>
+            <td>Lady Shaw Building (LSB) LT1</td>
+          </tr>
+          <tr>
+            <th rowspan="4" scope="row" style="vertical-align: middle">Tutorials</th>
+            <td>T01</td>
+            <td>Thursday 9:30AM - 10:15AM</td>
+            <td>William M.W. Mong Engineering Building (ERB) 407</td>
+          </tr>
+          <tr>
+            <td>T02</td>
+            <td>Thursday 10:30AM - 11:15AM</td>
+            <td>Lady Shaw Building (LSB) C4</td>
+          </tr>
+          <tr>
+            <td>T03</td>
+            <td>Thursday 4:30PM - 5:15PM</td>
+            <td>Y. C. Liang Hall (LHC) 104</td>
+          </tr>
+          <tr>
+            <td>T04</td>
+            <td>Thursday 5:30PM - 6:15PM</td>
+            <td>William M.W. Mong Engineering Building (ERB) 803</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+
 
        <b>Teaching Assistant:</b>
-       <div class="col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
+       <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
        <table class="table table-sm" style="margin-left: 2em;">
         <thead>
           <tr>
@@ -272,35 +318,9 @@ function topFunction() {
       </table>
     </div>
 
-        <!-- <ul>
-          <li>
-               <p class="NormalText" style="color:red;">
-                  To be determined.
-                </p>
-         </li> -->
-        <!-- <li>
-           <a href="https://robinbinluo.github.io/" target="_blank">Mr. LUO, Robin Bin</a> (bluo23 [at] cse.cuhk.edu.hk) <br \> 
-        </li>
-        <li>
-          TA Office Hour: Tue 2:30 - 3:30 pm, Room 120, Ho Sin Hang Engineering Building
-        </li> -->
-      </ul>
+        
 
-      <b>Use of AI tools:</b> 
-      <ul>
-        <li> 
-          This course follows "Approach 2 – Use only with prior permission" according to <a href="https://www.aqs.cuhk.edu.hk/documents/A-guide-for-students_use-of-AI-tools.pdf" target="_blank">the University's policy on the use of AI tools</a>. In particular, the use of AI tools is prohibited in all assessment-related components (including quizzes, the midterm, and the final exam). However, students are permitted to use AI tools for non-assessed learning activities, such as practicing exercise problems that do not count toward the final grade.
-        </li>
-      </ul>
-
-    <b>Further information:</b>
-      <ul>
-        <li>
-        It is still a bit early to announce the official arrangements for the course. However, for your reference, I will closely follow the version taught by <a href="https://www.cse.cuhk.edu.hk/~taoyf/" target="_blank">Prof. Yufei TAO</a> in Fall 2024 (you may refer to <a href="https://www.cse.cuhk.edu.hk/~taoyf/course/3160/24-fall/" target="_blank">this page</a> for more details). You can safely assume that the syllabus, textbook, and evaluation scheme will remain the same in the upcoming semester.
-
-        The course content will be nearly identical to Prof. TAO's version. The only differences will lie in the teaching style and possibly a few adjustments to the topics covered --- I may add or remove some topics based on the differences in research expertise between Prof. Tao and myself.
-        </li>
-      </ul>
+      
 
 
 <!--       <b>Assessment:</b>
@@ -656,7 +676,9 @@ function topFunction() {
     <hr />
 
      <p class="NormalText" style="color:red;">
-    To be determined.
+    1.  Introduction to Algorithms, by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein. 
+2.  Algorithms, by Sanjoy Dasgupta, Christos Papadimitriou, and Umesh Vazirani
+
   </p>
 
 	<!-- <p class="NormalText">
@@ -681,6 +703,45 @@ function topFunction() {
 
 
 
+
+
+<div class="row mt-4">
+  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+    <h4  id="Additional">Additional Information</h4>
+    <hr />
+
+    <b>Course Description: </b> 
+     In this course, we will (i) introduce provably efficient algorithms for solving a set of classic problems that are frequently encountered in practice, (ii) extract from those algorithms the generic techniques that can be deployed to solve many other problems with strong performance guarantees, and (iii) study NP-hard/complete problems (that is, problems of which no polynomial time algorithms are known) and their approximation algorithms for NP-hard problems.
+
+    <!-- This course introduces the basics of algorithm analysis: 
+      <ul>
+        <li> 
+            correctness and time complexity. 
+        </li>
+        <li> Techniques for designing efficient algorithms: greedy method, divide and conquer, and dynamic programming. </li>
+        <li> Fundamental graph algorithms: graph traversals, minimum spanning trees and shortest paths. </li>
+        <li> Introduction to complexity theory: polynomial-time reductions and NP-completeness.  </li>
+      </ul> -->
+
+      <br />
+      <br />
+
+    <b>Use of AI tools:</b> 
+          This course follows "Approach 2 – Use only with prior permission" according to <a href="https://www.aqs.cuhk.edu.hk/documents/A-guide-for-students_use-of-AI-tools.pdf" target="_blank">the University's policy on the use of AI tools</a>. In particular, the use of AI tools is prohibited in all assessment-related components (including quizzes, the midterm, and the final exam). However, students are permitted to use AI tools for non-assessed learning activities, such as practicing exercise problems that do not count toward the final grade.
+
+      <br />
+      <br />
+    <b>Further information:</b>
+      <ul>
+        <li>
+        It is still a bit early to announce the official arrangements for the course. However, for your reference, I will closely follow the version taught by <a href="https://www.cse.cuhk.edu.hk/~taoyf/" target="_blank">Prof. Yufei TAO</a> in Fall 2024 (you may refer to <a href="https://www.cse.cuhk.edu.hk/~taoyf/course/3160/24-fall/" target="_blank">this page</a> for more details). You can safely assume that the syllabus, textbook, and evaluation scheme will remain the same in the upcoming semester.
+
+        The course content will be nearly identical to Prof. TAO's version. The only differences will lie in the teaching style and possibly a few adjustments to the topics covered --- I may add or remove some topics based on the differences in research expertise between Prof. Tao and myself.
+        </li>
+      </ul>
+   
+  </div> <!-- end col -->
+</div> <!-- end row -->
 
 
 
