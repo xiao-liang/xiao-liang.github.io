@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <link rel="icon" href="../../Miscellaneous/CUHK-Emblem.png">
+
+
+    <title>CSCI3350 Introduction to Quantum Computing (2026 Spring)</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+
+    <style>
+        hr {
+          background-size: 4px;
+          border-top: 4px solid #FFF0F2;
+          border-color: #FFF0F2;
+          border: 4px;
+          margin-top: 5pt;
+          margin-bottom: 7pt;
+        }
+
+        h4 {
+          font-family: Time New Roman, Times, serif;
+          /*font-weight:bold;*/
+          font-size: large;
+        }
+       
+        a { 
+          text-decoration: none; 
+          color:#0073c0;
+          /*color:#3379b7;*/
+        }
+        
+        .NormalText {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:medium;
+            text-align:justify;
+        }
+
+        .TinyCaption {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:xx-small;
+            color:#b3b6b7;
+        }
+
+        .PaperTitle {
+            font-family: Time New Roman, Times, serif;
+            font-size:medium;
+            font-weight:bold;
+        }
+        .AuthorLine {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:small;
+        }
+        .ConferenceLine {
+            font-family: Time New Roman, Times, serif;
+            font-size:medium;
+        }
+        .MediumTNR {
+            font-family: Time New Roman, Times, serif;
+            font-size:medium;
+        }
+
+        .LargeTNR {
+            font-family: Time New Roman, Times, serif;
+            font-size:large;
+        }
+
+        .XLargeTNR {
+            font-family: Time New Roman, Times, serif;
+            font-size:x-large;
+        }
+
+        .ChineseName {
+                font-family: Arial, Helvetica, tahoma, verdana, 宋体, SimSun, 华文细黑, STXihei, sans-serif;
+/*                font-weight:bold;*/
+                font-size:large;
+            }
+
+        #myBtn {
+          display: none;
+          position: fixed;
+          bottom: 20px;
+          left: 20px;
+          z-index: 99;
+          font-size: 20px;
+          font-weight: bold;
+          border: none;
+          outline: none;
+          background-color: #b3b6b7;
+          color: white;
+          cursor: pointer;
+          padding: 10px;
+          border-radius: 4px;
+        }
+
+        #myBtn:hover {
+          background-color: #7b7d7d;
+        }
+
+    </style>
+
+
+
+
+</head>
+
+
+<!-- open tag for body -->
+<body>
+
+
+
+<!-- back to top button -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+<!-- to take care of the button -->
+<script type="text/javascript">
+  // Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+  
+</script>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+<div class="container-fluid">
+   <a class="navbar-brand" href="#">CSCI3350</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a  class="nav-link active" href="#grading">Grading Scheme</a>
+        </li> 
+
+        <li class="nav-item">
+          <a  class="nav-link active" href="#textbook">Textbooks</a>
+        </li>
+
+        <li class="nav-item">
+          <a  class="nav-link active" href="#schedule">Weekly Schedule</a>
+        </li> 
+
+
+        <li class="nav-item">
+          <a  class="nav-link active" href="#Additional">Additional Information</a>
+        </li>
+
+
+      </ul>
+    </div>
+</div>
+</nav> 
+
+
+
+
+
+<!-- full-page wrapper -->
+<div class="container">
+
+
+
+<div class="row mt-5"> 
+  <div class="col-12 col-sm-9 col-md-9 col-lg-10 col-xl-10 col-xxl-10">
+      <h3>CSCI3350 Introduction to Quantum Computing (2026 Spring)</h3> 
+  </div><!-- end col -->
+</div><!-- end row -->
+
+
+<div class="row mt-4">
+  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+    
+      <b>Course Instructor:</b> 
+      <ul>
+        <li>
+          <a href="https://xiao-liang.github.io/" target="_blank">Prof. Xiao LIANG</a> (xiaoliang [at] cuhk.edu.hk) 
+        </li>
+      </ul>
+      
+
+    <b>Time and Venues:</b>  
+    <div class="col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
+       <table class="table table-sm" style="margin-left: 2em;">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+         
+            <th scope="col">Time</th>
+            <th scope="col">Venue</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">Lectures</th>
+            
+            <td>Monday 9:30AM - 11:15AM</td>
+            <td>Y. C. Liang Hall (LHC) 104</td>
+          </tr>
+          <tr>
+            
+            <td>Tuesday 2:30PM - 3:15PM</td>
+            <td>Mong Man Wai Building (MMW) LT2</td>
+          </tr>
+          <tr>
+            <th rowspan="4" scope="row" style="vertical-align: middle">Tutorials</th>
+            
+            <td>Monday 8:30AM - 9:15AM</td>
+            <td>Y. C. Liang Hall (LHC) 104</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+
+
+    <b>Teaching Assistants:</b>
+    <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
+       <table class="table table-sm" style="margin-left: 2em;">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Office Hour</th>
+            <th scope="col">Room</th>
+            <th scope="col">Email</th>
+            <th scope="col">Responsible SID Range</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">TBD</th>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td>TBD [at] cse.cuhk.edu.hk</td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <th scope="row">TBD</th>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td>TBD [at] cse.cuhk.edu.hk</td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <th scope="row">TBD</th>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td>TBD [at] cse.cuhk.edu.hk</td>
+            <td>TBD</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+        
+  </div> <!-- end col -->
+</div> <!-- end row -->  
+
+
+<div class="row mt-4">
+  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+    <h4 style="color:red">Important Message for Potential Students</h4>
+<hr />
+<ul>
+<li>
+  <b>No programming; all theory:</b> This course is similar in style to <a href="https://xiao-liang.github.io/Resources/Courses/CSCI3160-25Fall/CSCI3160-25Fall.html" target="_blank">CSCI3160 Design and Analysis of Algorithms</a>, focusing on the algorithmic ideas, pseudocode, and theoretical analysis. It does <b>not</b> involve programming, real-world implementation, or software engineering considerations.
+</li>
+
+<li>
+  <b>Difficulty level:</b> The course uses linear algebra and probability as foundational tools. You can expect a difficulty level and workload comparable to your undergraduate-level Linear Algebra and Probability Theory courses.
+</li>
+
+<li>
+  <b>More than "algorithms":</b> While this course does explore quantum algorithms, it is not solely focused on them. A meaningful understanding of quantum algorithms begins with a solid foundation in the principles of quantum information — including concepts like superposition, entanglement, and measurement — which we will study in depth. The course may also cover several important topics that are not algorithmic in nature but are central to the field of quantum computing, such as quantum error correction, fault-tolerant computation, proofs of quantumness, and non-local games. If you're coming in with the expectation that this course is a direct quantum counterpart to a classical algorithms course like CSCI3160, we encourage you to view it instead as a broader and more foundational exploration of what makes quantum computing unique.
+
+
+</li>
+
+<li>
+  <b>This course is <u>NOT</u> intended for students who:</b>
+  <ul>
+    <li>Want to learn how to build a quantum computer</li>
+    <li>Want to practice quantum programming in a specific (quantum programming) language</li>
+    <li>Expect to learn quantum physics</li>
+  </ul>
+</li>
+</ul>
+
+
+    <h4  id="grading">Grading Scheme</h4>
+    <hr />  
+    <ul>
+      <li>
+        <b>Quizzes (16%):</b> There will be two quizzes, each accounting for 8%.
+      </li>
+      <li>
+        <b>Midterm (40%):</b> There will be one midterm exam. Although it's called a "midterm," it will actually take place in the later weeks of the course (e.g., between Week 8 and Week 15). This scheduling ensures that the exam occurs after most of the course material has been covered. It also compensates for the fact that <b>this course does not have a final exam!</b>
+
+      </li>
+      <li>
+        <b>Group Homework (14%):</b> There will be two problem sets, each worth 7%. Students are allowed to form groups and submit one joint solution. More details will be announced later.
+      </li>
+      <li>
+        <b>Group Project (30%):</b> Students will work in groups to choose a topic, read related papers, write a report, and give a presentation. More details will be provided in due course.
+      </li>
+    </ul>
+
+
+
+
+
+    
+
+    <!-- Please refer to pages 4 through 6 of the <a href= "slides/lectures/00_logistics.pdf" target="_blank">Logistics slides</a>. The following presents the regular and special exercises mentioned therein: -->
+
+
+    <!-- <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+       <table class="table table-sm" style="margin-left: 0em;">
+        <tbody>
+          <tr><th scope="row"></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+
+          <tr>
+            <th scope="row">Regular Exercises:</th>
+            <td><a href="slides/exercises/ex-01.pdf" target="_blank">Set 1 (solved)</a></td>
+            <td><a href="slides/exercises/ex-02.pdf" target="_blank">Set 2 (solved)</a></td>
+            <td><a href="slides/exercises/ex-03.pdf" target="_blank">Set 3 (solved)</a></td>
+            <td><a href="slides/exercises/ex-04.pdf" target="_blank">Set 4 (solved)</a></td>
+            <td><a href="slides/exercises/ex-05.pdf" target="_blank">Set 5 (solved)</a></td>
+            <td><a href="slides/exercises/ex-06.pdf" target="_blank">Set 6 (solved)</a></td>
+            <td><a href="slides/exercises/ex-07.pdf" target="_blank">Set 7 (solved)</a></td>
+            <td><a href="slides/exercises/ex-08.pdf" target="_blank">Set 8 (solved)</a></td>
+            <td><a href="slides/exercises/ex-09.pdf" target="_blank">Set 9 (solved)</a></td>
+            <td><a href="slides/exercises/ex-10.pdf" target="_blank">Set 10 (solved)</a></td>
+            <td><a href="slides/exercises/ex-11.pdf" target="_blank">Set 11 (solved)</a></td>
+            <td>[more to announce ...]</td>
+          </tr>
+          <tr>
+            <th scope="row">Special Exercises:</th>
+            <td><a href="slides/exercises/sp-ex-01.pdf" target="_blank">Set 1</a></td>
+            <td><a href="slides/exercises/sp-ex-02.pdf" target="_blank">Set 2</a></td>
+            <td><a href="slides/exercises/sp-ex-03.pdf" target="_blank">Set 3</a></td>
+            <td><a href="slides/exercises/sp-ex-04.pdf" target="_blank">Set 4</a></td>
+            <td><a href="slides/exercises/sp-ex-05.pdf" target="_blank">Set 5</a></td>
+            <td><a href="slides/exercises/sp-ex-06.pdf" target="_blank">Set 6</a></td>
+            <td><a href="slides/exercises/sp-ex-07.pdf" target="_blank">Set 7</a></td>
+            <td><a href="slides/exercises/sp-ex-08.pdf" target="_blank">Set 8</a></td>
+            <td><a href="slides/exercises/sp-ex-09.pdf" target="_blank">Set 9</a></td>
+            <td><a href="slides/exercises/sp-ex-10.pdf" target="_blank">Set 10</a></td>
+            <td><a href="slides/exercises/sp-ex-11.pdf" target="_blank">Set 11</a></td>
+            <td>[more to announce ...]</td>
+          </tr>
+        </tbody>
+      </table>
+    </div> -->
+
+  <!-- <p class="NormalText" style="color:red;">
+    I will follow the same grading scheme as previous years, when this course were instructed by Prof. Yufei TAO. I will update this section to specified the details soon. For you, please refer to <a href="https://www.cse.cuhk.edu.hk/~taoyf/course/3160/24-fall/" target="_blank">Prof. Tao's version (2024 Fall)</a> for more details.
+  </p> -->
+   
+
+   <!-- <b>Solutions to Quiz/Exam:</b>  
+      <a href="exams/quiz-1.pdf" target="_blank">Quiz-1</a>,
+      <a href="exams/midterm-A-solution.pdf" target="_blank">Midterm</a>,
+      <a href="exams/quiz-2-solution.pdf" target="_blank">Quiz-2</a>,
+      <br />  -->
+
+  </div> <!-- end col -->
+</div> <!-- end row -->
+
+
+<div class="row mt-4">
+  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+    <h4  id="textbook">Textbooks</h4>
+    <hr />  
+
+
+  <p class="NormalText">
+    (We will add more textbooks to the list as the course goes on.)
+    <ul>
+      <li>
+        <b>[NC]</b> &ndash; <i>Quantum Computation and Quantum Information (10th Anniversary Edition)</i>, by Michael A. Nielsen and Isaac L. Chuang 
+      </li>
+      <li>
+        <b>[Aar18]</b> &ndash; <i><a href= "https://www.scottaaronson.com/qclec.pdf" target="_blank">Introduction to Quantum Information Science Lecture Notes</a></i>, By Scott Aaronson.
+      </li>
+    </ul>
+  </p>
+    
+   
+  </div> <!-- end col -->
+</div> <!-- end row -->
+
+
+
+
+
+<div class="row mt-4">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+    <h4  id="schedule">Weekly Schedule</h4>
+    <hr />
+
+
+
+<!--     <p class="NormalText" style="color:red;">
+      IMPORTANT: the tutorial sessions start from Week 1!
+    </p> -->
+
+   <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">  <!-- container for table -->
+       <table class="table table-sm table-bordered" style="margin-left: 0em;">
+        <thead>
+          <tr>
+            <th scope="col">Week</th>
+            <th scope="col">Date</th>
+            <th scope="col">Lecture Topics and Slides</th>
+            <th scope="col">Supplementary Reading</th>
+            <th scope="col">Tutorial Topics and Slides</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <!-- Week 1 ------------------------------------------------------------>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">01</th>
+            <td>2026-01-05</td>
+            <td> 
+              TBD <!-- session 1 -->
+            </td>
+            <td>
+              TBD <!-- session 1 reading -->
+            </td>
+            <td rowspan="2" style="vertical-align: middle"> 
+              TBD <!-- tutorial -->
+            </td>
+          </tr>
+          <tr>
+            <td>2026-01-06</td>
+            <td>
+              TBD <!-- session 2-->
+            </td>
+            <td>
+              TBD <!-- session 2 reading -->
+            </td>
+          </tr>
+
+          <!-- Week 2 ------------------------------------------------------------>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">02</th>
+            <td>2026-01-12</td>
+            <td> 
+              TBD <!-- session 1 -->
+            </td>
+            <td>
+              TBD <!-- session 1 reading -->
+            </td>
+            <td rowspan="2" style="vertical-align: middle"> 
+              TBD <!-- tutorial -->
+            </td>
+          </tr>
+          <tr>
+            <td>2026-01-13</td>
+            <td>
+              TBD <!-- session 2-->
+            </td>
+            <td>
+              TBD <!-- session 2 reading -->
+            </td>
+          </tr>
+
+          <!-- Week 3 ------------------------------------------------------------>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">03</th>
+            <td>2026-01-19</td>
+            <td> 
+              TBD <!-- session 1 -->
+            </td>
+            <td>
+              TBD <!-- session 1 reading -->
+            </td>
+            <td rowspan="2" style="vertical-align: middle"> 
+              TBD <!-- tutorial -->
+            </td>
+          </tr>
+          <tr>
+            <td>2026-01-20</td>
+            <td>
+              TBD <!-- session 2-->
+            </td>
+            <td>
+              TBD <!-- session 2 reading -->
+            </td>
+          </tr>
+
+          <!-- Week 4 ------------------------------------------------------------>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">04</th>
+            <td>2026-01-26</td>
+            <td> 
+              TBD <!-- session 1 -->
+            </td>
+            <td>
+              TBD <!-- session 1 reading -->
+            </td>
+            <td rowspan="2" style="vertical-align: middle"> 
+              TBD <!-- tutorial -->
+            </td>
+          </tr>
+          <tr>
+            <td>2026-01-27</td>
+            <td>
+              TBD <!-- session 2-->
+            </td>
+            <td>
+              TBD <!-- session 2 reading -->
+            </td>
+          </tr>
+
+          <!-- Week 5 ------------------------------------------------------------>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">05</th>
+            <td>2026-02-02</td>
+            <td> 
+              TBD <!-- session 1 -->
+            </td>
+            <td>
+              TBD <!-- session 1 reading -->
+            </td>
+            <td rowspan="2" style="vertical-align: middle"> 
+              TBD <!-- tutorial -->
+            </td>
+          </tr>
+          <tr>
+            <td>2026-02-03</td>
+            <td>
+              TBD <!-- session 2-->
+            </td>
+            <td>
+              TBD <!-- session 2 reading -->
+            </td>
+          </tr>
+
+          <!-- Week 6 ------------------------------------------------------------>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">06</th>
+            <td>2026-02-09</td>
+            <td> 
+              TBD <!-- session 1 -->
+            </td>
+            <td>
+              TBD <!-- session 1 reading -->
+            </td>
+            <td rowspan="2" style="vertical-align: middle"> 
+              TBD <!-- tutorial -->
+            </td>
+          </tr>
+          <tr>
+            <td>2026-02-10</td>
+            <td>
+              TBD <!-- session 2-->
+            </td>
+            <td>
+              TBD <!-- session 2 reading -->
+            </td>
+          </tr>
+
+          <!-- Week 7 ------------------------------------------------------------>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">07</th>
+            <td>2026-02-16</td>
+            <td style="color:green;">
+              Lecture cancelled (Lunar New Year Vacation) 
+            </td>
+            <td>
+              N.A. <!-- session 1 reading -->
+            </td>
+            <td rowspan="2" style="vertical-align: middle; color:green;"> 
+              Tutorial cancelled (Lunar New Year Vacation) <!-- tutorial -->
+            </td>
+          </tr>
+          <tr>
+            <td>2026-02-17</td>
+            <td style="color:green;">
+              Lecture cancelled (Lunar New Year Vacation) 
+            </td>
+            <td>
+              N.A. <!-- session 2 reading -->
+            </td>
+          </tr>
+
+          <!-- Week 8 ------------------------------------------------------------>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">08</th>
+            <td>2026-02-23</td>
+            <td> 
+              TBD <!-- session 1 -->
+            </td>
+            <td>
+              TBD <!-- session 1 reading -->
+            </td>
+            <td rowspan="2" style="vertical-align: middle"> 
+              TBD <!-- tutorial -->
+            </td>
+          </tr>
+          <tr>
+            <td>2026-02-24</td>
+            <td>
+              TBD <!-- session 2-->
+            </td>
+            <td>
+              TBD <!-- session 2 reading -->
+            </td>
+          </tr>
+
+          <!-- Week 9 ------------------------------------------------------------>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">09</th>
+            <td>2026-03-02</td>
+            <td style="color:green;">
+              Lecture cancelled (reading week)
+            </td>
+            <td>
+              N.A. <!-- session 1 reading -->
+            </td>
+            <td rowspan="2" style="vertical-align: middle; color:green;"> 
+              Tutorial cancelled (reading week) <!-- tutorial -->
+            </td>
+          </tr>
+          <tr>
+            <td>2026-03-03</td>
+            <td style="color:green;">
+              Lecture cancelled (reading week)
+            </td>
+            <td>
+              N.A. <!-- session 2 reading -->
+            </td>
+          </tr>
+
+          <!-- Week 10 ------------------------------------------------------------>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">10</th>
+            <td>2026-03-09</td>
+            <td> 
+              TBD <!-- session 1 -->
+            </td>
+            <td>
+              TBD <!-- session 1 reading -->
+            </td>
+            <td rowspan="2" style="vertical-align: middle"> 
+              TBD <!-- tutorial -->
+            </td>
+          </tr>
+          <tr>
+            <td>2026-03-10</td>
+            <td>
+              TBD <!-- session 2-->
+            </td>
+            <td>
+              TBD <!-- session 2 reading -->
+            </td>
+          </tr>
+
+          <!-- Week 11 ------------------------------------------------------------>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">11</th>
+            <td>2026-03-16</td>
+            <td> 
+              TBD <!-- session 1 -->
+            </td>
+            <td>
+              TBD <!-- session 1 reading -->
+            </td>
+            <td rowspan="2" style="vertical-align: middle"> 
+              TBD <!-- tutorial -->
+            </td>
+          </tr>
+          <tr>
+            <td>2026-03-17</td>
+            <td>
+              TBD <!-- session 2-->
+            </td>
+            <td>
+              TBD <!-- session 2 reading -->
+            </td>
+          </tr>
+
+          <!-- Week 12 ------------------------------------------------------------>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">12</th>
+            <td>2026-03-23</td>
+            <td> 
+              TBD <!-- session 1 -->
+            </td>
+            <td>
+              TBD <!-- session 1 reading -->
+            </td>
+            <td rowspan="2" style="vertical-align: middle"> 
+              TBD <!-- tutorial -->
+            </td>
+          </tr>
+          <tr>
+            <td>2026-03-24</td>
+            <td>
+              TBD <!-- session 2-->
+            </td>
+            <td>
+              TBD <!-- session 2 reading -->
+            </td>
+          </tr>
+
+          <!-- Week 13 ------------------------------------------------------------>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">13</th>
+            <td>2026-03-30</td>
+            <td> 
+              TBD <!-- session 1 -->
+            </td>
+            <td>
+              TBD <!-- session 1 reading -->
+            </td>
+            <td rowspan="2" style="vertical-align: middle"> 
+              TBD <!-- tutorial -->
+            </td>
+          </tr>
+          <tr>
+            <td>2026-03-31</td>
+            <td>
+              TBD <!-- session 2-->
+            </td>
+            <td>
+              TBD <!-- session 2 reading -->
+            </td>
+          </tr>
+
+          <!-- Week 14 ------------------------------------------------------------>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">14</th>
+            <td>2026-04-06</td>
+            <td style="color:green;">
+              Lecture cancelled (the day following Ching Ming Festival)
+            </td>
+            <td>
+              N.A. <!-- session 1 reading -->
+            </td>
+            <td rowspan="2" style="vertical-align: middle; color:green;"> 
+              Tutorial cancelled (the day following Ching Ming Festival) <!-- tutorial -->
+            </td>
+          </tr>
+          <tr>
+            <td>2026-04-07</td>
+            <td style="color:green;">
+              Lecture cancelled (the day following Easter Monday) <!-- session 2-->
+            </td>
+            <td>
+              N.A. <!-- session 2 reading -->
+            </td>
+          </tr>
+
+          <!-- Week 15 ------------------------------------------------------------>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">15</th>
+            <td>2026-04-13</td>
+            <td> 
+              TBD <!-- session 1 -->
+            </td>
+            <td>
+              TBD <!-- session 1 reading -->
+            </td>
+            <td rowspan="2" style="vertical-align: middle"> 
+              TBD <!-- tutorial -->
+            </td>
+          </tr>
+          <tr>
+            <td>2026-04-14</td>
+            <td>
+              TBD <!-- session 2-->
+            </td>
+            <td>
+              TBD <!-- session 2 reading -->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div> <!-- end of container for table -->
+
+
+  </div> <!-- end col -->
+</div> <!-- end row -->
+
+
+
+
+
+
+<div class="row mt-4">
+  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+    <h4  id="Additional">Additional Information</h4>
+    <hr />
+
+<p class="NormalText">
+    <b>Course Description: </b> 
+     This course offers an introduction to the fascinating world of quantum computing, focusing on its fundamental concepts and algorithms. Additionally, as a unique feature, the instructor will guide students through several interdisciplinary areas where quantum computing intersects with fields such as computational complexity, cryptography, machine learning, networking, and information theory. This unique approach aims to equip students with a broad spectrum of quantum-related skills, preparing them to contribute to the rapidly evolving field of quantum computing, which offers abundant opportunities in both industry and academia.
+
+      Topics include:
+      <ul>
+        <li> 
+          Basics of quantum information, the linear-algebra formalism
+        </li>
+        <li> 
+          Entanglement and nonlocality
+        </li>
+        <li> 
+          The quantum circuit model
+        </li>
+        <li> 
+          Basic quantum protocols, such as quantum teleportation and superdense coding
+        </li>
+        <li> 
+          Basic quantum algorithms, such as Simons' algorithm, the Quantum Fourier Transform, Phase Estimation, Shor's Factoring algorithm, Grover search, amplitude
+        amplification
+        </li>
+        <li> 
+          Quantum error correction and fault-tolerance
+        </li>
+        <li> 
+          Selective topics from quantum cryptography, proof of quantumness, quantum information theory, quantum complexity theory, quantum machine learning
+        </li>
+      </ul>
+            No background in quantum physics is required. The only prerequisites are familiarity with undergraduate-level linear algebra and probability theory.
+      <br />
+      <br />
+
+    <b>Make-up Quiz/Exam Policy:</b> 
+
+    You may apply for a make-up quiz/exam if all of the following conditions are met:
+    <ul>
+      <li>
+        You must provide a valid justification along with supporting documentation.
+        For example, in the case of illness, a doctor's note clearly stating your condition is required.
+      </li>
+      <li>
+        You must email the instructor at least 4 hours before the start of the lecture in which the quiz is administered.
+      </li>
+    </ul>
+    Genuine emergency cases will be handled separately and typically require valid justification along with supporting documentation.
+    <br />
+    <br />
+
+
+  <!-- 
+    <b>Classes During Adverse Weather:</b> 
+          Summer (i.e. May – Oct.) is the typhoon/adverse weather season in Hong Kong. It is likely that some classes will be affected. We will follow the University's official policy on adverse weather. For details, please refer to the relevant section in the Undergraduate Student Handbook: <a href="https://rgsntl.rgs.cuhk.edu.hk/aqs_prd_applx/Public/Handbook/document.aspx?id=2029&tv=F&lang=en" target="_blank">General Arrangements for Classes and Examinations on Approach of Typhoons and Rainstorms</a>.
+
+      <br />
+      <br /> -->
+
+
+
+    
+    <b>Students with Special Educational Needs (SEN):</b> CUHK is committed to promoting equal opportunities in academic pursuits for all students. To support full-time students with special educational needs (SEN) in fully participating in campus life and enhancing their learning experience, the SEN Service (SENS) provides tailored support based on individual needs. These may include learning aids and equipment, special arrangements for classes or examinations, accessible facilities, and assistance with hostel visits and accommodations.
+          <br />
+          <br />
+
+
+          
+          Students who require these services should first register with the <a href="https://www.osa.cuhk.edu.hk/services/special-educational-needs-sen-support/" target="_blank">Office of Student Affairs</a> (OSA) and undergo an assessment by the SEN team. If a student is identified as needing SEN support, the recommended academic accommodations will be communicated to the SEN coordinator of the relevant teaching unit, who will then inform the course instructor accordingly. If you have completed the registration and assessment process with the SEN team at OSA, please email the course instructor to discuss arrangements that best accommodate your needs.
+
+
+      <br />
+      <br />
+
+    <b>Use of AI tools:</b> 
+          This course follows "Approach 2 – Use only with prior permission" according to <a href="https://www.aqs.cuhk.edu.hk/documents/A-guide-for-students_use-of-AI-tools.pdf" target="_blank">the University's policy on the use of AI tools</a>. In particular, the use of AI tools is prohibited in all assessment-related components (including quizzes, the midterm, and the final exam). However, students are permitted to use AI tools for non-assessed learning activities, such as practicing exercise problems that do not count toward the final grade.
+
+      <br />
+      <br />
+
+
+</p>
+<!-- this is the closing paragraph that starts at the beginning of "additional informaiton" -->
+
+
+  </div> <!-- end col -->
+</div> <!-- end row -->
+
+
+
+
+
+
+
+
+
+</div> <!-- container -->
+
+
+
+
+
+</body> 
+</html>
+
