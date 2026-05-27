@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <link rel="icon" href="../../Resources/Miscellaneous/CUHK-Emblem.png">
+
+
+    <title>CSCI3360 Introduction to Computational Complexity (2026 Fall)</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+
+    <style>
+        hr {
+          background-size: 4px;
+          border-top: 4px solid #FFF0F2;
+          border-color: #FFF0F2;
+          border: 4px;
+          margin-top: 5pt;
+          margin-bottom: 7pt;
+        }
+
+        h4 {
+          font-family: Time New Roman, Times, serif;
+          /*font-weight:bold;*/
+          font-size: large;
+        }
+       
+        a { 
+          text-decoration: none; 
+          color:#0073c0;
+          /*color:#3379b7;*/
+        }
+        
+        .NormalText {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:medium;
+            text-align:justify;
+        }
+
+        .TinyCaption {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:xx-small;
+            color:#b3b6b7;
+        }
+
+        .PaperTitle {
+            font-family: Time New Roman, Times, serif;
+            font-size:medium;
+            font-weight:bold;
+        }
+        .AuthorLine {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:small;
+        }
+        .ConferenceLine {
+            font-family: Time New Roman, Times, serif;
+            font-size:medium;
+        }
+        .MediumTNR {
+            font-family: Time New Roman, Times, serif;
+            font-size:medium;
+        }
+
+        .LargeTNR {
+            font-family: Time New Roman, Times, serif;
+            font-size:large;
+        }
+
+        .XLargeTNR {
+            font-family: Time New Roman, Times, serif;
+            font-size:x-large;
+        }
+
+        .ChineseName {
+                font-family: Arial, Helvetica, tahoma, verdana, 宋体, SimSun, 华文细黑, STXihei, sans-serif;
+/*                font-weight:bold;*/
+                font-size:large;
+            }
+
+        #myBtn {
+          display: none;
+          position: fixed;
+          bottom: 20px;
+          left: 20px;
+          z-index: 99;
+          font-size: 20px;
+          font-weight: bold;
+          border: none;
+          outline: none;
+          background-color: #b3b6b7;
+          color: white;
+          cursor: pointer;
+          padding: 10px;
+          border-radius: 4px;
+        }
+
+        #myBtn:hover {
+          background-color: #7b7d7d;
+        }
+
+    </style>
+
+
+
+
+</head>
+
+
+<!-- open tag for body -->
+<body>
+
+
+
+<!-- back to top button -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+<!-- to take care of the button -->
+<script type="text/javascript">
+  // Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+  
+</script>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+<div class="container-fluid">
+   <a class="navbar-brand" href="#">CSCI3360</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a  class="nav-link active" href="#grading">Grading Scheme</a>
+        </li> 
+
+        <li class="nav-item">
+          <a  class="nav-link active" href="#textbook">Textbooks</a>
+        </li>
+
+        <li class="nav-item">
+          <a  class="nav-link active" href="#schedule">Weekly Schedule</a>
+        </li> 
+
+
+        <li class="nav-item">
+          <a  class="nav-link active" href="#Additional">Additional Information</a>
+        </li>
+
+
+      </ul>
+    </div>
+</div>
+</nav> 
+
+
+
+
+
+<!-- full-page wrapper -->
+<div class="container">
+
+
+
+<div class="row mt-5"> 
+  <div class="col-12 col-sm-9 col-md-9 col-lg-10 col-xl-10 col-xxl-10">
+      <h3>CSCI3360 Introduction to Computational Complexity (2026 Fall)</h3> 
+  </div><!-- end col -->
+</div><!-- end row -->
+
+
+<div class="row mt-4">
+  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+    
+      <b>Course Instructor:</b> 
+      <ul>
+        <li style="text-align:justify;">
+          <a href="https://xiao-liang.github.io/" target="_blank">Prof. Xiao LIANG</a> (xiaoliang [at] cuhk.edu.hk) 
+        </li>
+      </ul>
+      
+
+    <b>Time and Venues:</b>  
+    <div class="col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
+       <table class="table table-sm" style="margin-left: 2em;">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+         
+            <th scope="col">Time</th>
+            <th scope="col">Venue</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">Lectures</th>
+            
+            <td>Monday 9:30AM - 11:15AM</td>
+            <td>Y. C. Liang Hall (LHC) 104</td>
+          </tr>
+          <tr>
+            
+            <td>Tuesday 2:30PM - 3:15PM</td>
+            <td>Mong Man Wai Building (MMW) LT2</td>
+          </tr>
+          <tr>
+            <th rowspan="4" scope="row" style="vertical-align: middle">Tutorials</th>
+            
+            <td>Monday 8:30AM - 9:15AM</td>
+            <td>Y. C. Liang Hall (LHC) 104</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+
+
+    <b>Teaching Assistant:</b>
+    <div class="col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
+       <table class="table table-sm" style="margin-left: 2em;">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Office Hour</th>
+            <th scope="col">Office Room</th>
+            <th scope="col">Email</th>
+            <!-- <th scope="col">Responsible SID Range</th> -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td >Ziqing Guo</td>
+            <td>Wed. 10:30am - 11:30am </td>
+            <td>SHB1004</td>
+            <td>zqguo25 [at] cse.cuhk.edu.hk</td>
+            <!-- <td>TBD</td> -->
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+        
+  </div> <!-- end col -->
+</div> <!-- end row -->  
+
+
+<div class="row mt-4">
+  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+    <h4 style="color:red">Important Message for Perspective Students</h4>
+<hr />
+
+<p class="NormalText">
+  <ul>
+    <li style="text-align:justify;">
+      <b>No programming; all theory:</b> This course is purely theoretical. It does <b>not</b> involve programming, real-world implementation, or software engineering considerations.
+    </li>
+
+    <li style="text-align:justify;">
+      <b>Difficulty level:</b> The course assumes that students have basic undergraduate-level mathematical maturity. In particular, it relies on probability theory as a foundational tool. You can expect a difficulty level and workload comparable to those of <a href="https://xiao-liang.github.io/Resources/Courses/CSCI3160-25Fall/CSCI3160-25Fall.html" target="_blank">CSCI3360 Design and Analysis of Algorithms</a>.
+    </li>
+
+  </ul>
+</p>
+<br />
+
+    <h4  id="grading">Grading Scheme</h4>
+    <hr /> 
+    <p class="NormalText"> 
+      <ul>
+        <li style="text-align:justify;">
+          <b>Quizzes (20%):</b> There will be two quizzes, each accounting for 10%. The quiz times will be announced one week in advance.
+
+
+        </li>
+        <li style="text-align:justify;">
+          <b>Midterm (46%):</b> There will be one midterm exam. Although it's called a "midterm," it will actually take place in the later weeks of the course (e.g., between Week 8 and Week 15). The exact time of the midterm will be announced at least one week in advance. This scheduling ensures that the exam occurs after most of the course material has been covered. It also compensates for the fact that <b>this course does not have a final exam!</b>
+
+        </li>
+        <li style="text-align:justify;">
+          <b>Group Homework (14%):</b> There will be two problem sets, each worth 7%. Students are allowed to form groups and submit one joint solution. More details will be announced later.
+        </li>
+        <li style="text-align:justify;">
+          <b>Group Project (20%):</b> Students will work in groups to choose a computational-complexity paper, write a report, and give a presentation. More details will be provided in due course.
+        </li>
+      </ul>
+    </p>
+    <br />
+
+
+
+
+    
+
+    <!-- Please refer to pages 4 through 6 of the <a href= "slides/lectures/00_logistics.pdf" target="_blank">Logistics slides</a>. The following presents the regular and special exercises mentioned therein: -->
+
+
+    <!-- <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+       <table class="table table-sm" style="margin-left: 0em;">
+        <tbody>
+          <tr><th scope="row"></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+
+          <tr>
+            <th scope="row">Regular Exercises:</th>
+            <td><a href="slides/exercises/ex-01.pdf" target="_blank">Set 1 (solved)</a></td>
+            <td><a href="slides/exercises/ex-02.pdf" target="_blank">Set 2 (solved)</a></td>
+            <td><a href="slides/exercises/ex-03.pdf" target="_blank">Set 3 (solved)</a></td>
+            <td><a href="slides/exercises/ex-04.pdf" target="_blank">Set 4 (solved)</a></td>
+            <td><a href="slides/exercises/ex-05.pdf" target="_blank">Set 5 (solved)</a></td>
+            <td><a href="slides/exercises/ex-06.pdf" target="_blank">Set 6 (solved)</a></td>
+            <td><a href="slides/exercises/ex-07.pdf" target="_blank">Set 7 (solved)</a></td>
+            <td><a href="slides/exercises/ex-08.pdf" target="_blank">Set 8 (solved)</a></td>
+            <td><a href="slides/exercises/ex-09.pdf" target="_blank">Set 9 (solved)</a></td>
+            <td><a href="slides/exercises/ex-10.pdf" target="_blank">Set 10 (solved)</a></td>
+            <td><a href="slides/exercises/ex-11.pdf" target="_blank">Set 11 (solved)</a></td>
+            <td>[more to announce ...]</td>
+          </tr>
+          <tr>
+            <th scope="row">Special Exercises:</th>
+            <td><a href="slides/exercises/sp-ex-01.pdf" target="_blank">Set 1</a></td>
+            <td><a href="slides/exercises/sp-ex-02.pdf" target="_blank">Set 2</a></td>
+            <td><a href="slides/exercises/sp-ex-03.pdf" target="_blank">Set 3</a></td>
+            <td><a href="slides/exercises/sp-ex-04.pdf" target="_blank">Set 4</a></td>
+            <td><a href="slides/exercises/sp-ex-05.pdf" target="_blank">Set 5</a></td>
+            <td><a href="slides/exercises/sp-ex-06.pdf" target="_blank">Set 6</a></td>
+            <td><a href="slides/exercises/sp-ex-07.pdf" target="_blank">Set 7</a></td>
+            <td><a href="slides/exercises/sp-ex-08.pdf" target="_blank">Set 8</a></td>
+            <td><a href="slides/exercises/sp-ex-09.pdf" target="_blank">Set 9</a></td>
+            <td><a href="slides/exercises/sp-ex-10.pdf" target="_blank">Set 10</a></td>
+            <td><a href="slides/exercises/sp-ex-11.pdf" target="_blank">Set 11</a></td>
+            <td>[more to announce ...]</td>
+          </tr>
+        </tbody>
+      </table>
+    </div> -->
+
+  <!-- <p class="NormalText" style="color:red;">
+    I will follow the same grading scheme as previous years, when this course were instructed by Prof. Yufei TAO. I will update this section to specified the details soon. For you, please refer to <a href="https://www.cse.cuhk.edu.hk/~taoyf/course/3160/24-fall/" target="_blank">Prof. Tao's version (2024 Fall)</a> for more details.
+  </p> -->
+   
+
+   <!-- <b>Solutions to Quiz/Exam:</b>  
+      <a href="exams/quiz-1.pdf" target="_blank">Quiz-1</a>,
+      <a href="exams/midterm-A-solution.pdf" target="_blank">Midterm</a>,
+      <a href="exams/quiz-2-solution.pdf" target="_blank">Quiz-2</a>,
+      <br />  -->
+
+
+    <h4  id="textbook">Textbooks</h4>
+    <hr />  
+
+
+  <p class="NormalText">
+
+    <b> <a href="lecture_notes/CSCI3360-main.pdf" target="_blank">All-in-one lecture notes:</a> </b> 
+    This document contains all the notes used for both lectures and tutorials. Most of the teaching in this course will not use slides; instead, the instructor will use the whiteboard. This is a common practice in mathematical or theoretical courses, as it better demonstrates derivations, calculations, and proofs. To help students grasp the material and have a single set of notes for review, we provide these all-in-one lecture notes. This document will be updated periodically as the course progresses.
+  </p>
+
+
+ 
+    <p class="NormalText">
+      The following are some useful supplementary materials. The relevant sections will be indicated in the weekly schedule below.
+    <ul>
+      <li style="text-align:justify;">
+        <b>[AB]</b> &ndash; <i><a href= "https://theory.cs.princeton.edu/complexity/book.pdf" target="_blank">Computational Complexity: A Modern Approach</a></i>, by Sanjeev Arora and Boaz Barak 
+      </li>
+      <li style="text-align:justify;">
+        <b>[DPV]</b> &ndash; <i>Algorithms</i>, by Sanjoy Dasgupta, Christos Papadimitriou, and Umesh Vazirani.
+      </li>
+    </ul>
+  </p>
+    
+   
+  </div> <!-- end col -->
+</div> <!-- end row -->
+
+
+
+
+
+<div class="row mt-4">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+    <h4  id="schedule">Weekly Schedule</h4>
+    <hr />
+
+
+
+<!--     <p class="NormalText" style="color:red;">
+      IMPORTANT: the tutorial sessions start from Week 1!
+    </p> -->
+
+   <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">  <!-- container for table -->
+       <table class="table table-sm table-bordered" style="margin-left: 0em;">
+        <thead>
+          <tr>
+            <th scope="col">Week</th>
+            <th scope="col">Date</th>
+            <th scope="col">Lecture Topics</th>
+            <th scope="col">Tutorial Topics</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <!-- Week 1 ------------------------------------------------------------>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">01</th>
+            <td>2026-01-05</td>
+            <td> 
+              <a href="lecture_notes/00_logistics.pdf" target="_blank">course logistics</a>, <a href="lecture_notes/01_intro.pdf" target="_blank">introduction</a> <!-- session 1 -->
+            </td>
+            
+            <td rowspan="2" style="vertical-align: middle; color:green;"> 
+              no tutorial in week 1<!-- tutorial -->
+            </td>
+          </tr>
+
+          <tr>
+            <td>2026-01-06</td>
+            <td>
+              vector spaces, linear maps, complex vector spaces, need for geometry <!-- session 2-->
+            </td>
+            
+          </tr>
+
+          <!-- Week 2 ------------------------------------------------------------>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">02</th>
+            <td>2026-01-12</td>
+            <td> 
+              inner products, Hilbert spaces, the necessity of complex numbers in quantum mechanics <!-- session 1 -->
+            </td>
+            
+            <td rowspan="2" style="vertical-align: middle"> 
+              reviewing basic concepts on vector spaces <!-- tutorial -->
+            </td>
+          </tr>
+          <tr>
+            <td>2026-01-13</td>
+            <td>
+              the 1st postulate, single-qubit systems: spin-1/2 and artificial atom <!-- session 2-->
+            </td>
+            
+          </tr>
+
+          <!-- Week 3 ------------------------------------------------------------>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">03</th>
+            <td>2026-01-19</td>
+            <td> 
+              Dirac notation, the 2nd postulate, unitary operators, Pauli matrices <!-- session 1 -->
+            </td>
+            
+            <td rowspan="2" style="vertical-align: middle"> 
+              reviewing complex number arithmetic <!-- tutorial -->
+            </td>
+          </tr>
+          <tr>
+            <td>2026-01-20</td>
+            <td>
+              Hadamard operators, 4-point quantum Fourier transform, physical meaning of measurement <!-- session 2-->
+            </td>
+            
+          </tr>
+
+          <!-- Week 4 ------------------------------------------------------------>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">04</th>
+            <td>2026-01-26</td>
+            <td> 
+              the 3rd postulate, Elitzur-Vaidman bomb  <!-- session 1 -->
+            </td>
+            
+            <td rowspan="2" style="vertical-align: middle"> 
+              calculations in Dirac Notation <!-- tutorial -->
+            </td>
+          </tr>
+          <tr>
+            <td>2026-01-27</td>
+            <td>
+              Elitzur-Vaidman bomb (cont'd) <!-- session 2-->
+            </td>
+            
+          </tr>
+
+          <!-- Week 5 ------------------------------------------------------------>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">05</th>
+            <td>2026-02-02</td>
+            <td> 
+              the 4th postulate, Kronecker product, tensor product space, entanglement <!-- session 1 -->
+            </td>
+            
+            <td rowspan="2" style="vertical-align: middle"> 
+              union bound <!-- tutorial -->
+            </td>
+          </tr>
+          <tr>
+            <td>2026-02-03</td>
+            <td>
+              separability of unitaries, partial unitaries, partial measurements <!-- session 2-->
+            </td>
+            
+          </tr>
+
+          <!-- Week 6 ------------------------------------------------------------>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">06</th>
+            <td>2026-02-09</td>
+            <td> 
+              no-cloning theorem, CNOT gate and EPR pair, quantum teleportation,  <!-- session 1 -->
+            </td>
+            
+            <td rowspan="2" style="vertical-align: middle"> 
+              more examples on postulate-4 calculations  <!-- tutorial -->
+            </td>
+          </tr>
+          <tr>
+            <td>2026-02-10</td>
+            <td style="color:purple;">
+              Quiz 1 <!-- session 2-->
+            </td>
+            
+          </tr>
+
+          <!-- Week 7 ------------------------------------------------------------>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">07</th>
+            <td>2026-02-16</td>
+            <td style="color:green;">
+              lecture cancelled (Lunar New Year Vacation) 
+            </td>
+            
+            <td rowspan="2" style="vertical-align: middle; color:green;"> 
+              tutorial cancelled (Lunar New Year Vacation) <!-- tutorial -->
+            </td>
+          </tr>
+          <tr>
+            <td>2026-02-17</td>
+            <td style="color:green;">
+              lecture cancelled (Lunar New Year Vacation) 
+            </td>
+            
+          </tr>
+
+          <!-- Week 8 ------------------------------------------------------------>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">08</th>
+            <td>2026-02-23</td>
+            <td> 
+              quantum teleportation (cont'd), EPR paradox, CHSH game <!-- session 1 -->
+            </td>
+            
+            <td rowspan="2" style="vertical-align: middle"> 
+               superdense coding <!-- tutorial -->
+            </td>
+          </tr>
+          <tr>
+            <td>2026-02-24</td>
+            <td>
+              CHSH game (classical lower bounds) <!-- session 2-->
+            </td>
+            
+          </tr>
+
+          <!-- Week 9 ------------------------------------------------------------>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">09</th>
+            <td>2026-03-02</td>
+            <td style="color:green;">
+              lecture cancelled (reading week)
+            </td>
+            
+            <td rowspan="2" style="vertical-align: middle; color:green;"> 
+              tutorial cancelled (reading week) <!-- tutorial -->
+            </td>
+          </tr>
+          <tr>
+            <td>2026-03-03</td>
+            <td style="color:green;">
+              lecture cancelled (reading week)
+            </td>
+            
+          </tr>
+
+          <!-- Week 10 ------------------------------------------------------------>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">10</th>
+            <td>2026-03-09</td>
+            <td> 
+              CHSH game (quantum upper bounds), <a href="lecture_notes/02_intermezzo.pdf" target="_blank">interpretation of quantum mechanics</a> <!-- session 1 -->
+            </td>
+            
+            <td rowspan="2" style="vertical-align: middle"> 
+              Quiz 1 review <!-- tutorial -->
+            </td>
+          </tr>
+          <tr>
+            <td>2026-03-10</td>
+            <td style="color:purple;">
+              Quiz 2  <!-- session 2-->
+            </td>
+
+            
+          </tr>
+
+          <!-- Week 11 ------------------------------------------------------------>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">11</th>
+            <td>2026-03-16</td>
+            <td> 
+              quantum circuits, quantum (reversible) implementation of classical circuits  <!-- session 1 -->
+            </td>
+            
+            <td rowspan="2" style="vertical-align: middle"> 
+              Quiz 2 Review <!-- tutorial -->
+            </td>
+          </tr>
+          <tr>
+            <td>2026-03-17</td>
+            <td>
+              phase-kickback trick, phase oracle, universal gate sets  <!-- session 2-->
+            </td>
+            
+          </tr>
+
+          <!-- Week 12 ------------------------------------------------------------>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">12</th>
+            <td>2026-03-23</td>
+            <td> 
+              Deutsch's algorithm, Deutsch-Josza algorithm  <!-- session 1 -->
+            </td>
+            
+            <td rowspan="2" style="vertical-align: middle"> 
+              recitation [<a href="lecture_notes/recitation.pdf" target="_blank">problem set with solutions</a>]  <!-- tutorial -->
+            </td>
+          </tr>
+          <tr>
+            <td>2026-03-24</td>
+            <td>
+              Grover's search <!-- session 2-->
+            </td>
+            
+          </tr>
+
+          <!-- Week 13 ------------------------------------------------------------>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">13</th>
+            <td>2026-03-30</td>
+            <td style="color:purple;">
+              Midterm <!-- session 2-->
+            </td>
+
+            
+            <td rowspan="2" style="vertical-align: middle; color:green;"> 
+              tutorial cancelled (for you to prepare for the midterm) <!-- tutorial -->
+            </td>
+          </tr>
+          <tr>
+            <td>2026-03-31</td>
+            <td>
+              Simon's algorithms <!-- session 2-->
+            </td>
+            
+          </tr>
+
+          <!-- Week 14 ------------------------------------------------------------>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">14</th>
+            <td>2026-04-06</td>
+            <td style="color:green;">
+              lecture cancelled (the day following Ching Ming Festival)
+            </td>
+            
+            <td rowspan="2" style="vertical-align: middle; color:green;"> 
+              tutorial cancelled (the day following Ching Ming Festival) <!-- tutorial -->
+            </td>
+          </tr>
+          <tr>
+            <td>2026-04-07</td>
+            <td style="color:green;">
+              lecture cancelled (the day following Easter Monday) <!-- session 2-->
+            </td>
+            
+          </tr>
+
+          <!-- Week 15 ------------------------------------------------------------>
+          <tr>
+            <th rowspan="2" scope="row" style="vertical-align: middle">15</th>
+            <td>2026-04-13</td>
+            <td> 
+              quantum Fourier transform (QFT), quantum phase estimation (QPE) <!-- session 1 -->
+            </td>
+            
+            <td rowspan="2" style="vertical-align: middle"> 
+              Bernstein-Vazirani algorithm <!-- tutorial -->
+            </td>
+          </tr>
+          <tr>
+            <td>2026-04-14</td>
+            <td>
+              QPE-based factoring algorithm <!-- session 2-->
+            </td>
+            
+          </tr>
+        </tbody>
+      </table>
+    </div> <!-- end of container for table -->
+
+
+  </div> <!-- end col -->
+</div> <!-- end row -->
+
+
+
+
+
+
+<div class="row mt-4">
+  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+    <h4  id="Additional">Additional Information</h4>
+    <hr />
+
+<p class="NormalText">
+    <b>Course Description: </b> 
+     This course offers a deep dive into the field of computational complexity, a cornerstone of theoretical computer science (TCS) that studies the inherent difficulty of computational problems and classifies them according to their computational resources, such as time and space. The course is designed to elucidate the pivotal role of computational complexity in shaping the landscape of modern computing, with emphasis on its connections to algorithm design and related areas. Students will gain a broad view of how complexity theory informs and is informed by other scientific and technological domains. Interdisciplinary connections to cryptography and quantum computing may also be covered if time permits; these topics are optional and will depend on this year's teaching progress and the students' learning pace.
+</p>
+
+
+      Tentative topics:
+      <ul>
+        <li style="text-align:justify;">
+          Resources for computation (time, space, nondeterminism, randomness) and their associated complexity classes
+        </li>
+        <li style="text-align:justify;">
+          Relationships among resources (P vs NP and more), reductions, and completeness
+        </li>
+        <li style="text-align:justify;">
+          Space complexity: PSPACE, L, NL
+        </li>
+        <li style="text-align:justify;">
+          Randomized computation: RP, BPP
+        </li>
+
+        <li style="text-align:justify;">
+          Basic circuit complexity (P/poly, NC, and more)
+        </li>
+
+        <li style="text-align:justify;">
+          Counting: #P, Toda's Theorem, approximate counting
+        </li>
+
+        <li style="text-align:justify;">
+          (If time permits:) Alternation: the polynomial hierarchy, time-space trade-offs for SAT
+        </li>
+        
+        <li style="text-align:justify;">
+          (If time permits:) Interactive proofs (AM, MA, IP)
+        </li>
+        <li style="text-align:justify;">
+          (If time permits:) Probabilistically checkable proofs (PCP) and non-approximability
+        </li>
+        
+        <li style="text-align:justify;">
+          (If time permits:) average-case complexity and connections to cryptography, including TFNP, Kolmogorov complexity, one-way functions, factoring, discrete logarithm, and Diffie-Hellman
+        </li>
+        <li style="text-align:justify;">
+          (If time permits:) quantum complexity classes, including BQP, QMA, PostBQP, quantum auxiliary advice, hidden subgroup problems, and (local) Hamiltonian problems
+        </li>
+      </ul>
+
+      <br />
+
+<p class="NormalText">
+ <b>Classes During Adverse Weather:</b> 
+          Summer (i.e. May – Oct.) is the typhoon/adverse weather season in Hong Kong. It is likely that some classes will be affected. We will follow the University's official policy on adverse weather. For details, please refer to the relevant section in the Undergraduate Student Handbook: <a href="https://rgsntl.rgs.cuhk.edu.hk/aqs_prd_applx/Public/Handbook/document.aspx?id=2029&tv=F&lang=en" target="_blank">General Arrangements for Classes and Examinations on Approach of Typhoons and Rainstorms</a>.
+</p>
+<br />
+
+<p class="NormalText">
+    <b>Make-up Quiz/Exam Policy:</b> 
+
+    You may apply for a make-up quiz/exam if all of the following conditions are met:
+    <ul>
+      <li style="text-align:justify;">
+        You must provide a valid justification along with supporting documentation.
+        For example, in the case of illness, a doctor's note clearly stating your condition is required.
+      </li>
+      <li style="text-align:justify;">
+        You must email the instructor at least 4 hours before the start of the lecture in which the quiz is administered.
+      </li>
+    </ul>
+</p>
+
+<p class="NormalText">
+    Genuine emergency cases will be handled separately and typically require valid justification along with supporting documentation.
+</p>
+<br />
+ 
+
+<p class="NormalText">
+    <b>Policy on Regrading Requests:</b> 
+    
+    It is not uncommon for students to disagree with a marker's (such as a TA or the course instructor) grading on exams, quizzes, or homework, and to request additional points. If you plan to do so, please read the following policy carefully to make effective use of both your time and that of the marker.
+    <ul>
+      <li style="text-align:justify;">
+        Regrading will be considered <u>only if</u> points were lost due to a misunderstanding of your written answer by the marker. 
+      </li>
+    </ul>
+</p>
+
+<p class="NormalText">
+    In such cases, you are encouraged to clarify your original response so that the marker can reassess it based on what you actually wrote. However, regrading will not be considered if your justification relies on additional reasoning or explanation that was not included in your original written answer. The principle is simple: grading must be based solely on what was written during the exam or assignment; there is no fair way to take into account explanations provided after the fact, especially since different students may present different arguments about what they meant to write or how they were thinking during the exam.
+</p>
+
+
+<p class="NormalText">
+    Please also note that some questions, such as short-answer, calculation, or proof-based questions, do not have simple yes/no answers and often require multiple steps. It is common for students to argue: 
+    <ul>
+      <li style="text-align:justify;">
+        "I know my answer is incorrect, but it's not 'that wrong.' I included some useful steps, or at least showed that I was on the right track, even though I didn't finish or get the correct final answer. So I believe I deserve partial credit, or more partial credit than what I received."
+      </li>
+    </ul>
+</p>
+<p class="NormalText">
+    If you are planning to make this kind of argument, please save your effort. The marker will not adjust your score based on such reasoning. If your answer is incomplete or incorrect, the amount of partial credit is determined entirely by the marker and applied consistently across all students. No special consideration will be given to any individual, either in your favor or against you. Allowing such exceptions would introduce unfairness, as it would depend on the student's ability to argue and the emotional state of the marker, which we aim to avoid.
+</p>
+    
+<p class="NormalText">
+    That said, if you believe your answer was completely correct and that you lost points only because the marker misunderstood your writing, then you are welcome to request a re-evaluation.
+</p>
+<br />
+
+<p class="NormalText">
+    <b>Academic Honesty:</b>
+    Students are reminded to carefully review and adhere to the University's policies and regulations on academic honesty, as well as the disciplinary guidelines and procedures governing breaches of these rules. We emphasize the importance of strictly following all examination regulations. During an exam, if an invigilator observes behavior deemed suspicious or potentially indicative of academic dishonesty, they are authorized to issue a warning, record the student's name, and report the incident directly to the Faculty Disciplinary Committee (FDC) for investigation. If the FDC determines that a violation has occurred, the student will receive an automatic failure for the course and may face additional disciplinary actions in accordance with University policy.
+</p>
+<p class="NormalText">
+    All students are strongly encouraged to familiarize themselves with the University's official guidelines on examination conduct and academic integrity. Please refer to the following links:
+    <ul>
+      <li style="text-align:justify;">
+        <a href="https://www.cuhk.edu.hk/policy/academichonesty/" target="_blank">Honesty in Academic Work: A Guideline for Students and Teachers</a>
+      </li>
+      <li style="text-align:justify;">
+        <a href="https://www.erg.cuhk.edu.hk/erg/AcademicHonesty" target="_blank">Guidelines from the Engineering Faculty</a>
+      </li>
+    </ul>
+</p>
+
+<p class="NormalText">
+In particular, the following sections are relevant to course examinations:    
+    <ul>
+      <li style="text-align:justify;">
+        <a href="https://rgsntl.rgs.cuhk.edu.hk/aqs_prd_applx/Public/Handbook/document.aspx?id=1551&tv=F&lang=en"  target="_blank">Rules to be Observed by Candidates at Examination Centre</a>
+      </li>
+      <li style="text-align:justify;">
+        <a href="https://www.cuhk.edu.hk/policy/academichonesty/Eng_htm_files_(2013-14)/p06.htm"  target="_blank">CUHK disciplinary guidelines and procedures</a>
+      </li>
+    </ul>
+</p>
+    <br />
+
+  <!-- 
+    <b>Classes During Adverse Weather:</b> 
+          Summer (i.e. May – Oct.) is the typhoon/adverse weather season in Hong Kong. It is likely that some classes will be affected. We will follow the University's official policy on adverse weather. For details, please refer to the relevant section in the Undergraduate Student Handbook: <a href="https://rgsntl.rgs.cuhk.edu.hk/aqs_prd_applx/Public/Handbook/document.aspx?id=2029&tv=F&lang=en" target="_blank">General Arrangements for Classes and Examinations on Approach of Typhoons and Rainstorms</a>.
+
+      <br />
+      <br /> -->
+
+
+
+<p class="NormalText">
+    <b>Students with Special Educational Needs (SEN):</b> CUHK is committed to promoting equal opportunities in academic pursuits for all students. To support full-time students with special educational needs (SEN) in fully participating in campus life and enhancing their learning experience, the SEN Service (SENS) provides tailored support based on individual needs. These may include learning aids and equipment, special arrangements for classes or examinations, accessible facilities, and assistance with hostel visits and accommodations.
+</p>
+<p class="NormalText">    
+          Students who require these services should first register with the <a href="https://www.osa.cuhk.edu.hk/services/special-educational-needs-sen-support/" target="_blank">Office of Student Affairs</a> (OSA) and undergo an assessment by the SEN team. If a student is identified as needing SEN support, the recommended academic accommodations will be communicated to the SEN coordinator of the relevant teaching unit, who will then inform the course instructor accordingly. If you have completed the registration and assessment process with the SEN team at OSA, please email the course instructor to discuss arrangements that best accommodate your needs.
+</p>
+<br />
+
+<p class="NormalText">
+    <b>Use of AI tools:</b> 
+          This course follows "Approach 2 – Use only with prior permission" according to <a href="https://www.aqs.cuhk.edu.hk/documents/A-guide-for-students_use-of-AI-tools.pdf" target="_blank">the University's policy on the use of AI tools</a>. In particular, the use of AI tools is prohibited in all assessment-related components (including quizzes, the midterm, and the final exam). However, students are permitted to use AI tools for non-assessed learning activities, such as practicing exercise problems that do not count toward the final grade.
+</p>
+<br />
+
+
+
+<!-- this is the closing paragraph that starts at the beginning of "additional informaiton" -->
+
+
+  </div> <!-- end col -->
+</div> <!-- end row -->
+
+
+
+
+
+
+
+
+
+</div> <!-- container -->
+
+
+
+
+
+</body> 
+</html>
+
